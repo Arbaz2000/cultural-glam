@@ -55,16 +55,16 @@ const MenuOne: React.FC<Props> = ({ props }) => {
     }, [lastScrollPosition]);
 
     const handleGenderClick = (gender: string) => {
-        router.push(`/shop/breadcrumb1?gender=${gender}`);
+        router.push(`/homepages/fashion2?gender=${gender}`);
     };
 
     const handleCategoryClick = (category: string) => {
-        router.push(`/shop/breadcrumb1?category=${category}`);
+        router.push(`/homepages/jewelry?category=${category}`);
     };
 
     const handleTypeClick = (type: string) => {
         setSelectedType(type)
-        router.push(`/shop/breadcrumb1?type=${type}`);
+        router.push(`/homepages/furniture?type=${type}`);
     };
 
     return (
@@ -811,14 +811,14 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                         <div className="nav-item">
                                                             <div className="text-button-uppercase pb-2">Products Features</div>
                                                             <ul>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/default'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/default' ? 'active' : ''}`}
                                                                     >
                                                                         Products Defaults
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                                 <li>
                                                                     <Link
                                                                         href={'/product/sale'}
@@ -827,22 +827,22 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                         Products Sale
                                                                     </Link>
                                                                 </li>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/countdown-timer'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/countdown-timer' ? 'active' : ''}`}
                                                                     >
                                                                         Products Countdown Timer
                                                                     </Link>
-                                                                </li>
-                                                                <li>
+                                                                </li> */}
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/grouped'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/grouped' ? 'active' : ''}`}
                                                                     >
                                                                         Products Grouped
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                                 <li>
                                                                     <Link
                                                                         href={'/product/bought-together'}
@@ -859,27 +859,27 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                         Products Out Of Stock
                                                                     </Link>
                                                                 </li>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/variable'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/variable' ? 'active' : ''}`}
                                                                     >
                                                                         Products Variable
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item">
                                                             <div className="text-button-uppercase pb-2">Products Features</div>
                                                             <ul>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/external'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/external' ? 'active' : ''}`}
                                                                     >
                                                                         Products External
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                                 <li>
                                                                     <Link
                                                                         href={'/product/on-sale'}
@@ -896,28 +896,28 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                         Products With Discount
                                                                     </Link>
                                                                 </li>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/sidebar'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/sidebar' ? 'active' : ''}`}
                                                                     >
                                                                         Products With Sidebar
                                                                     </Link>
-                                                                </li>
-                                                                <li>
+                                                                </li> */}
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/fixed-price'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/fixed-price' ? 'active' : ''}`}
                                                                     >
                                                                         Products Fixed Price
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item">
                                                             <div className="text-button-uppercase pb-2">Products Layout</div>
                                                             <ul>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/thumbnail-left'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/product/thumbnail-left' ? 'active' : ''}`}
@@ -948,23 +948,23 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                     >
                                                                         Products Grid 2 Scrolling
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                                 <li>
                                                                     <Link
                                                                         href={'/product/combined-one'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/product/combined-one' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Combined 1
+                                                                        Products Combined
                                                                     </Link>
                                                                 </li>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/combined-two'}
                                                                         className={`link text-secondary duration-300 cursor-pointer ${pathname === '/product/combined-two' ? 'active' : ''}`}
                                                                     >
                                                                         Products Combined 2
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                             </ul>
                                                         </div>
                                                     </div>
