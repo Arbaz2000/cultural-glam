@@ -17,7 +17,7 @@ interface Props {
     category: string | null
 }
 
-const ShopBreadCrumb1: React.FC<Props> = ({ data, productPerPage, dataType, gender, category }) => {
+const ShopBreadCrumb3: React.FC<Props> = ({ data, productPerPage, dataType, gender, category }) => {
     const [showOnlySale, setShowOnlySale] = useState(false)
     const [sortOption, setSortOption] = useState('');
     const [type, setType] = useState<string | null | undefined>(dataType)
@@ -535,4 +535,4 @@ const ShopBreadCrumb1: React.FC<Props> = ({ data, productPerPage, dataType, gend
     )
 }
 
-export default ShopBreadCrumb1
+export default ShopBreadCrumb3
