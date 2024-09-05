@@ -577,7 +577,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                             </div>
                                         </div>
                                     </li>
-                                    <li className='h-full'>
+                                    {/* <li className='h-full'>
                                         <Link
                                             href="#!"
                                             className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${pathname.includes('/shop/') ? 'active' : ''}`}
@@ -796,7 +796,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> */}
                                     <li className='h-full'>
                                         <Link
                                             href="#!"
@@ -1030,7 +1030,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                         Contact Us
                                                     </Link>
                                                 </li>
-                                                <li>
+                                                {/* <li>
                                                     <Link href="/pages/store-list" className={`link text-secondary duration-300 ${pathname === '/pages/store-list' ? 'active' : ''}`}>
                                                         Store List
                                                     </Link>
@@ -1039,7 +1039,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                     <Link href="/pages/page-not-found" className={`link text-secondary duration-300 ${pathname === '/pages/page-not-found' ? 'active' : ''}`}>
                                                         404
                                                     </Link>
-                                                </li>
+                                                </li> */}
                                                 <li>
                                                     <Link href="/pages/faqs" className={`link text-secondary duration-300 ${pathname === '/pages/faqs' ? 'active' : ''}`}>
                                                         FAQs
