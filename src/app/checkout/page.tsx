@@ -134,7 +134,10 @@ const Checkout = () => {
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div className={`type bg-surface p-5 border border-line rounded-lg mt-5 ${activePayment === 'cash-delivery' ? 'open' : ''}`}>
+
+                                                {/* for payment methods, */}
+
+                                                {/* <div className={`type bg-surface p-5 border border-line rounded-lg mt-5 ${activePayment === 'cash-delivery' ? 'open' : ''}`}>
                                                     <input className="cursor-pointer" type="radio" id="delivery" name="payment" checked={activePayment === 'cash-delivery'} onChange={() => handlePayment('cash-delivery')} />
                                                     <label className="text-button pl-2 cursor-pointer" htmlFor="delivery">Cash on delivery</label>
                                                     <div className="infor">
@@ -142,7 +145,7 @@ const Checkout = () => {
                                                         <div className="row">
                                                             <div className="col-12 mt-3">
                                                                 {/* <div className="bg-img"><Image src="assets/images/component/payment.png" alt="" /></div> */}
-                                                                <label htmlFor="cardNumberDelivery">Card Numbers</label>
+                                                                {/* <label htmlFor="cardNumberDelivery">Card Numbers</label>
                                                                 <input className="cursor-pointer border-line px-4 py-3 w-full rounded mt-2" type="text" id="cardNumberDelivery" placeholder="ex.1234567290" />
                                                             </div>
                                                             <div className=" mt-3">
@@ -158,9 +161,9 @@ const Checkout = () => {
                                                             <input type="checkbox" id="saveDelivery" name="save" />
                                                             <label className="text-button" htmlFor="saveDelivery">Save Card Details</label>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div className={`type bg-surface p-5 border border-line rounded-lg mt-5 ${activePayment === 'apple-pay' ? 'open' : ''}`}>
+                                                    </div> */}
+                                                {/* </div>  */}
+                                                {/* <div className={`type bg-surface p-5 border border-line rounded-lg mt-5 ${activePayment === 'apple-pay' ? 'open' : ''}`}>
                                                     <input className="cursor-pointer" type="radio" id="apple" name="payment" checked={activePayment === 'apple-pay'} onChange={() => handlePayment('apple-pay')} />
                                                     <label className="text-button pl-2 cursor-pointer" htmlFor="apple">Apple Pay</label>
                                                     <div className="infor">
@@ -168,7 +171,7 @@ const Checkout = () => {
                                                         <div className="row">
                                                             <div className="col-12 mt-3">
                                                                 {/* <div className="bg-img"><Image src="assets/images/component/payment.png" alt="" /></div> */}
-                                                                <label htmlFor="cardNumberApple">Card Numbers</label>
+                                                                {/* <label htmlFor="cardNumberApple">Card Numbers</label>
                                                                 <input className="cursor-pointer border-line px-4 py-3 w-full rounded mt-2" type="text" id="cardNumberApple" placeholder="ex.1234567290" />
                                                             </div>
                                                             <div className=" mt-3">
@@ -184,8 +187,8 @@ const Checkout = () => {
                                                             <input type="checkbox" id="saveApple" name="save" />
                                                             <label className="text-button" htmlFor="saveApple">Save Card Details</label>
                                                         </div>
-                                                    </div>
-                                                </div>
+                                                    </div> */}
+                                                {/* </div>  */}
                                                 <div className={`type bg-surface p-5 border border-line rounded-lg mt-5 ${activePayment === 'paypal' ? 'open' : ''}`}>
                                                     <input className="cursor-pointer" type="radio" id="paypal" name="payment" checked={activePayment === 'paypal'} onChange={() => handlePayment('paypal')} />
                                                     <label className="text-button pl-2 cursor-pointer" htmlFor="paypal">PayPal</label>
