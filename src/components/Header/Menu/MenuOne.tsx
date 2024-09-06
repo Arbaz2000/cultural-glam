@@ -1134,25 +1134,25 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                 <ul>
                                                     <li>
                                                         <Link href="/" className={`nav-item-mobile link text-secondary duration-300 ${pathname === '/' ? 'active' : ''}`}>
-                                                            Home Fashion 1
+                                                            Home
                                                         </Link>
                                                     </li>
                                                     <li>
                                                         <Link href="/homepages/fashion2" className={`nav-item-mobile link text-secondary duration-300 ${pathname === '/homepages/fashion2' ? 'active' : ''}`}>
-                                                            Home Fashion 2
+                                                            Fashion
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/homepages/fashion3" className={`nav-item-mobile link text-secondary duration-300 ${pathname === '/homepages/fashion3' ? 'active' : ''}`}>
-                                                            Home Fashion 3
+                                                        <Link href="/homepages/jewelry" className={`nav-item-mobile link text-secondary duration-300 ${pathname === '/homepages/fashion3' ? 'active' : ''}`}>
+                                                            Jewellery
                                                         </Link>
                                                     </li>
                                                     <li>
-                                                        <Link href="/homepages/fashion4" className={`nav-item-mobile link text-secondary duration-300 ${pathname === '/homepages/fashion4' ? 'active' : ''}`}>
-                                                            Home Fashion 4
+                                                        <Link href="/homepages/furniture" className={`nav-item-mobile link text-secondary duration-300 ${pathname === '/homepages/fashion4' ? 'active' : ''}`}>
+                                                            Home Decor
                                                         </Link>
                                                     </li>
-                                                    <li>
+                                                    {/* <li>
                                                         <Link href="/homepages/fashion5" className={`nav-item-mobile link text-secondary duration-300 ${pathname === '/homepages/fashion5' ? 'active' : ''}`}>
                                                             Home Fashion 5
                                                         </Link>
@@ -1186,9 +1186,9 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                         <Link href="/homepages/fashion11" className={`nav-item-mobile link text-secondary duration-300 ${pathname === '/homepages/fashion11' ? 'active' : ''}`}>
                                                             Home Fashion 11
                                                         </Link>
-                                                    </li>
+                                                    </li>  */}
                                                 </ul>
-                                                <ul>
+                                                {/* <ul>
                                                     <li>
                                                         <Link href="/homepages/underwear" className={`nav-item-mobile link text-secondary duration-300 ${pathname === '/homepages/underwear' ? 'active' : ''}`}>
                                                             Home Underwear
@@ -1249,7 +1249,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                             Home Marketplace
                                                         </Link>
                                                     </li>
-                                                </ul>
+                                                </ul> */}
                                             </div>
                                         </div>
                                     </li>
@@ -1273,43 +1273,43 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                             <div className="list-nav-item w-full pt-3 pb-12">
                                                 <div className="nav-link grid grid-cols-2 gap-5 gap-y-6">
                                                     <div className="nav-item">
-                                                        <div className="text-button-uppercase pb-1">For Men</div>
+                                                        <div className="text-button-uppercase pb-1">Fashion</div>
                                                         <ul>
-                                                            <li>
+                                                            {/* <li>
                                                                 <div
                                                                     onClick={() => handleGenderClick('men')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
                                                                     Starting From 50% Off
                                                                 </div>
-                                                            </li>
+                                                            </li> */}
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('outerwear')}
+                                                                    onClick={() => handleTypeClick('woman')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Outerwear | Coats
+                                                                    Indian Kurties
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('sweater')}
+                                                                    onClick={() => handleTypeClick('saree')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Sweaters | Cardigans
+                                                                    Sarees
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('shirt')}
+                                                                    onClick={() => handleTypeClick('Men')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Shirt | Sweatshirts
+                                                                    Men's Ethnic
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleGenderClick('men')}
+                                                                    onClick={() => handleGenderClick('fashion')}
                                                                     className={`link text-secondary duration-300 view-all-btn`}
                                                                 >
                                                                     View All
@@ -1318,43 +1318,43 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                         </ul>
                                                     </div>
                                                     <div className="nav-item">
-                                                        <div className="text-button-uppercase pb-1">Skincare</div>
+                                                        <div className="text-button-uppercase pb-1">Jewellery</div>
                                                         <ul>
-                                                            <li>
+                                                            {/* <li>
                                                                 <div
                                                                     onClick={() => handleTypeClick('face')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
                                                                     Faces Skin
                                                                 </div>
-                                                            </li>
+                                                            </li> */}
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('eye')}
+                                                                    onClick={() => handleTypeClick('Neck')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Eyes Makeup
+                                                                    Neck Jewellery
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('lip')}
+                                                                    onClick={() => handleTypeClick('Hand')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Lip Polish
+                                                                    Hand Jewellery
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('hair')}
+                                                                    onClick={() => handleTypeClick('Face')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Hair Care
+                                                                    Face Jewellery
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleCategoryClick('cosmetic')}
+                                                                    onClick={() => handleCategoryClick('jewellery')}
                                                                     className={`link text-secondary duration-300 view-all-btn`}
                                                                 >
                                                                     View All
@@ -1363,43 +1363,43 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                         </ul>
                                                     </div>
                                                     <div className="nav-item">
-                                                        <div className="text-button-uppercase pb-1">Health</div>
+                                                        <div className="text-button-uppercase pb-1">Home Decor</div>
                                                         <ul>
-                                                            <li>
+                                                            {/* <li>
                                                                 <div
                                                                     onClick={() => handleTypeClick('candle')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
                                                                     Cented Candle
                                                                 </div>
-                                                            </li>
+                                                            </li> */}
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('drinks')}
+                                                                    onClick={() => handleTypeClick('BedSheets')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Health Drinks
+                                                                    BedSheets | curtains
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('clothes')}
+                                                                    onClick={() => handleTypeClick('Paintings')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Yoga Clothes
+                                                                    Paintings
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleTypeClick('mats')}
+                                                                    onClick={() => handleTypeClick('Devotional')}
                                                                     className={`link text-secondary duration-300 cursor-pointer`}
                                                                 >
-                                                                    Yoga Equipment
+                                                                    Devotional
                                                                 </div>
                                                             </li>
                                                             <li>
                                                                 <div
-                                                                    onClick={() => handleCategoryClick('yoga')}
+                                                                    onClick={() => handleCategoryClick('furniture')}
                                                                     className={`link text-secondary duration-300 view-all-btn`}
                                                                 >
                                                                     View All
@@ -1407,7 +1407,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div className="nav-item">
+                                                    {/* <div className="nav-item">
                                                         <div className="text-button-uppercase pb-1">For Women</div>
                                                         <ul>
                                                             <li>
@@ -1451,8 +1451,8 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                 </div>
                                                             </li>
                                                         </ul>
-                                                    </div>
-                                                    <div className="nav-item">
+                                                    </div> */}
+                                                    {/* <div className="nav-item">
                                                         <div className="text-button-uppercase pb-1">For Kid</div>
                                                         <ul>
                                                             <li>
@@ -1496,8 +1496,8 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                 </div>
                                                             </li>
                                                         </ul>
-                                                    </div>
-                                                    <div className="nav-item">
+                                                    </div> */}
+                                                    {/* <div className="nav-item">
                                                         <div className="text-button-uppercase pb-1">For Home</div>
                                                         <ul>
                                                             <li>
@@ -1541,7 +1541,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                 </div>
                                                             </li>
                                                         </ul>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                                 <div className="banner-ads-block grid sm:grid-cols-2 items-center gap-6 pt-6">
                                                     <div className="banner-ads-item bg-linear rounded-2xl relative overflow-hidden" onClick={() => handleTypeClick('swimwear')}>
@@ -1580,7 +1580,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                             </div>
                                         </div>
                                     </li>
-                                    <li
+                                    {/* <li
                                         className={`${openSubNavMobile === 3 ? 'open' : ''}`}
                                         onClick={() => handleOpenSubNavMobile(3)}
                                     >
@@ -1808,7 +1808,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
+                                    </li> */}
                                     <li
                                         className={`${openSubNavMobile === 4 ? 'open' : ''}`}
                                         onClick={() => handleOpenSubNavMobile(4)}
@@ -1832,14 +1832,14 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                         <div className="nav-item">
                                                             <div className="text-button-uppercase pb-1">Products Features</div>
                                                             <ul>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/default'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/default' ? 'active' : ''}`}
                                                                     >
                                                                         Products Defaults
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                                 <li>
                                                                     <Link
                                                                         href={'/product/sale'}
@@ -1848,7 +1848,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                         Products Sale
                                                                     </Link>
                                                                 </li>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/countdown-timer'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/countdown-timer' ? 'active' : ''}`}
@@ -1863,7 +1863,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                     >
                                                                         Products Grouped
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                                 <li>
                                                                     <Link
                                                                         href={'/product/bought-together'}
@@ -1880,27 +1880,27 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                         Products Out Of Stock
                                                                     </Link>
                                                                 </li>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/variable'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/variable' ? 'active' : ''}`}
                                                                     >
                                                                         Products Variable
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item">
                                                             <div className="text-button-uppercase pb-1">Products Features</div>
                                                             <ul>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/external'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/external' ? 'active' : ''}`}
                                                                     >
                                                                         Products External
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                                 <li>
                                                                     <Link
                                                                         href={'/product/on-sale'}
@@ -1917,7 +1917,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                         Products With Discount
                                                                     </Link>
                                                                 </li>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/sidebar'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/sidebar' ? 'active' : ''}`}
@@ -1932,13 +1932,13 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                     >
                                                                         Products Fixed Price
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                             </ul>
                                                         </div>
                                                         <div className="nav-item col-span-2">
                                                             <div className="text-button-uppercase pb-1">Products Layout</div>
                                                             <ul>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/thumbnail-left'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/thumbnail-left' ? 'active' : ''}`}
@@ -1969,23 +1969,23 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                                     >
                                                                         Products Grid 2 Scrolling
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                                 <li>
                                                                     <Link
                                                                         href={'/product/combined-one'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/combined-one' ? 'active' : ''}`}
                                                                     >
-                                                                        Products Combined 1
+                                                                        Products Combined
                                                                     </Link>
                                                                 </li>
-                                                                <li>
+                                                                {/* <li>
                                                                     <Link
                                                                         href={'/product/combined-two'}
                                                                         className={`link text-secondary duration-300 ${pathname === '/product/combined-two' ? 'active' : ''}`}
                                                                     >
                                                                         Products Combined 2
                                                                     </Link>
-                                                                </li>
+                                                                </li> */}
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -2078,7 +2078,8 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                             Contact Us
                                                         </Link>
                                                     </li>
-                                                    <li>
+                                                    {/* unsused element(Store list, 404) */}
+                                                    {/* <li>
                                                         <Link href="/pages/store-list" className={`link text-secondary duration-300 ${pathname === '/pages/store-list' ? 'active' : ''}`}>
                                                             Store List
                                                         </Link>
@@ -2087,7 +2088,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                         <Link href="/pages/page-not-found" className={`link text-secondary duration-300 ${pathname === '/pages/page-not-found' ? 'active' : ''}`}>
                                                             404
                                                         </Link>
-                                                    </li>
+                                                    </li> */}
                                                     <li>
                                                         <Link href="/pages/faqs" className={`link text-secondary duration-300 ${pathname === '/pages/faqs' ? 'active' : ''}`}>
                                                             FAQs
