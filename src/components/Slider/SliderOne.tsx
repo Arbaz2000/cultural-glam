@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css/bundle';
 import 'swiper/css/effect-fade';
+import LPP from "../../../public/images/slider/landingPagePhoto.jpeg"
 
 
 const SliderOne = () => {
@@ -26,27 +27,33 @@ const SliderOne = () => {
                         }}
                     >
                         <SwiperSlide>
-                            <div className="slider-item h-full w-full relative">
+                            <div className="slider-item h-screen w-full relative mt-24">
                                 <div className="container w-full h-full flex items-center relative">
-                                    <div className="text-content basis-1/2">
-                                        <div className="text-sub-display">Sale! Up To 50% Off!</div>
-                                        <div className="text-display md:mt-5 mt-2">Summer Sale Collections</div>
-                                        <Link href='/shop/breadcrumb-img' className="button-main md:mt-8 mt-3">Shop Now</Link>
+                                    <div className="text-content basis-1/2 relative z-10 px-6">
+                                        <div className="text-sub-display text-white">We are here</div>
+                                        <div className="text-display md:mt-5 mt-2 text-white">Book With Us And <strong> Enjoy </strong>Your Travel</div>
+                                        <Link href='/shop/breadcrumb-img' className="button-main md:mt-8 mt-3 text-white">Shop Now</Link>
                                     </div>
-                                    <div className="sub-img absolute sm:w-1/2 w-3/5 2xl:-right-[60px] -right-[16px] bottom-0">
+                                    <div className="sub-img absolute top-0 left-0 w-full h-full">
                                         <Image
-                                            src={'/images/slider/bg1-1.png'}
+                                            src={LPP}
                                             width={670}
                                             height={936}
-                                            alt='bg1-1'
+                                            alt='landing page photo'
+                                            style={{
+                                                objectFit: 'cover', // Ensure image covers the entire container
+                                                width: '100%',
+                                                height: '100%',
+                                            }}
                                             priority={true}
                                         />
                                     </div>
                                 </div>
                             </div>
+
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className="slider-item h-full w-full relative">
+                            <div className="slider-item h-full w-full relative mt-24">
                                 <div className="container w-full h-full flex items-center relative">
                                     <div className="text-content basis-1/2">
                                         <div className="text-sub-display">Sale! Up To 50% Off!</div>
@@ -66,7 +73,7 @@ const SliderOne = () => {
                             </div>
                         </SwiperSlide>
                         <SwiperSlide>
-                            <div className="slider-item h-full w-full relative">
+                            <div className="slider-item h-full w-full relative mt-24">
                                 <div className="container w-full h-full flex items-center relative">
                                     <div className="text-content basis-1/2">
                                         <div className="text-sub-display">Sale! Up To 50% Off!</div>
@@ -76,9 +83,9 @@ const SliderOne = () => {
                                     <div className="sub-img absolute sm:w-1/2 w-2/3 2xl:-right-[60px] -right-[36px] sm:bottom-0 -bottom-[30px]">
                                         <Image
                                             src={'/images/slider/bg1-3.png'}
-                                            width={670}
-                                            height={936}
-                                            alt='bg1-3'
+                                            width={1000}
+                                            height={1000}
+                                            alt='landing page photo'
                                             priority={true}
                                         />
                                     </div>

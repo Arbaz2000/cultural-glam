@@ -14,7 +14,7 @@ const TopNavOne: React.FC<Props> = ({ props, slogan }) => {
     const [isOpenLanguage, setIsOpenLanguage] = useState(false)
     const [isOpenCurrence, setIsOpenCurrence] = useState(false)
     const [language, setLanguage] = useState('English')
-    const [currence, setCurrence] = useState('USD')
+    // const [currence, setCurrence] = useState('USD')
 
     return (
         <>
@@ -41,7 +41,7 @@ const TopNavOne: React.FC<Props> = ({ props, slogan }) => {
                                 </div>
                                 <Icon.CaretDown size={12} color='#fff' />
                             </div>
-                            <div
+                            {/* <div
                                 className="choose-type choose-currency flex items-center gap-1.5"
                                 onClick={() => {
                                     setIsOpenCurrence(!isOpenCurrence)
@@ -59,7 +59,7 @@ const TopNavOne: React.FC<Props> = ({ props, slogan }) => {
                                     </ul>
                                 </div>
                                 <Icon.CaretDown size={12} color='#fff' />
-                            </div>
+                            </div> */}
                         </div>
                         <div className="text-center text-button-uppercase text-white flex items-center">
                             {slogan}

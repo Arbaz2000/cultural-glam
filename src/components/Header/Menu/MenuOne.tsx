@@ -77,7 +77,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                         </div>
                         <div className="left flex items-center gap-16">
                             <Link href={'/'} className='flex items-center max-lg:absolute max-lg:left-1/2 max-lg:-translate-x-1/2'>
-                                <div className="heading4">Anvogue</div>
+                                <div className="heading5">Indian Private Chauffeur</div>
                             </Link>
                             <div className="menu-main h-full max-lg:hidden">
                                 <ul className='flex items-center gap-8 h-full'>
@@ -86,7 +86,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                             href="#!"
                                             className={`text-button-uppercase duration-300 h-full flex items-center justify-center gap-1 ${pathname === '/' ? 'active' : ''}`}
                                         >
-                                            Demo
+                                            HOME
                                         </Link>
                                         <div className="sub-menu py-3 px-5 -left-10 w-max absolute grid grid-cols-4 gap-5 bg-white rounded-b-xl">
                                             <ul>
@@ -135,7 +135,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                 <li>
                                                     <Link href="/homepages/fashion9" className='link text-secondary duration-300'>
                                                         Home Fashion 9
-                                                    </Link>
+                                       Demo             </Link>
                                                 </li>
                                                 <li>
                                                     <Link href="/homepages/fashion10" className='link text-secondary duration-300'>
@@ -216,7 +216,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                     </li>
                                     <li className='h-full'>
                                         <Link href="#!" className='text-button-uppercase duration-300 h-full flex items-center justify-center'>
-                                            category
+                                            TOUR
                                         </Link>
                                         <div className="mega-menu absolute top-[74px] left-0 bg-white w-screen">
                                             <div className="container">
@@ -802,7 +802,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                             href="#!"
                                             className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${pathname.includes('/product/') ? 'active' : ''}`}
                                         >
-                                            Product
+                                            PAKAGE TOUR
                                         </Link>
                                         <div className="mega-menu absolute top-[74px] left-0 bg-white w-screen">
                                             <div className="container">
@@ -982,7 +982,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                     </li>
                                     <li className='h-full relative'>
                                         <Link href="#!" className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${pathname.includes('/blog') ? 'active' : ''}`}>
-                                            Blog
+                                            TESTIMONIALS
                                         </Link>
                                         <div className="sub-menu py-3 px-5 -left-10 absolute bg-white rounded-b-xl">
                                             <ul className='w-full'>
@@ -1016,7 +1016,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                     </li>
                                     <li className='h-full relative'>
                                         <Link href="#!" className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${pathname.includes('/pages') ? 'active' : ''}`}>
-                                            Pages
+                                            RAFERENCE
                                         </Link>
                                         <div className="sub-menu py-3 px-5 -left-10 absolute bg-white rounded-b-xl">
                                             <ul className='w-full'>
@@ -1057,6 +1057,16 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                                 </li>
                                             </ul>
                                         </div>
+                                    </li>
+                                    <li className='h-full relative'>
+                                        <Link href="#!" className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${pathname.includes('/pages') ? 'active' : ''}`}>
+                                            GALlARY
+                                        </Link>
+                                    </li>
+                                    <li className='h-full relative'>
+                                        <Link href="#!" className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${pathname.includes('/pages') ? 'active' : ''}`}>
+                                            CONTACT US
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>
