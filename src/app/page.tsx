@@ -18,7 +18,7 @@ import ModalNewsletter from '@/components/Modal/ModalNewsletter'
 export default function Home() {
   return (
     <>
-      <TopNavOne props="style-one bg-black" slogan="New customers save 10% with the code GET10" />
+      <TopNavOne props="style-one bg-black" slogan="Enjoy Your Travel" />
       <div id="header" className='relative w-full'>
         <MenuOne props="bg-transparent" />
         <SliderOne />
@@ -30,9 +30,9 @@ export default function Home() {
       <Benefit props="md:py-20 py-10" />
       <Testimonial data={testimonialData} limit={6} />
       <Instagram />
-      <Brand />
+      {/* <Brand /> */}
       <Footer />
-      <ModalNewsletter />
+      {/* <ModalNewsletter /> */}
     </>
   )
 }
