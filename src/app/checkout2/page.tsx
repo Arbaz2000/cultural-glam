@@ -4,7 +4,6 @@ import Link from 'next/link'
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import { useCart } from '@/context/CartContext'
 import { useModalCartContext } from '@/context/ModalCartContext'
-import Image from 'next/image';
 
 const Checkout = () => {
     const { openModalCart } = useModalCartContext()

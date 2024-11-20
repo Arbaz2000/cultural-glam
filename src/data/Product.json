@@ -1,10 +1,9 @@
-
 [
   {
     "id": "1",
     "category": "fashion",
     "type": "top",
-    "name": "Safari",
+    "name": "mesh shirt",
     "gender": "women",
     "new": true,
     "sale": false,
@@ -53,7 +52,7 @@
     "id": "2",
     "category": "fashion",
     "type": "t-shirt",
-    "name": "Safari",
+    "name": "Raglan Sleeve T-shirt",
     "gender": "women",
     "new": true,
     "sale": false,
