@@ -50,7 +50,7 @@ const Instagram = () => {
                                     spaceBetween: 16,
                                 },
                             }}
-                        >lahagrah frod
+                        >
                             <SwiperSlide>
                                 <Link href={'https://www.instagram.com/'} target='_blank' className="item relative block rounded-[32px] overflow-hidden">
                                     <Image
