@@ -7,7 +7,7 @@ interface Props {
 const Benefit: React.FC<Props> = ({ props }) => {
     return (
         <>
-            <div className="container">
+            {/* <div className="container">
                 <div className={`benefit-block ${props}`}>
                     <div className="heading text-center">
                         <div className="heading3">What Makes Us Different</div>
@@ -36,7 +36,7 @@ const Benefit: React.FC<Props> = ({ props }) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }
