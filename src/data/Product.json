@@ -1,9 +1,10 @@
+
 [
   {
     "id": "1",
     "category": "fashion",
     "type": "top",
-    "name": "mesh shirt",
+    "name": "friends-enjoying",
     "gender": "women",
     "new": true,
     "sale": false,
@@ -35,8 +36,8 @@
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/tourTravel/friends-enjoying.jpg",
+      "/images/tourTravel/friends-enjoying.jpg"
     ],
     "images": [
       "/images/product/1000x1000.png",
@@ -44,7 +45,7 @@
       "/images/product/1000x1000.png",
       "/images/product/1000x1000.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Enjoy Friends is about cherishing the moments spent with close companions. Whether you're hanging out, sharing laughs, or making memories, it’s all about the joy of being with those who bring happiness into your life. Celebrate friendship, create lasting bonds, and enjoy every minute with your friends!",
     "action": "quick shop",
     "slug": "mesh-shirt"
   },
@@ -86,8 +87,10 @@
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/tourTravel/food.jpg",
+      "/images/tourTravel/food.jpg"
+
+
     ],
     "images": [
       "/images/product/1000x1000.png",
@@ -95,7 +98,8 @@
       "/images/product/1000x1000.png",
       "/images/product/1000x1000.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Discover the flavors of the world with every meal you enjoy. From street food to gourmet dishes, each destination offers unique culinary delights. Taste fresh ingredients and traditional recipes that reflect the local culture. Let food be an essential part of your journey, turning each bite into a new adventure.",
+    "icon":"",
     "action": "quick shop",
     "slug": "shirt"
   },
@@ -103,7 +107,7 @@
     "id": "3",
     "category": "fashion",
     "type": "dress",
-    "name": "Off-the-Shoulder Blouse",
+    "name": "Enjoy Travler",
     "gender": "women",
     "new": false,
     "sale": true,
@@ -138,8 +142,10 @@
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+     "/images/tourTravel/friends-enjoying.jpg",
+     "/images/tourTravel/friends-enjoying.jpg"
+
+
     ],
     "images": [
       "/images/product/1000x1000.png",
@@ -147,7 +153,7 @@
       "/images/product/1000x1000.png",
       "/images/product/1000x1000.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description":"Enjoy Traveler is all about embracing the spirit of adventure and exploring the world. Whether you're discovering new destinations, experiencing different cultures, or seeking new thrills, it's about making the most of every journey. Travel with joy, create unforgettable memories, and enjoy the freedom of discovering new horizons!",
     "action": "add to cart",
     "slug": "blouse"
   },
@@ -155,7 +161,7 @@
     "id": "4",
     "category": "fashion",
     "type": "t-shirt",
-    "name": "Kimono sleeve top",
+    "name": "Visit Jungle",
     "gender": "women",
     "new": false,
     "sale": true,
@@ -192,8 +198,9 @@
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/tourTravel/tigerImage.jpeg",
+      "/images/tourTravel/tigerImage.jpeg"
+      
     ],
     "images": [
       "/images/product/1000x1000.png",
@@ -201,7 +208,7 @@
       "/images/product/1000x1000.png",
       "/images/product/1000x1000.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Visit Jungle invites you to explore the wonders of nature's untouched beauty. Immerse yourself in lush greenery, discover exotic wildlife, and experience the serenity of the jungle. Whether for adventure, relaxation, or wildlife spotting, a jungle visit offers an unforgettable escape into the heart of the wild.",
     "action": "add to cart",
     "slug": "kimono"
   },
@@ -209,7 +216,7 @@
     "id": "5",
     "category": "fashion",
     "type": "dress",
-    "name": "mesh shirt",
+    "name": "vehicle",
     "gender": "women",
     "new": true,
     "sale": false,
@@ -255,7 +262,7 @@
       "/images/product/1000x1000.png",
       "/images/product/1000x1000.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Experience the thrill of a desert ride, where vast stretches of golden sand meet the horizon. Ride across rolling dunes in a 4x4 or on a camel, feeling the rush of wind and the heat of the sun. The desert's serene beauty and unique landscapes create an unforgettable adventure.",
     "action": "quick shop",
     "slug": "mesh-shirt"
   },
@@ -320,7 +327,7 @@
     "id": "7",
     "category": "fashion",
     "type": "shirt",
-    "name": "Off-the-Shoulder Blouse",
+    "name": "Travel view",
     "gender": "women",
     "new": false,
     "sale": true,
@@ -361,8 +368,8 @@
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/tourTravel/route.jpeg",
+      "/images/tourTravel/route.jpeg"
     ],
     "images": [
       "/images/product/1000x1000.png",
@@ -370,7 +377,7 @@
       "/images/product/1000x1000.png",
       "/images/product/1000x1000.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description":  "Travel View showcases breathtaking landscapes and scenic vistas from around the world. Whether it's a mountain range, serene beach, or bustling city skyline, travel views capture the essence of each destination. Explore new perspectives, immerse yourself in natural beauty, and enjoy the stunning visuals that make travel unforgettable.",
     "action": "add to cart",
     "slug": "blouse"
   },
@@ -378,7 +385,7 @@
     "id": "8",
     "category": "fashion",
     "type": "sets",
-    "name": "Kimono sleeve top",
+    "name": "happy passenger",
     "gender": "women",
     "new": false,
     "sale": true,
@@ -422,8 +429,9 @@
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/tourTravel/passenger.jpeg",
+      "/images/tourTravel/passenger.jpeg"
+
     ],
     "images": [
       "/images/product/1000x1000.png",
@@ -431,7 +439,7 @@
       "/images/product/1000x1000.png",
       "/images/product/1000x1000.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description":"Happy Passenger reflects the joy and satisfaction of a comfortable, stress-free journey. Whether traveling for business or leisure, a happy passenger enjoys seamless service, smooth rides, and attentive care. With a focus on comfort and convenience, every ride becomes a pleasant experience, ensuring passengers arrive at their destination with a smile.",
     "action": "add to cart",
     "slug": "kimono"
   },
@@ -439,7 +447,7 @@
     "id": "9",
     "category": "fashion",
     "type": "t-shirt",
-    "name": "mesh shirt",
+    "name": "vehicle",
     "gender": "women",
     "new": true,
     "sale": false,
@@ -477,8 +485,7 @@
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/tourTravel/vehicle.jpg"
     ],
     "images": [
       "/images/product/1000x1000.png",
@@ -486,7 +493,7 @@
       "/images/product/1000x1000.png",
       "/images/product/1000x1000.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description":"A vehicle is a machine used for transporting people or goods. It can be powered by various means, such as gasoline, electricity, or human effort. Vehicles come in many forms, including cars, trucks, bicycles, and buses, offering varying capacities and features for personal, commercial, or public transportation.",
     "action": "quick shop",
     "slug": "mesh-shirt"
   },
@@ -494,7 +501,7 @@
     "id": "10",
     "category": "fashion",
     "type": "t-shirt",
-    "name": "Raglan Sleeve T-shirt",
+    "name": "Hotel",
     "gender": "women",
     "new": true,
     "sale": false,
@@ -540,8 +547,9 @@
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/tourTravel/Hotel.jpeg",
+      "/images/tourTravel/Hotel.jpeg"
+
     ],
     "images": [
       "/images/product/1000x1000.png",
@@ -549,7 +557,7 @@
       "/images/product/1000x1000.png",
       "/images/product/1000x1000.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description":"A hotel is a commercial establishment that provides lodging, meals, and various services to travelers. It offers different types of rooms, from basic to luxurious, and may include amenities such as pools, gyms, restaurants, and spas. Hotels cater to both short-term and long-term stays, ensuring comfort and convenience.",
     "action": "quick shop",
     "slug": "shirt"
   },
@@ -557,7 +565,7 @@
     "id": "11",
     "category": "fashion",
     "type": "t-shirt",
-    "name": "Off-the-Shoulder Blouse",
+    "name": "Explore world",
     "gender": "women",
     "new": false,
     "sale": true,
@@ -592,8 +600,9 @@
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+    "/images/tourTravel/exploreWorld.jpeg",
+    "/images/tourTravel/exploreWorld.jpeg"
+
     ],
     "images": [
       "/images/product/1000x1000.png",
@@ -601,7 +610,7 @@
       "/images/product/1000x1000.png",
       "/images/product/1000x1000.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description":  "Explore the world with our travel website! Discover amazing destinations, hidden gems, and unforgettable experiences. Whether you're seeking adventure, relaxation, or cultural exploration, we provide expert tips, travel guides, and booking options. Start planning your next journey and experience the beauty of the world in every corner!",
     "action": "add to cart",
     "slug": "blouse"
   },
@@ -609,7 +618,7 @@
     "id": "12",
     "category": "fashion",
     "type": "sets",
-    "name": "Kimono sleeve top",
+    "name": "Advanture",
     "gender": "women",
     "new": false,
     "sale": true,
@@ -653,8 +662,8 @@
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
-      "/images/product/1000x1000.png"
+      "/images/tourTravel/advanture.jpeg",
+      "/images/tourTravel/advanture.jpeg"
     ],
     "images": [
       "/images/product/1000x1000.png",
@@ -662,7 +671,7 @@
       "/images/product/1000x1000.png",
       "/images/product/1000x1000.png"
     ],
-    "description": "Keep your home organized, yet elegant with storage cabinets by Onita Patio Furniture. Traditionally designed, they are perfect to be used in the any place where you need to store.",
+    "description": "Adventure travel is about exploring remote destinations, embarking on a thrilling journey. From trekking through wilderness to safaris, each trip offers discovery and immersion. Whether a road trip, expedition, or escapade, it’s about embracing the unknown, seeking new experiences, and pushing boundaries with adventurous spirit and wanderlust.",
     "action": "add to cart",
     "slug": "kimono"
   },
@@ -670,7 +679,7 @@
     "id": "13",
     "category": "fashion",
     "type": "t-shirt",
-    "name": "mesh shirt",
+    "name": "uttrakhand",
     "gender": "women",
     "new": true,
     "sale": false,
@@ -713,7 +722,7 @@
       }
     ],
     "thumbImage": [
-      "/images/product/1000x1000.png",
+      "/images/tourTravel/uttrakhandH.jpg",
       "/images/product/1000x1000.png"
     ],
     "images": [
@@ -1821,7 +1830,7 @@
     "id": "31",
     "category": "fashion",
     "type": "underwear",
-    "name": "Off-the-Shoulder Blouse",
+    "name": "Off-the-Shoulder Blouseeeeeeee",
     "gender": "women",
     "new": false,
     "sale": true,
@@ -7935,4 +7944,4 @@
     "action": "quick shop",
     "slug": "blouse"
   }
-]
+]	

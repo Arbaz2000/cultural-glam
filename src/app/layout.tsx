@@ -15,8 +15,8 @@ const serverTimeLeft: CountdownTimeType = countdownTime();
 const instrument = Instrument_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Cultural Glam',
-  description: 'eCommerce website',
+  title: 'IndiaPrivateChauffeur',
+  description: 'Tour and Travels website',
 }
 
 export default function RootLayout({

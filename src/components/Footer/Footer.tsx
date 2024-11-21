@@ -12,7 +12,7 @@ const Footer = () => {
                         <div className="content-footer py-[60px] flex justify-between flex-wrap gap-y-8">
                             <div className="company-infor basis-1/4 max-lg:basis-full pr-7">
                                 <Link href={'/'} className="logo">
-                                    <div className="heading4">Anvogue</div>
+                                    <div className="heading4">IPC</div>
                                 </Link>
                                 <div className='flex gap-3 mt-3'>
                                     <div className="flex flex-col ">
@@ -81,86 +81,6 @@ const Footer = () => {
                                             <div className="icon-pinterest text-2xl text-black"></div>
                                         </Link>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="footer-bottom py-3 flex items-center justify-between gap-5 max-lg:justify-center max-lg:flex-col border-t border-line">
-                            <div className="left flex items-center gap-8">
-                                <div className="copyright caption1 text-secondary">©2023 Anvogue. All Rights Reserved.</div>
-                                <div className="select-block flex items-center gap-5 max-md:hidden">
-                                    <div className="choose-language flex items-center gap-1.5">
-                                        <select name="language" id="chooseLanguageFooter" className='caption2 bg-transparent'>
-                                            <option value="English">English</option>
-                                            <option value="Espana">Espana</option>
-                                            <option value="France">France</option>
-                                        </select>
-                                        <Icon.CaretDown size={12} color='#1F1F1F' />
-                                    </div>
-                                    <div className="choose-currency flex items-center gap-1.5">
-                                        <select name="currency" id="chooseCurrencyFooter" className='caption2 bg-transparent'>
-                                            <option value="USD">USD</option>
-                                            <option value="EUR">EUR</option>
-                                            <option value="GBP">GBP</option>
-                                        </select>
-                                        <Icon.CaretDown size={12} color='#1F1F1F' />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="right flex items-center gap-2">
-                                <div className="caption1 text-secondary">Payment:</div>
-                                <div className="payment-img">
-                                    <Image
-                                        src={'/images/payment/Frame-0.png'}
-                                        width={500}
-                                        height={500}
-                                        alt={'payment'}
-                                        className='w-9'
-                                    />
-                                </div>
-                                <div className="payment-img">
-                                    <Image
-                                        src={'/images/payment/Frame-1.png'}
-                                        width={500}
-                                        height={500}
-                                        alt={'payment'}
-                                        className='w-9'
-                                    />
-                                </div>
-                                <div className="payment-img">
-                                    <Image
-                                        src={'/images/payment/Frame-2.png'}
-                                        width={500}
-                                        height={500}
-                                        alt={'payment'}
-                                        className='w-9'
-                                    />
-                                </div>
-                                <div className="payment-img">
-                                    <Image
-                                        src={'/images/payment/Frame-3.png'}
-                                        width={500}
-                                        height={500}
-                                        alt={'payment'}
-                                        className='w-9'
-                                    />
-                                </div>
-                                <div className="payment-img">
-                                    <Image
-                                        src={'/images/payment/Frame-4.png'}
-                                        width={500}
-                                        height={500}
-                                        alt={'payment'}
-                                        className='w-9'
-                                    />
-                                </div>
-                                <div className="payment-img">
-                                    <Image
-                                        src={'/images/payment/Frame-5.png'}
-                                        width={500}
-                                        height={500}
-                                        alt={'payment'}
-                                        className='w-9'
-                                    />
                                 </div>
                             </div>
                         </div>
