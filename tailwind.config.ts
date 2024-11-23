@@ -10,6 +10,9 @@ const config: Config = {
   jit: true,
   theme: {
     extend: {
+      fontFamily: {
+        'instrument-sans': ['Instrument Sans', 'sans-serif'],  // Adding custom font if needed
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -42,4 +45,5 @@ const config: Config = {
   },
   plugins: [],
 }
-export default config
+
+export default config;

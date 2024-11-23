@@ -32,33 +32,27 @@ const SliderOne = () => {
                     <SwiperSlide>
                         <div className="slider-item h-screen w-full relative mt-24">
                             <div className="container w-full h-full flex items-center relative">
-                            <div className="text-content basis-1/2 relative z-10 px-6">
-                            <div className="text-content basis-1/2 relative z-10 px-6">
-                            <div className="relative">
-    {/* Increased Black Overlay behind the text */}
-    <div className="absolute inset-0 bg-black/60 z-0"></div>  {/* Increased opacity for the overlay to stand out more */}
+                                <div className="text-content basis-1/2 relative z-10 px-6">
+                                    <div className="text-content basis-1/2 relative z-10 px-6">
+                                        <div className="relative">
+                                            <div className="absolute inset-0 bg-black/60 z-0"></div>
+                                            <div className="text-sub-display text-white text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-shadow-lg relative z-10 mt-16">
+                                                We are here
+                                            </div>
 
-    {/* Text content with enhanced styling */}
-    <div className="text-sub-display text-white text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-shadow-lg relative z-10 mt-16"> 
-        {/* Added margin-top for more space */}
-        We are here
-    </div>
-    
-    <div className="text-display md:mt-5 mt-2 text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight relative z-10">
-        Book With Us And <strong>Enjoy</strong> Your Travel
-    </div>
+                                            <div className="text-display md:mt-5 mt-2 text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight relative z-10">
+                                                Book With Us And <strong>Enjoy</strong> Your Travel
+                                            </div>
+                                            <div className="flex justify-center mt-10 relative z-10">
+                                                <Link href="/shop/breadcrumb-img" className="button-main text-white bg-primary px-6 py-3 rounded-lg">
+                                                    Plan Your Trip
+                                                </Link>
+                                            </div>
+                                        </div>
 
-    {/* "Plan Your Trip" button below the text, centered with added space */}
-    <div className="flex justify-center mt-10 relative z-10"> {/* More space between button and text */}
-        <Link href="/shop/breadcrumb-img" className="button-main text-white bg-primary px-6 py-3 rounded-lg">
-            Plan Your Trip
-        </Link>
-    </div>
-</div>
+                                    </div>
 
-</div>
-
-</div>
+                                </div>
 
 
                                 <div className="sub-img absolute top-0 left-0 w-full h-full z-0 group">
