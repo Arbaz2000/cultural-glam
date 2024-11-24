@@ -92,33 +92,53 @@ const Product: React.FC<ProductProps> = ({ data, type }) => {
     let percentSold = Math.floor((data.sold / data.quantity) * 100)
 
     return (
-          
+
         <div className="product-item grid-type">
             <div onClick={() => handleDetailProduct(data.id)} className="product-main cursor-pointer block">
                 <div className="product-thumb bg-white relative overflow-hidden rounded-2xl">
                     <div className="product-img w-full h-full aspect-[3/4]">
-                        
-                                {
-                                    data.thumbImage.map((img, index) => (
-                                        <Image
-                                            key={index}
-                                            src={img}
-                                            width={500}
-                                            height={500}
-                                            priority={true}
-                                            alt={data.name}
-                                            className='w-full h-full object-cover duration-700'
-                                        />
-                                    ))
+                        {
+                            data.thumbImage.map((img, index) => (
+                                <Image
+                                    key={index}
+                                    src={img}
+                                    width={500}
+                                    height={500}
+                                    priority={true}
+                                    alt={data.name}
+                                    className='w-full h-full object-cover duration-700'
+                                />
+                            ))
+                        }
+                        <div className="mt-4 text-9xl text-gray-800 uppercase un mb-5">
+                            <p className="font-bold underline-custom">{data.name}</p>
+                        </div>
+
+                        <style jsx>{`
+                                .underline-custom {
+                                    position: relative;
+                                    display: inline-block;
                                 }
-                            
+
+                                .underline-custom::after {
+                                    content: '';
+                                    position: absolute;
+                                    bottom: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 1px;
+                                    background: linear-gradient(to right, #0d1b2a, #1b263b); /* Gradient underline */
+                                    border-radius: 10px; /* Rounded ends */
+                                }
+                                `}</style>
+                        <div className='mt-4 '>
+                            <p className='mt-2'>{data.description}</p>
+                        </div>
                     </div>
-                    
                 </div>
-                
             </div>
         </div>
-       
+
     )
 }
 

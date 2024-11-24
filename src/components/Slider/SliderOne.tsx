@@ -9,9 +9,9 @@ import 'swiper/css/bundle';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import 'swiper/css';
-import LPP from "../../../public/images/slider/slideOne1.jpg"
-import LPP2 from "../../../public/images/slider/slideTwo.jpg"
-import LPP3 from "../../../public/images/slider/slideThree.jpg"
+import LPP from "../../../public/images/slider/slideOne1.jpeg"
+import LPP2 from "../../../public/images/slider/slideTwo.jpeg"
+import LPP3 from "../../../public/images/slider/slideThree.jpeg"
 
 
 const SliderOne = () => {

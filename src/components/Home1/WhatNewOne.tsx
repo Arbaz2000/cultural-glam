@@ -24,8 +24,8 @@ const WhatNewOne: React.FC<Props> = ({ data, start, limit }) => {
         <>
             <div className="whate-new-block md:pt-20 pt-10">
                 <div className="container">
-                    <div className="heading flex flex-col items-center text-center">
-                        <div className="heading3">Primimum Chauffeur Services</div>
+                    <div className="heading flex flex-col ">
+                        <div className="heading3 pt-10 pb-5 pl-4 pr-2   bg-[#f5f5f5]">Premium Chauffeur Services</div>
                     </div>
 
                     <div className="list-product hide-product-sold grid lg:grid-cols-4 grid-cols-2 sm:gap-[30px] gap-[20px] md:mt-10 mt-6">

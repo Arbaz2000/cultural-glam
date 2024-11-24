@@ -51,11 +51,11 @@ const ModalNewsletter = () => {
                             </div>
                             <div className="heading5 pb-5">You May Also Like</div>
                             <div className="list flex flex-col gap-5 overflow-x-auto sm:pr-6">
-                                {productData.slice(11, 16).map((item, index) => (
-                                    <>
+                                {productData.slice(11, 16).map((item) => (
+                                    
                                         <div
                                             className='product-item item pb-5 flex items-center justify-between gap-3 border-b border-line'
-                                            key={index}
+                                            key={item.id}
                                         >
                                             <div
                                                 className="infor flex items-center gap-5 cursor-pointer"
@@ -82,7 +82,7 @@ const ModalNewsletter = () => {
                                                 QUICK VIEW
                                             </button>
                                         </div>
-                                    </>
+                                
                                 ))}
                             </div>
                         </div>
