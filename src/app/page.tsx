@@ -16,6 +16,9 @@ import Instagram from '@/components/Home1/Instagram'
 import Brand from '@/components/Home1/Brand'
 import Footer from '@/components/Footer/Footer'
 import ModalNewsletter from '@/components/Modal/ModalNewsletter'
+import Cars from "@/components/Home1/caars"
+import YoutubeVideo from "@/components/Home1/youtube"
+import Special from "@/components/Home1/special"
 
 export default function Home() {
   return (
@@ -25,13 +28,16 @@ export default function Home() {
         <MenuOne props="bg-transparent" />
         <SliderOne />
       </div>
+      <Special/>
       <WhatNewOne data={productData} start={0} limit={4} />
+      <Cars/>
       <Collection />
       <TabFeatures data={productData} start={0} limit={6} />
       <TabFeatures2/>
       <Banner />
       <Benefit props="md:py-20 py-10" />
       <Testimonial data={testimonialData} limit={6} />
+      <YoutubeVideo/>
       <Instagram />
       <Brand />
       <Footer />
