@@ -7,7 +7,7 @@ import productData from '@/data/Product.json'
 import Collection from '@/components/Home1/Collection'
 import TabFeatures from '@/components/Home1/TabFeatures'
 import TabFeatures2 from '@/components/Home1/TabFeatures2'
-
+import '../stylesGlobals/globals.css'
 import Banner from '@/components/Home1/Banner'
 import Benefit from '@/components/Home1/Benefit'
 import testimonialData from '@/data/Testimonial.json'

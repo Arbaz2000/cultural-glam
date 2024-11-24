@@ -419,48 +419,65 @@ const ContactUs = () => {
                 <MenuOne props="bg-transparent" />
                 <Breadcrumb heading="Explore India" subHeading="Discover India" />
             </div>
-
             <section className="py-16 bg-gray-100">
-                <div className="container mx-auto flex flex-col lg:flex-row gap-8">
-                    <div className="w-full lg:w-1/3">
-                        <div className="bg-white p-6 rounded-lg shadow-md sticky top-20">
-                            <h2 className="text-2xl font-bold text-center mb-6">Explore Tours</h2>
-                            <ul className="space-y-4">
-                                {tours.map((tour, index) => (
-                                    <li key={index}>
-                                        <button
-                                            onClick={() => setActiveTour(tour)}
-                                            className={`block w-full p-4 text-left rounded-lg shadow-md transition transform ${activeTour.title === tour.title
-                                                ? 'bg-orange-500 text-white scale-105'
-                                                : 'bg-white text-gray-800 hover:bg-orange-200'
-                                                }`}
-                                        >
-                                            {tour.title}
-                                        </button>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
+    <div className="container mx-auto flex flex-col lg:flex-row gap-8">
+        <div className="w-full lg:w-1/3">
+            <div className="bg-white p-6 rounded-lg shadow-md sticky top-20">
+                <h2 className="text-2xl font-bold text-center mb-6">Explore Tours</h2>
+                <ul className="space-y-4">
+                    {tours.map((tour, index) => (
+                        <li key={index}>
+                            <button
+                                onClick={() => setActiveTour(tour)}
+                                className={`block w-full p-4 text-left rounded-lg shadow-md transition transform ${
+                                    activeTour.title === tour.title
+                                        ? 'bg-orange-500 scale-105'
+                                        : 'bg-gray-100 text-gray-800 hover:bg-orange-200'
+                                }`}
+                            >
+                                {tour.title}
+                            </button>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
 
-                    <div className="w-full lg:w-2/3 bg-white rounded-lg shadow-md overflow-hidden">
-                        <Image
-                            src={activeTour.image}
-                            alt={activeTour.title}
-                            width={800}
-                            height={400}
-                            className="w-full h-64 object-cover"
-                        />
-                        <div className="p-6">
-                            <h2 className="text-3xl font-bold mb-4">{activeTour.title}</h2>
-                            <p className="text-lg text-gray-700 mb-4"><strong>Cities: </strong>{activeTour.cities}</p>
-                            <p className="text-gray-700 whitespace-pre-line leading-relaxed">
-                                {activeTour.description}
-                            </p>
-                        </div>
-                    </div>
+        <div className="w-full lg:w-2/3 bg-white rounded-lg shadow-md overflow-hidden">
+            <Image
+                src={activeTour.image}
+                alt={activeTour.title}
+                width={800}
+                height={400}
+                className="w-full h-64 object-cover"
+            />
+            <div className="p-6">
+                <h2 className="text-3xl font-bold mb-4">{activeTour.title}</h2>
+                <p className="text-lg text-gray-700 mb-4">
+                    <span className="font-semibold text-orange-500">Cities: </span>{activeTour.cities}
+                </p>
+                <div className="text-gray-700 whitespace-pre-line leading-relaxed">
+                    {activeTour.description.split('**').map((text, index) => {
+                        if (index % 2 === 1) {
+                            return (
+                                <span key={index} className="block mt-4 font-semibold text-orange-500">
+                                    {text}
+                                </span>
+                            );
+                        }
+                        return (
+                            <span key={index}>
+                                {text}
+                            </span>
+                        );
+                    })}
                 </div>
-            </section>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
 
             <Footer />
         </>

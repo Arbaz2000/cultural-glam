@@ -41,7 +41,7 @@ const SliderOne = () => {
                                             </div>
 
                                             <div className="text-display md:mt-5 mt-2 text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight relative z-10">
-                                                Book With Us And <strong>Enjoy</strong> Your Travel
+                                                Book With Us And <strong className='text-primary'>Enjoy</strong> Your Travel
                                             </div>
                                             <div className="flex justify-center mt-10 relative z-10">
                                                 <Link href="/shop/breadcrumb-img" className="button-main text-white bg-primary px-6 py-3 rounded-lg">
@@ -81,7 +81,7 @@ const SliderOne = () => {
                                 <div className="text-content basis-1/2">
                                     <div className="text-sub-display">Explore Now! Up To 50% Off!</div>
                                     <div className="text-display md:mt-5 mt-2">
-                                        Discover Destinations for Every Traveler
+                                        Discover Destinations for Every <strong className='text-primary'>Traveler</strong>
                                     </div>
                                     <Link href="/shop/breadcrumb-img" className="button-main md:mt-8 mt-3">
                                         Book Your Journey
@@ -110,7 +110,7 @@ const SliderOne = () => {
                                 <div className="text-content basis-1/2">
                                     <div className="text-sub-display">Explore Now! Up To 50% Off!</div>
                                     <div className="text-display md:mt-5 mt-2">
-                                        Adventures Await All Year Round
+                                        Adventures <strong className="text-primary">Await</strong> All Year Round
                                     </div>
                                     <Link href="/shop/breadcrumb-img" className="button-main md:mt-8 mt-3">
                                         Discover More
