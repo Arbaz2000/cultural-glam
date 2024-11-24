@@ -53,7 +53,7 @@
     "id": "2",
     "category": "fashion",
     "type": "t-shirt",
-    "name": "Raglan Sleeve T-shirt",
+    "name": "Rajasthani Food",
     "gender": "women",
     "new": true,
     "sale": false,
@@ -87,10 +87,8 @@
       }
     ],
     "thumbImage": [
-      "/images/tourTravel/food.jpg",
-      "/images/tourTravel/food.jpg"
-
-
+      "/images/tourTravel/daalbati.png",
+      "/images/tourTravel/daalbati.png"
     ],
     "images": [
       "/images/product/1000x1000.png",
