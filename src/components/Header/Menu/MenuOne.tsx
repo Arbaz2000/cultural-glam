@@ -90,9 +90,9 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                 </li>
                                 <li className="h-full relative">
                                     <Link
-                                        href="#!"
+                                        href="/pages/cars"
                                         className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${pathname === '#!' ? 'active' : ''}`}
-                                    >
+                                    >   
                                         CARS
                                     </Link>
                                 </li>

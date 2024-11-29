@@ -5,7 +5,7 @@ import MenuOne from '@/components/Header/Menu/MenuOne'
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb'
 import Footer from '@/components/Footer/Footer'
 import { ProductType } from '@/type/ProductType'
-import Product from '@/components/Product/Product'
+import Product from '@/components/Product/packege'
 import { useWishlist } from '@/context/WishlistContext'
 import HandlePagination from '@/components/Other/HandlePagination'
 import * as Icon from "@phosphor-icons/react/dist/ssr";

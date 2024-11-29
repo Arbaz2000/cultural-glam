@@ -12,6 +12,10 @@ import 'swiper/css';
 import LPP from "../../../public/images/slider/slideOne1.jpeg"
 import LPP2 from "../../../public/images/slider/slideTwo.jpeg"
 import LPP3 from "../../../public/images/slider/slideThree.jpeg"
+import LPP4 from "../../../public/images/slider/sliderfour.png"
+import LPP5 from "../../../public/images/slider/sliderfive.jpg"
+
+
 
 
 const SliderOne = () => {
@@ -119,6 +123,63 @@ const SliderOne = () => {
                                 <div className="sub-img relative w-1/2 h-full flex justify-end items-center">
                                     <Image
                                         src={LPP3}
+                                        alt="landing page photo"
+                                        width={1000}
+                                        height={1000}
+                                        style={{
+                                            objectFit: 'cover',
+                                            objectPosition: 'center right',
+                                        }}
+                                        priority={true}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="slider-item h-full w-full relative mt-24">
+                            <div className="container w-full h-full flex items-center justify-between relative">
+                                <div className="text-content basis-1/2">
+                                    <div className="text-sub-display">Explore Now! Up To 50% Off!</div>
+                                    <div className="text-display md:mt-5 mt-2">
+                                        Enjoy <strong className="text-primary">Desert</strong> tours,
+                                    </div>
+                                    <Link href="/shop/breadcrumb-img" className="button-main md:mt-8 mt-3">
+                                        Travel Now
+                                    </Link>
+                                </div>
+                                <div className="sub-img relative w-1/2 h-full flex justify-end items-center">
+                                    <Image
+                                        src={LPP4}
+                                        alt="landing page photo"
+                                        width={1000}
+                                        height={1000}
+                                        style={{
+                                            objectFit: 'cover',
+                                            objectPosition: 'center right',
+                                        }}
+                                        priority={true}
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className="slider-item h-full w-full relative mt-24">
+                            <div className="container w-full h-full flex items-center justify-between relative">
+                                <div className="text-content basis-1/2">
+                                    <div className="text-sub-display">Explore Now! Up To 50% Off!</div>
+                                    <div className="text-display md:mt-5 mt-2">
+                                        Visit <strong className="text-primary">Heritage</strong> locations 
+                                    </div>
+                                    <Link href="/shop/breadcrumb-img" className="button-main md:mt-8 mt-3">
+                                        Book Now
+                                    </Link>
+                                </div>
+                                <div className="sub-img relative w-1/2 h-full flex justify-end items-center">
+                                    <Image
+                                        src={LPP5}
                                         alt="landing page photo"
                                         width={1000}
                                         height={1000}

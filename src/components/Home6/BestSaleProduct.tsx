@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from 'react'
 import Image from 'next/image'
-import Product from '../Product/Product'
+import Product from '../Product/packege'
 import { ProductType } from '@/type/ProductType'
 import Rate from '../Other/Rate'
 import { Swiper, SwiperSlide } from 'swiper/react';

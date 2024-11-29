@@ -14,13 +14,20 @@ import Rajasthan10daysThree from '../../../../public/images/slider/Rajasthan10Da
 import Rajasthan16Days from '../../../../public/images/slider/Rajasthan16Days.jpeg';
 import Rajasthan20Days from '../../../../public/images/slider/Rajasthan20Days.jpeg';
 
-const tours = [
+export const Tours = [
     {
+        id :"1",
         title: 'Golden Triangle Tour: (6 Days)',
         cities: 'Delhi – Agra – Jaipur – Delhi in 6 days',
         description: `
             **Day 01: Arrival at Delhi**  
             A warm traditional welcome at Indira Gandhi International Airport awaits you at Delhi, followed by a transfer to your hotel for dinner and an overnight stay. You will also receive the full details of the tour itinerary during dinner.  
+    
+            **Day 02: Delhi**  
+            After a delicious breakfast, you will go for a guided sightseeing tour of Delhi, the capital of India, in an A/C deluxe coach.  
+            - **New Delhi Highlights:** Rashtrapati Bhawan (President's Palace), Parliament House, and India Gate, where you can enjoy a boat ride and well-maintained lawns. Explore Humayun's Tomb and Qutub Minar.  
+            - **Old Delhi Highlights:** Red Fort, Jama Masjid (India's largest mosque), Raj Ghat (memorial to Mahatma Gandhi), and Chandni Chowk bazaar, where you can shop and enjoy famous delicacies.  
+            End the day with a sound  A warm traditional welcome at Indira Gandhi International Airport awaits you at Delhi, followed by a transfer to your hotel for dinner and an overnight stay. You will also receive the full details of the tour itinerary during dinner.  
     
             **Day 02: Delhi**  
             After a delicious breakfast, you will go for a guided sightseeing tour of Delhi, the capital of India, in an A/C deluxe coach.  
@@ -50,12 +57,37 @@ const tours = [
             Spend the evening at leisure, shopping, or savoring traditional Rajasthani cuisine like Dal Bati Churma and Bajre Ki Roti. Overnight stay at the hotel.  
     
             **Day 07: Delhi**  
+            After breakfast, return to Delhi. Enjoy a farewell lunch at the hotel, followed by a transfer to the airport to catch your flight.  and light show at Red Fort. Overnight stay at the hotel.  
+    
+            **Day 03: Agra**  
+            In the morning, leave for Agra, visiting Fatehpur Sikri en route.  
+            - **Fatehpur Sikri Highlights:** Panch Mahal, Anup Talao, Diwan-e-Khas, sacred Tomb of Salim Chisti, and Buland Darwaza.  
+            On arrival in Agra, check in at the hotel. Spend the evening exploring Agra's markets for souvenirs like marble crafts, leather items, brass handicrafts, and the famous sweet "Petha." Overnight stay at the hotel.  
+    
+            **Day 04: Agra**  
+            After breakfast, enjoy a guided tour of Agra.  
+            - **Highlights:** Taj Mahal (emblem of love), Agra Fort (with its palaces and mosques), and Sikandra (tomb of Emperor Akbar).  
+            Overnight stay at the hotel in Agra.  
+    
+            **Day 05: Jaipur**  
+            In the morning, drive to Jaipur, the capital of Rajasthan. Witness colorful traditional attire and turbans of locals.  
+            - Check in at the hotel and freshen up.  
+            - Enjoy a royal elephant ride to Amber Fort and visit the Hall of Victory and Jal Mahal (situated amidst Man Sagar Lake).  
+            Overnight stay at the hotel.  
+    
+            **Day 06: Jaipur**  
+            Explore the Pink City, Jaipur, in the morning.  
+            - **Highlights:** City Palace (with its museum), Jantar Mantar, Hawa Mahal, and local bazaars.  
+            Spend the evening at leisure, shopping, or savoring traditional Rajasthani cuisine like Dal Bati Churma and Bajre Ki Roti. Overnight stay at the hotel.  
+    
+            **Day 07: Delhi**  
             After breakfast, return to Delhi. Enjoy a farewell lunch at the hotel, followed by a transfer to the airport to catch your flight.  
         `,
         image: GoldenTriangle,
     },
 
     {
+        id :"2",
         title: 'Rajasthan (11 Days)',
         cities: 'Delhi - Agra - Jaipur - Jodhpur - Jaisalmer - Udaipur - Delhi',
         description: `
@@ -132,6 +164,7 @@ const tours = [
     }
     ,
     {
+        id :"3",
         title: 'Rajasthan Tour: (8 Days)',
         cities: `
             Destinations Covered: Jaipur - Bikaner - Jaisalmer - Jodhpur - Mount Abu - Udaipur  
@@ -190,6 +223,7 @@ const tours = [
     }
     ,
     {
+        id :"4",
         title: 'Rajasthan PALACE Tour: (10 Days)',
         cities: `
             Destinations Covered: Delhi - Jaipur - Jodhpur - Udaipur - Jaisalmer - Bikaner - Delhi  
@@ -254,6 +288,7 @@ const tours = [
     }
     ,
     {
+        id :"5",
         title: 'Rajasthan PALACE Tour : (10 Days)',
         cities: 'Destinations Covered: Delhi - Jaipur - Sariska - Mandawa - Bikaner - Khimsar - Jodhpur - Delhi',
         description: `
@@ -290,6 +325,7 @@ const tours = [
         image: Rajasthan10daysTwo,
     },
     {
+        id :"6",
         title: 'Rajasthan Ethnic Tour : (10 Days)',
         cities: 'Destinations Covered: Delhi - Agra - Jaipur - Jodhpur - Udaipur - Kishangarh - Delhi',
         description: `
@@ -326,6 +362,7 @@ const tours = [
         image: Rajasthan10daysThree,
     },
     {
+        id :"7",
         title: 'Rajasthan DESERT Tour : (16 Days)',
         cities: 'Destinations Covered: Delhi - Mandawa - Bikaner - Jaisalmer - Jodhpur - Jaipur - Delhi',
         description: `
@@ -356,6 +393,7 @@ const tours = [
     },
 
     {
+        id :"8",
         title: "Rajasthan FORT– PALACE Tour : (20 Days)",
         cities: "Destinations Covered: Delhi - Agra - Jaipur - Pushkar - Ranthambhore - Kota - Bundi - Chittaurgarh - Bijaipur - Udaipur - Kumbhalgarh - Jodhpur - Jaisalmer - Bikaner - Mandawa - Delhi",
         description: `
@@ -411,7 +449,7 @@ const tours = [
 
 
 const ContactUs = () => {
-    const [activeTour, setActiveTour] = useState(tours[0]);
+    const [activeTour, setActiveTour] = useState(Tours[0]);
 
     return (
         <>
@@ -425,7 +463,7 @@ const ContactUs = () => {
             <div className="bg-white p-6 rounded-lg shadow-md sticky top-20">
                 <h2 className="text-2xl font-bold text-center mb-6">Explore Tours</h2>
                 <ul className="space-y-4">
-                    {tours.map((tour, index) => (
+                    {Tours.map((tour, index) => (
                         <li key={index}>
                             <button
                                 onClick={() => setActiveTour(tour)}

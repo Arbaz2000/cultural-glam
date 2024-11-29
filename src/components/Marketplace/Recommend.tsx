@@ -1,6 +1,6 @@
 import React from 'react'
 import productData from '@/data/Product.json'
-import Product from '../Product/Product'
+import Product from '../Product/packege'
 
 const Recommend = () => {
     return (
