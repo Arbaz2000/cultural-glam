@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
 import MenuOne from '@/components/Header/Menu/MenuOne'
@@ -29,20 +30,76 @@ export default function Home() {
         <MenuOne props="bg-transparent" />
         <SliderOne />
       </div>
-      {/* <Special/> */}
-      <Package/>
-      <Cars/>
-      <Collection />
-      {/* <TabFeatures data={productData} start={0} limit={6} /> */}
-      <TabFeatures2/>
-      <Banner />
-      <Benefit props="md:py-20 py-10" />
-      <Testimonial data={testimonialData} limit={6} />
-      <YoutubeVideo/>
-      <Instagram />
-      <Brand />
+
+      {/* Sidebar */}
+      <div className="fixed top-1/3 left-0 z-50 bg-gray-800 text-white w-16 p-4">
+        <ul className="space-y-4">
+          <li>
+            <a href="#header" className="block hover:text-gray-400">Header</a>
+          </li>
+          <li>
+            <a href="#package" className="block hover:text-gray-400">Package</a>
+          </li>
+          <li>
+            <a href="#cars" className="block hover:text-gray-400">Cars</a>
+          </li>
+          <li>
+            <a href="#collection" className="block hover:text-gray-400">Collection</a>
+          </li>
+          <li>
+            <a href="#tabfeatures" className="block hover:text-gray-400">Tab Features</a>
+          </li>
+          <li>
+            <a href="#benefit" className="block hover:text-gray-400">Benefit</a>
+          </li>
+          <li>
+            <a href="#testimonial" className="block hover:text-gray-400">Testimonial</a>
+          </li>
+          <li>
+            <a href="#youtube" className="block hover:text-gray-400">YouTube</a>
+          </li>
+          <li>
+            <a href="#instagram" className="block hover:text-gray-400">Instagram</a>
+          </li>
+          <li>
+            <a href="#brand" className="block hover:text-gray-400">Brand</a>
+          </li>
+        </ul>
+      </div>
+
+      {/* Main Content */}
+      <div id="package">
+        <Package />
+      </div>
+      <div id="cars">
+        <Cars />
+      </div>
+      <div id="collection">
+        <Collection />
+      </div>
+      <div id="tabfeatures">
+        <TabFeatures2 />
+      </div>
+      <div id="benefit">
+        <Benefit props="md:py-20 py-10" />
+      </div>
+      <div id="testimonial">
+        <Testimonial data={testimonialData} limit={6} />
+      </div>
+      <div id="youtube">
+        <YoutubeVideo />
+      </div>
+      <div id="instagram">
+        <Instagram />
+      </div>
+      <div id="brand">
+        <Brand />
+      </div>
       <Footer />
       <ModalNewsletter />
+
+      {/* Global CSS for Smooth Scrolling */}
+      
     </>
   )
 }
