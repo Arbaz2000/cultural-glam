@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import Product from '../Product/Product'
+import Product from '../Product/packege'
 import { ProductType } from '@/type/ProductType'
 
 interface Props {

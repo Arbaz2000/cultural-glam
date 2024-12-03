@@ -7,7 +7,7 @@ import { countdownTime } from '@/store/countdownTime'
 import { useRouter } from 'next/navigation'
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import productData from '@/data/Product.json'
-import Product from '../Product/Product'
+import Product from '../Product/packege'
 
 const Deal = () => {
     const [timeLeft, setTimeLeft] = useState(countdownTime());

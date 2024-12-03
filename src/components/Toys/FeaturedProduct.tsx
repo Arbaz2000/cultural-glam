@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css/bundle';
-import Product from '../Product/Product';
+import Product from '../Product/packege';
 import { ProductType } from '@/type/ProductType'
 
 interface Props {
