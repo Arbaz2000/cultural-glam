@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
 import MenuOne from '@/components/Header/Menu/MenuOne'
@@ -13,12 +14,12 @@ import Benefit from '@/components/Home1/Benefit'
 import testimonialData from '@/data/Testimonial.json'
 import Testimonial from '@/components/Home1/Testimonial'
 import Instagram from '@/components/Home1/Instagram'
-import Brand from '@/components/Home1/Brand'
 import Footer from '@/components/Footer/Footer'
 import ModalNewsletter from '@/components/Modal/ModalNewsletter'
 import Cars from "@/components/Home1/caars"
 import YoutubeVideo from "@/components/Home1/youtube"
 import Special from "@/components/Home1/special"
+import Package from '@/components/Product/packege'
 
 export default function Home() {
   return (
@@ -28,20 +29,23 @@ export default function Home() {
         <MenuOne props="bg-transparent" />
         <SliderOne />
       </div>
-      <Special/>
-      <WhatNewOne data={productData} start={0} limit={4} />
+      {/* <Special/> */}
+      <Package/>
+      <Testimonial data={testimonialData} limit={10} />
       <Cars/>
-      <Collection />
-      <TabFeatures data={productData} start={0} limit={6} />
+      {/* <Collection /> */}
+      {/* <TabFeatures data={productData} start={0} limit={6} /> */}
       <TabFeatures2/>
       <Banner />
       <Benefit props="md:py-20 py-10" />
-      <Testimonial data={testimonialData} limit={6} />
       <YoutubeVideo/>
       {/* <Instagram /> */}
-      <Brand />
+      {/* <Brand /> */}
       <Footer />
       <ModalNewsletter />
+
+      {/* Global CSS for Smooth Scrolling */}
+      
     </>
   )
 }

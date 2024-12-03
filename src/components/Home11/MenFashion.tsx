@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import Product from '../Product/Product'
+import Product from '../Product/packege'
 import { ProductType } from '@/type/ProductType'
 import { motion } from 'framer-motion'
 

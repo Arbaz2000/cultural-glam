@@ -154,7 +154,7 @@ const Collection = () => {
         <>
             <div className="collection-block md:pt-20 pt-10">
                 <div className="container">
-                    <div className="heading3 pt-10 pb-5 pl-4 pr-2   bg-[#f5f5f5]">Travel With Happness <strong>CHAUFFEUR</strong></div>
+                    <div className="heading3 pt-10 pb-5 pl-4 pr-2   bg-[#f5f5f5]">Travel With Happyness <strong>CHAUFFEUR</strong></div>
                 </div>
             </div>
         </>

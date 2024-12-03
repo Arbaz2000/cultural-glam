@@ -53,7 +53,7 @@
     "id": "2",
     "category": "fashion",
     "type": "t-shirt",
-    "name": "Rajasthani Food",
+    "name": "Golden Triangle Tour",
     "gender": "women",
     "new": true,
     "sale": false,
@@ -87,8 +87,8 @@
       }
     ],
     "thumbImage": [
-      "/images/tourTravel/daalbati.png",
-      "/images/tourTravel/daalbati.png"
+      "/images/tourTravel/goldenTriangleTour.jpg",
+      "/images/tourTravel/goldenTriangleTour.jpg"
     ],
     "images": [
       "/images/product/1000x1000.png",
@@ -96,7 +96,7 @@
       "/images/product/1000x1000.png",
       "/images/product/1000x1000.png"
     ],
-    "description": "Discover the flavors of the world with every meal you enjoy. From street food to gourmet dishes, each destination offers unique culinary delights. Taste fresh ingredients and traditional recipes that reflect the local culture. Let food be an essential part of your journey, turning each bite into a new adventure.",
+    "description": "The Golden Triangle Tour is one of India's most popular travel circuits, covering three major cities: Delhi, Agra, and Jaipur. The journey begins in Delhi, the capital, known for its historical landmarks like the Red Fort and India Gate. The tour then moves to Agra, home of the iconic Taj Mahal, a UNESCO World Heritage site. Finally, it concludes in Jaipur, the Pink City, renowned for its grand palaces, forts, and vibrant culture. This tour offers a rich blend of history, architecture, and tradition, providing travelers with an unforgettable experience of India's heritage.",
     "icon":"",
     "action": "quick shop",
     "slug": "shirt"
@@ -159,7 +159,7 @@
     "id": "4",
     "category": "fashion",
     "type": "t-shirt",
-    "name": "Visit Jungle",
+    "name": "Rajasthangsgdgdggdgdgdg",
     "gender": "women",
     "new": false,
     "sale": true,
@@ -196,8 +196,8 @@
       }
     ],
     "thumbImage": [
-      "/images/tourTravel/tigerImage.jpeg",
-      "/images/tourTravel/tigerImage.jpeg"
+      "/images/tourTravel/rajasthanPackage.jpg",
+      "/images/tourTravel/rajasthanPackage.jpg"
       
     ],
     "images": [
@@ -206,7 +206,7 @@
       "/images/product/1000x1000.png",
       "/images/product/1000x1000.png"
     ],
-    "description": "Visit Jungle invites you to explore the wonders of nature's untouched beauty. Immerse yourself in lush greenery, discover exotic wildlife, and experience the serenity of the jungle. Whether for adventure, relaxation, or wildlife spotting, a jungle visit offers an unforgettable escape into the heart of the wild.",
+    "description": "Rajasthan, known as the Land of Kings, is a vibrant state in India, famous for its rich cultural heritage, stunning architecture, and vast desert landscapes. The state boasts magnificent palaces, forts, and temples, with Jaipur, Udaipur, Jodhpur, and Jaisalmer being key highlights. Jaipur, the Pink City, is renowned for its historic Amber Fort and City Palace. Udaipur is famous for its picturesque lakes and palaces. Jodhpur, the Blue City, features the grand Mehrangarh Fort. Jaisalmer, with its golden sandstone structures, offers a unique desert experience. Rajasthan provides an unforgettable journey into India's royal past and traditions.",
     "action": "add to cart",
     "slug": "kimono"
   },

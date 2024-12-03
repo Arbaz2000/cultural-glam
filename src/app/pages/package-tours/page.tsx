@@ -14,8 +14,9 @@ import Rajasthan10daysThree from '../../../../public/images/slider/Rajasthan10Da
 import Rajasthan16Days from '../../../../public/images/slider/Rajasthan16Days.jpeg';
 import Rajasthan20Days from '../../../../public/images/slider/Rajasthan20Days.jpeg';
 
-const tours = [
+export const Tours = [
     {
+        id :"1",
         title: 'Golden Triangle Tour: (6 Days)',
         cities: 'Delhi – Agra – Jaipur – Delhi in 6 days',
         description: [
@@ -106,6 +107,7 @@ const tours = [
     ,
 
     {
+        id :"2",
         title: 'Rajasthan (11 Days)',
         cities: 'Delhi - Agra - Jaipur - Jodhpur - Jaisalmer - Udaipur - Delhi',
         description: [
@@ -258,6 +260,7 @@ const tours = [
 
     ,
     {
+        id :"3",
         title: 'Rajasthan Tour: (8 Days)',
         cities: {
             destinations: 'Jaipur - Bikaner - Jaisalmer - Jodhpur - Mount Abu - Udaipur',
@@ -422,6 +425,7 @@ const tours = [
 
     ,
     {
+        id :"4",
         title: 'Rajasthan PALACE Tour: (10 Days)',
         cities: {
             destinations: 'Delhi - Jaipur - Jodhpur - Udaipur - Jaisalmer - Bikaner - Mandawa - Delhi',
@@ -735,6 +739,7 @@ const tours = [
     }
     ,
     {
+        id :"6",
         title: 'Rajasthan Ethnic Tour : (10 Days)',
         cities: 'Destinations Covered: Delhi - Agra - Jaipur - Jodhpur - Udaipur - Kishangarh - Delhi',
         description: [
@@ -884,6 +889,7 @@ const tours = [
     }
     ,
     {
+        id :"7",
         title: 'Rajasthan DESERT Tour : (16 Days)',
         cities: 'Destinations Covered: Delhi - Mandawa - Bikaner - Jaisalmer - Jodhpur - Jaipur - Delhi',
         description: [
@@ -994,6 +1000,7 @@ const tours = [
     ,
 
     {
+        id :"8",
         title: "Rajasthan FORT– PALACE Tour : (20 Days)",
         cities: "Destinations Covered: Delhi - Agra - Jaipur - Pushkar - Ranthambhore - Kota - Bundi - Chittaurgarh - Bijaipur - Udaipur - Kumbhalgarh - Jodhpur - Jaisalmer - Bikaner - Mandawa - Delhi",
         description: [
@@ -1206,92 +1213,99 @@ const tours = [
 
 
 const ContactUs = () => {
-    const [activeTour, setActiveTour] = useState(tours[0]);
-  
+    const [activeTour, setActiveTour] = useState(Tours[0] || {});
+
     return (
         <>
+            {/* Header Section */}
             <div id="header" className="relative w-full">
                 <MenuOne props="bg-transparent" />
                 <Breadcrumb heading="Explore India" subHeading="Discover India" />
             </div>
+
+            {/* Tours Section */}
             <section className="py-16 bg-gray-100">
-    <div className="container mx-auto flex flex-col lg:flex-row gap-12">
-        {/* Left Side: Tour List */}
-        <div className="w-full lg:w-1/3">
-            <div className="bg-white p-6 rounded-lg shadow-md sticky top-20">
-                <h2 className="text-2xl font-bold text-center mb-6 text-heading">Explore Tours</h2>
-                <ul className="space-y-6">
-                    {tours.map((tour, index) => (
-                        <li key={index}>
-                            <button
-                                onClick={() => setActiveTour(tour)}
-                                className={`block w-full p-4 text-left rounded-lg shadow-md transition-all duration-300 transform ${
-                                    activeTour.title === tour.title
-                                        ? 'bg-orange-600 text-white scale-105'
-                                        : 'bg-gray-200 text-gray-800 hover:bg-orange-500 hover:text-white'
-                                }`}
-                            >
-                                {tour.title}
-                            </button>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-        </div>
+                <div className="container mx-auto flex flex-col lg:flex-row gap-12">
+                    {/* Left Side: Tour List */}
+                    <div className="w-full lg:w-1/3">
+                        <div className="bg-white p-6 rounded-lg shadow-md sticky top-20">
+                            <h2 className="text-2xl font-bold text-center mb-6 text-heading">Explore Tours</h2>
+                            <ul className="space-y-6">
+                                {Tours.map((tour, index) => (
+                                    <li key={index}>
+                                        <button
+                                            onClick={() => setActiveTour(tour)}
+                                            className={`block w-full p-4 text-left rounded-lg shadow-md transition-all duration-300 transform ${
+                                                activeTour?.title === tour.title
+                                                    ? 'bg-orange-600 text-white scale-105'
+                                                    : 'bg-gray-200 text-gray-800 hover:bg-orange-500 hover:text-white'
+                                            }`}
+                                        >
+                                            {tour.title}
+                                        </button>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
 
-        {/* Right Side: Tour Details */}
-        <div className="w-full lg:w-2/3 bg-white rounded-lg shadow-md overflow-hidden">
-            <Image
-                src={activeTour.image}
-                alt={activeTour.title}
-                width={800}
-                height={400}
-                className="w-full h-64 object-cover rounded-t-lg"
-            />
-            <div className="p-6">
-                <h2 className="text-3xl font-bold text-heading mb-6">{activeTour.title}</h2>
+                    {/* Right Side: Tour Details */}
+                    <div className="w-full lg:w-2/3 bg-white rounded-lg shadow-md overflow-hidden">
+                        {activeTour?.image && (
+                            <Image
+                                src={activeTour.image}
+                                alt={activeTour.title || 'Tour Image'}
+                                width={800}
+                                height={400}
+                                className="w-full h-64 object-cover rounded-t-lg"
+                            />
+                        )}
+                        <div className="p-6">
+                            <h2 className="text-3xl font-bold text-heading mb-6">
+                                {activeTour.title || 'Tour Title'}
+                            </h2>
 
-                {/* Cities Information */}
-                <p className="text-lg text-body mb-6">
-                    <span className="font-semibold text-primary">Cities: </span>
-                    {typeof activeTour.cities === 'string'
-                        ? activeTour.cities
-                        : `${activeTour.cities.destinations} - ${activeTour.cities.duration}`}
-                </p>
+                            {/* Cities Information */}
+                            <p className="text-lg text-body mb-6">
+                                <span className="font-semibold text-primary">Cities: </span>
+                                {typeof activeTour.cities === 'string'
+                                    ? activeTour.cities
+                                    : activeTour.cities?.destinations
+                                    ? `${activeTour.cities.destinations} - ${activeTour.cities.duration || ''}`
+                                    : 'N/A'}
+                            </p>
 
-                {/* Description */}
-                <div className="text-body whitespace-pre-line leading-relaxed space-y-4">
-                    {activeTour.description.map((item, index) => {
-                        const content = Array.isArray(item.content) ? item.content.join(' ') : item.content;
-                        return (
-                            <div key={index}>
-                                {typeof content === 'string' ? content.split('**').map((text, subIndex) => (
-                                    subIndex % 2 === 1 ? (
-                                        <span key={subIndex} className="block mt-4 font-semibold text-primary">
-                                            {text}
-                                        </span>
-                                    ) : (
-                                        <span key={subIndex}>
-                                            {text}
-                                        </span>
-                                    )
-                                )) : (
-                                    <span>{content}</span>
-                                )}
+                            {/* Description */}
+                            <div className="text-body whitespace-pre-line leading-relaxed space-y-4">
+                                {activeTour.description?.map((item, index) => {
+                                    const content = Array.isArray(item.content)
+                                        ? item.content.join(' ')
+                                        : item.content;
+                                    return (
+                                        <div key={index}>
+                                            {typeof content === 'string'
+                                                ? content.split('**').map((text, subIndex) =>
+                                                    subIndex % 2 === 1 ? (
+                                                        <span key={subIndex} className="block mt-4 font-semibold text-primary">
+                                                            {text}
+                                                        </span>
+                                                    ) : (
+                                                        <span key={subIndex}>{text}</span>
+                                                    )
+                                                )
+                                                : (
+                                                    <span>{content}</span>
+                                                )}
+                                        </div>
+                                    );
+                                })}
                             </div>
-                        );
-                    })}
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</section>
+            </section>
 
-
-
-
-
-
+            {/* Footer Section */}
             <Footer />
         </>
     );

@@ -20,7 +20,6 @@ const Testimonial: React.FC<Props> = ({ data, limit }) => {
                     <div className="heading3 text-center">
                         What People Are Saying
                     </div>
-
                     <div className="list-testimonial pagination-mt40 md:mt-10 mt-6">
                         <Swiper
                             spaceBetween={12}
@@ -28,6 +27,9 @@ const Testimonial: React.FC<Props> = ({ data, limit }) => {
                             pagination={{ clickable: true }}
                             loop={true}
                             modules={[Pagination, Autoplay]}
+                            autoplay={{
+                                delay: 2000,
+                            }}
                             breakpoints={{
                                 680: {
                                     slidesPerView: 2,

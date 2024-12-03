@@ -13,10 +13,10 @@ interface Props {
 const Benefit: React.FC<Props> = ({ props }) => {
     return (
         <>
-            <div className="whate-new-block md:pt-20 pt-10">
+            <div className="whate-new-block ">
                 <div className="container">
                     <div className="heading flex flex-col ">
-                        <div className="heading3 pt-10 pb-5 pl-4 pr-2   bg-[#f5f5f5]">Our Services</div>
+                        <div className="text-4xl font-bold mb-2 text-center ">Our Services</div>
                     </div>
                 </div>
             </div>

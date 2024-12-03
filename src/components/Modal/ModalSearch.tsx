@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import productData from '@/data/Product.json'
-import Product from '../Product/Product';
+import Product from '../Product/packege';
 import { useModalSearchContext } from '@/context/ModalSearchContext'
 
 const ModalSearch = () => {

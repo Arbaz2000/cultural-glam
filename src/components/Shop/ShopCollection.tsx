@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ProductType } from '@/type/ProductType'
-import Product from '../Product/Product';
+import Product from '../Product/packege';
 
 interface Props {
     data: Array<ProductType>;

@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { ProductType } from '@/type/ProductType';
 import { motion } from 'framer-motion'
-import Product from '../Product/Product';
+import Product from '../Product/packege';
 
 interface Props {
     data: Array<ProductType>;
