@@ -20,10 +20,6 @@ import toyoto from "../../../../public/images/cars/toyto.jpeg";
 import Toyotainnova from "../../../../public/images/cars/toyto1.jpeg";
 
 import toyoto1 from "../../../../public/images/cars/toyto1.jpeg";
-
-
-
-
 const cardata = () => {
   const tours = [
     {

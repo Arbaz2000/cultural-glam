@@ -4,10 +4,10 @@ import YouTube from "react-youtube";
 const YoutubeVideo = () => {
     return (
         <>
-        <div className="whate-new-block md:pt-20 pt-10 flex flex-row">
+        <div className="whate-new-block  flex flex-row">
           <div className="container">
             <div className="heading flex flex-col mb-10">
-              <div className="heading3 pt-10 pb-5 pl-4 pr-2 bg-[#f5f5f5]">Youtube</div>
+              <div className="text-4xl font-bold mb-2 text-center ">Youtube</div>
             </div>
           </div>
         </div>

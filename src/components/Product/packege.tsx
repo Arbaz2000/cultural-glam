@@ -5,53 +5,62 @@ import Image from 'next/image'; // Assuming you're using Next.js
 import { FaCircleArrowLeft } from "react-icons/fa6";
 import { FaCircleArrowRight } from "react-icons/fa6";
 
-import goldenTriangleTour from "../../../public/images/slider/GoldenTriangle.jpeg"
-import rajasthan from "../../../public/images/slider/Rajasthan10DayesOne.jpeg"
-import rajasthanTour from "../../../public/images/slider/Rajasthan10DayesTwo.jpeg"
-import rajasthanPlaceTour from "../../../public/images/slider/Rajasthan8Days.jpeg"
-import rajasthanEthnic from "../../../public/images/slider/rajasthanEthnic.jpeg"
-import rajasthanDesert from "../../../public/images/slider/sliderfour.png"
-import rajasthanFort from "../../../public/images/slider/Rajasthan20Days.jpeg"
+import goldenTriangleTour from "../../../public/images/slider/packegeTours/GoldenTriangle.jpeg"
+import rajasthan from "../../../public/images/slider/packegeTours/Rajasthan10DayesOne.jpeg"
+import rajasthanTour from "../../../public/images/slider/packegeTours/Rajasthan10DayesTwo.jpeg"
+import rajasthanPlaceTour from "../../../public/images/slider/packegeTours/Rajasthan8Days.jpeg"
+import rajasthanEthnic from "../../../public/images/slider/packegeTours/rajasthanEthnic.jpeg"
+import rajasthanDesert from "../../../public/images/slider/packegeTours/sliderfour.png"
+import rajasthanFort from "../../../public/images/slider/packegeTours/Rajasthan20Days.jpeg"
 import Link from 'next/link'
+import { FaWhatsapp } from "react-icons/fa";
+import { CiMail } from "react-icons/ci";
 
 const tours = [
   {
+    id :"1",
     title: "Golden Triangle Tour India:",
     days: "6 Days",
     src: goldenTriangleTour,
     description: "Experience India's cultural splendor with the Golden Triangle Tour, covering Delhi, Agra, and Jaipur. Visit iconic landmarks like the Taj Mahal, Red Fort, and Amber Fort, immersing in history and heritage."
   },
   {
+    id :"2",
     title: "Rajasthan:",
     days: "11 Days",
     src: rajasthan,
     description: "Rajasthan offers a stunning blend of rich history, royal palaces, and desert landscapes. Explore vibrant cities like Jaipur, Udaipur, and Jodhpur, with their majestic forts, temples, and colorful cultural experiences."
   },
   {
+    id :"3",
     title: "Rajasthan Tours:",
     days: "8 Days",
     src: rajasthanTour,
     description: "Rajasthan offers a stunning blend of rich history, royal palaces, and desert landscapes. Explore vibrant cities like Jaipur, Udaipur, and Jodhpur, with their majestic forts, temples, and colorful cultural experiences."
   },
   {
+    id :"4",
     title: "Rajasthan Place Tours:",
     days: "10 Days",
     src: rajasthanPlaceTour,
     description: "Rajasthan Place Tours take you through awe-inspiring forts, palaces, and temples. Visit Udaipur’s Lake Palace, Jodhpur’s Mehrangarh Fort, and Jaipur’s Amber Fort, offering rich history and regal architecture in every corner."
   },
   {
+    id :"5",
     title: "Rajasthan Ethnic Tours:",
     days: "10 Days",
     src: rajasthanEthnic,
-    description: "Rajasthan offers a stunning blend of rich history, royal palaces, and desert landscapes. Explore vibrant cities like Jaipur, Udaipur, and Jodhpur, with their majestic forts, temples, and colorful cultural experiences."
+    description: "Rajasthan offers a stunning blend of rich history, royal palaces, and desert landscapes. Explore vibrant cities like Jaipur, Udaipur, and Jodhpur, with their rajasthan majestic forts, temples, and colorful cultural experiences."
   },
   {
+    id :"6",
     title: "Rajasthan Desert:",
     days: "16 Days",
     src: rajasthanDesert,
     description: "Rajasthan Desert Tours offer a unique experience of the Thar Desert. Enjoy camel rides, desert safaris, and starlit camps while discovering sand dunes, traditional villages, and the rugged beauty of Rajasthan's arid landscapes."
   },
   {
+    id :"7",
     title: "Rajasthan Fort Tours:",
     days: "20 Days",
     src: rajasthanFort,
@@ -62,38 +71,51 @@ const tours = [
 const Package = () => {
   return (
     <>
-      <Link href="/pages/package-tours ">
-        <div className="px-20 bg-slate-50">
-          <div className="bg-slate-50 py-16">
-            <p className="text-4xl font-bold mb-8 text-center">Explore Your Packege Tours</p>
-          </div>
-          <hr className="border-gray-800 mb-14" />
-          <div className="container mx-auto py-12 ">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-              {tours.map((tours) => (
-                <a
-                  key={tours.title}
-                  className="block rounded-lg shadow-md overflow-hidden"
-                >
-                  <Image
-                    src={tours.src}
-                    alt={tours.title}
-                    width={500}
-                    height={300}
-                    className="object-cover"
-                  />
-                  <div className="p-4">
-                    <h2 className="text-xl font-bold mb-2">{tours.title}</h2>
-                    <p className="text-gray-700 text-sm">
-                      {tours.description}
-                    </p>
+
+      <div className=" bg-slate-50">
+        <div className="bg-slate-50 py-10">
+          <p className="text-4xl font-bold mb-2 text-center">Explore Your Packege Tours</p>
+        </div>
+        <hr className="border-gray-800 mb-2" />
+        <div className="container mx-auto py-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+            {tours.map((tours) => (
+              <a
+                key={tours.id}
+                className="block rounded-lg shadow-md overflow-hidden"
+              >
+                <Image
+                  src={tours.src}
+                  alt={tours.title}
+                  width={500}
+                  height={300}
+                  className="object-cover"
+                />
+                <div className="p-4 flex flex-row justify-between">
+                  <h2 className="text-xl font-bold mb-2">{tours.title}</h2>
+                  <p className="text-gray-700 text-bold text">
+                    {tours.days}
+                  </p>
+                </div>
+                <p className="ml-3 text-gray-700  text">
+                    {tours.description}
+                  </p>
+                <Link href='/pages/package-tours' >
+                  <div className="p-4 flex flex-row justify-between">
+                    <button className="text-xl text-black rounded-md bg-secondary2 hover:bg-secondary ">Details</button>
+                    <div className="flex flex-row space-x-5">
+                      <h1 className="text-gray-700 text-bold text">
+                        <FaWhatsapp />
+                      </h1>
+                      <h1 className="text-gray-700 text-bold text"><CiMail /></h1>
+                    </div>
                   </div>
-                </a>
-              ))}
-            </div>
+                </Link>
+              </a>
+            ))}
           </div>
         </div>
-      </Link>
+      </div>
     </>
   );
 };

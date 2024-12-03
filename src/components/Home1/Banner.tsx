@@ -6,45 +6,34 @@ import React from 'react'
 import travler1 from "../../../public/images/tourTravel/travler1.jpg"
 import travler2 from "../../../public/images/tourTravel/travler2.jpg"
 
-
 const Banner = () => {
     return (
-        <><div className="container mt-14">
-            <div className="heading3 pt-10 pb-5 pl-4 pr-2   bg-[#f5f5f5]">Our Happy<strong>Travler</strong></div>
+        <><div className="container mt-10">
+            <div className="heading3 pt-10 pb-5 pl-4 pr-2 bg-[#f5f5f5] text-4xl font-bold mb-2 text-center">Our Happy<strong>Travler</strong></div>
         </div>
-            <div className="banner-block style-one grid sm:grid-cols-2 gap-5 md:pt-20 pt-10">
-                <Link href={'/shop/breadcrumb-img'} className="banner-item relative block overflow-hidden duration-500">
-                    <div className="banner-img">
+            <div className="container mx-auto  justify-between">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 ">
+                    <div className='flex flex-col'>
                         <Image
                             src={travler1}
-                            width={2000}
-                            height={1300}
-                            alt='banner1'
-                            priority={true}
-                            className='duration-1000'
+                            alt="kkss"
+                            width={500}
+                            height={300}
+                            className="object-cover"
                         />
+                        <p className='font-bold'>Mrs. & Mr. Rottomburg (France)  in trip in India</p>
                     </div>
-                    <div className="banner-content absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
-                        <div className="heading2 text-white">Mrs. & Mr. Rottomburg France in trip in India</div>
-                        {/* <div className="text-button text-white relative inline-block pb-1 border-b-2 border-white duration-500 mt-2">Shop Now</div> */}
-                    </div>
-                </Link>
-                <Link href={'/shop/breadcrumb-img'} className="banner-item relative block overflow-hidden duration-500">
-                    <div className="banner-img">
+                    <div className='flex flex-col'>
                         <Image
                             src={travler2}
-                            width={2000}
-                            height={1300}
-                            alt='banner2'
-                            priority={true}
-                            className='duration-1000'
+                            alt="kkss"
+                            width={500}
+                            height={300}
+                            className="object-cover"
                         />
+                        <p className='font-bold'>Mrs. & Mr. Rottomburg (France)  in trip in India</p>
                     </div>
-                    <div className="banner-content absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
-                        <div className="heading2 text-white">Friend from Germany having papaya... </div>
-                        {/* <div className="text-button text-white relative inline-block pb-1 border-b-2 border-white duration-500 mt-2">Shop Now</div> */}
-                    </div>
-                </Link>
+                </div>
             </div>
         </>
     )

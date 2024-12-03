@@ -22,7 +22,7 @@ const ChauffeurCars = () => {
     return (
         <>
         <Link href="/pages/cars">
-            <div className="whate-new-block md:pt-20 pt-10">
+            <div className="text-4xl font-bold mb-2 text-center ">
                 <div className="container">
                     <div className="heading flex flex-col mb-10 ">
                         <div className="heading3 pt-10 pb-5 pl-4 pr-2 bg-[#f5f5f5]">Chauffeur Car Service</div>
