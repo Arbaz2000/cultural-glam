@@ -114,7 +114,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                 </li>
                                 <li className="h-full relative">
                                     <Link
-                                        href="#!"
+                                        href="/pages/gallery"
                                         className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${pathname === '#!' ? 'active' : ''}`}
                                     >
                                         GALLERY
@@ -122,8 +122,8 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                 </li>
                                 <li className="h-full">
                                     <Link
-                                        href="/pages/about"
-                                        className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${pathname === '/pages/about' ? 'active' : ''}`}
+                                        href="/pages/contact"
+                                        className={`text-button-uppercase duration-300 h-full flex items-center justify-center ${pathname === '/pages/contact' ? 'active' : ''}`}
                                     >
                                         Contect Us
                                     </Link>
@@ -183,7 +183,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                     </li>
                                     <li>
                                         <Link
-                                            href="#!"
+                                            href="/pages/gallery"
                                             className={`text-button-uppercase duration-300 flex items-center justify-center ${pathname === '#!' ? 'active' : ''}`}
                                         >
                                             GALLERY
@@ -191,10 +191,10 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                     </li>
                                     <li>
                                         <Link
-                                            href="/pages/about"
-                                            className={`text-button-uppercase duration-300 flex items-center justify-center ${pathname === '/pages/about' ? 'active' : ''}`}
+                                            href="/pages/contact"
+                                            className={`text-button-uppercase duration-300 flex items-center justify-center ${pathname === '/pages/contact' ? 'active' : ''}`}
                                         >
-                                            About Us
+                                            Contect Us
                                         </Link>
                                     </li>
                                 </ul>

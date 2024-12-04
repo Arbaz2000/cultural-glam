@@ -11,9 +11,11 @@ const Footer = () => {
                     <div className="container">
                         <div className="content-footer py-[60px] flex justify-between flex-wrap gap-y-8">
                             <div className="company-infor basis-1/4 max-lg:basis-full pr-7">
-                                <Link href={'/'} className="logo">
+                                {/* <Link href={'/'} className="logo">
                                     <div className="heading4">IPC</div>
-                                </Link>
+                                </Link> */}
+                                <div className="heading4 ">Quick Contact</div>
+
                                 <div className='flex gap-3 mt-3'>
                                     <div className="flex flex-col ">
                                         <span className="text-button">Mail:</span>
@@ -22,23 +24,28 @@ const Footer = () => {
                                     </div>
                                     <div className="flex flex-col ">
                                         <span className=''>skystarjpr@yahoo.co.in</span>
-                                        <span className='mt-3'>0091-941 434 9229</span>
-                                        <span className='mt-3 pt-px'>549 Oak St.Crystal Lake, IL 60014</span>
+                                        <span className='flex flex-col'>
+                                        <span className='mt-3'>+91-941 434 9229</span>  
+                                        </span>                                           
+                                        <span className='mt-3 pt-px'>s-4 raja-park , Tilak nagar jaipur,(Rajasthan)</span>
                                     </div>
                                 </div>
                             </div>
                             <div className="right-content flex flex-wrap gap-y-8 basis-3/4 max-lg:basis-full">
-                                <div className="list-nav flex justify-between basis-2/3 max-md:basis-full gap-4">
+                                <div className="list-nav flex  basis-2/3 max-md:basis-full gap-4">
                                     <div className="item flex flex-col basis-1/3 ">
                                         <div className="text-button-uppercase pb-3">Infomation</div>
                                         <Link className='caption1 has-line-before duration-300 w-fit' href={'/pages/contact'}>Contact us</Link>
                                         <Link className='caption1 has-line-before duration-300 w-fit pt-2' href={'#!'}>Career</Link>
                                         <Link className='caption1 has-line-before duration-300 w-fit pt-2' href={'/my-account'}>My Account</Link>
-                                        <Link className='caption1 has-line-before duration-300 w-fit pt-2' href={'/order-tracking'}>Order  & Returns</Link>
-                                        <Link className='caption1 has-line-before duration-300 w-fit pt-2' href={'/pages/faqs'}>FAQs</Link>
+                                        <Link className='caption1 has-line-before duration-300 w-fit pt-2' href={'/order-tracking'}>Private Policy</Link>
+                                        <Link className='caption1 has-line-before duration-300 w-fit pt-2' href={'/pages/faqs'}>Terms of Service</Link>
                                     </div>
                                     <div className="item flex flex-col basis-1/3 ">
-                                        <div className="text-button-uppercase pb-3">Customer Services</div>
+                                        <div className="text-button-uppercase pb-3">Contact Us</div>
+                                        <Link className='caption1 has-line-before duration-300 w-fit' href={'/pages/contact'}>Contact us</Link>
+                                        <Link className='caption1 has-line-before duration-300 w-fit pt-2' href={'#!'}>FAQ</Link>
+                                        <Link className='caption1 has-line-before duration-300 w-fit pt-2' href={'/my-account'}>Get In Touch</Link>
                                     </div>
                                 </div>
                                 <div className="newsletter basis-1/3 pl-7 max-md:basis-full max-md:pl-0">

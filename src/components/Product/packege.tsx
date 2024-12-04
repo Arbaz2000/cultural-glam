@@ -47,7 +47,7 @@ const tours = [
     title: "Rajasthan Ethnic Tours:",
     days: "10 Days",
     src: rajasthanEthnic,
-    description: "Rajasthan offers a stunning blend of rich history, royal palaces, and desert landscapes. Explore vibrant cities like Jaipur, Udaipur, and Jodhpur, with their majestic forts, temples, and colorful cultural experiences."
+    description: "Rajasthan offers a stunning blend of rich history, Rajasthan royal palaces, and desert landscapes. Explore vibrant cities like Jaipur, Udaipur, and Jodhpur, with their majestic forts, temples, and colorful cultural experiences."
   },
   {
     id: "6",
@@ -71,7 +71,6 @@ const Package = () => {
       <div className="py-10">
         <p className="text-4xl font-bold mb-2 text-center">Explore Your Package Tours</p>
       </div>
-      <hr className="border-gray-800 mb-2" />
       <div className="container mx-auto py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {tours.map((tour) => (
@@ -89,11 +88,11 @@ const Package = () => {
                   <p className="text-gray-700 font-bold">{tour.days}</p>
                 </div>
                 <p className="ml-3 text-gray-700">{tour.description}</p>
-                <div className="p-4 flex flex-row justify-between">
-                  <button className="text-xl text-black rounded-md bg-secondary2 hover:bg-secondary">Details</button>
+                <div className="p-4 flex flex-row justify-between bg-[#edf6f9]">
+                  <button className="text-l py-1 text-[#FFFFFF] rounded-md bg-[#1677FF] hover:bg-[#023e8a]">Details</button>
                   <div className="flex flex-row space-x-5">
-                    <h1 className="text-gray-700 font-bold"><FaWhatsapp /></h1>
-                    <h1 className="text-gray-700 font-bold"><CiMail /></h1>
+                    <FaWhatsapp className="text-success text-3xl"/>
+                    <CiMail className="text-red text-3xl"/>
                   </div>
                 </div>
               </div>

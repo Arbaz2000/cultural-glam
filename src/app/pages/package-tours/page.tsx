@@ -16,7 +16,7 @@ import Rajasthan20Days from '../../../../public/images/slider/Rajasthan20Days.jp
 
 export const Tours = [
     {
-        id :"1",
+        id: "1",
         title: 'Golden Triangle Tour: (6 Days)',
         cities: 'Delhi – Agra – Jaipur – Delhi in 6 days',
         description: [
@@ -107,7 +107,7 @@ export const Tours = [
     ,
 
     {
-        id :"2",
+        id: "2",
         title: 'Rajasthan (11 Days)',
         cities: 'Delhi - Agra - Jaipur - Jodhpur - Jaisalmer - Udaipur - Delhi',
         description: [
@@ -260,7 +260,7 @@ export const Tours = [
 
     ,
     {
-        id :"3",
+        id: "3",
         title: 'Rajasthan Tour: (8 Days)',
         cities: {
             destinations: 'Jaipur - Bikaner - Jaisalmer - Jodhpur - Mount Abu - Udaipur',
@@ -425,7 +425,7 @@ export const Tours = [
 
     ,
     {
-        id :"4",
+        id: "4",
         title: 'Rajasthan PALACE Tour: (10 Days)',
         cities: {
             destinations: 'Delhi - Jaipur - Jodhpur - Udaipur - Jaisalmer - Bikaner - Mandawa - Delhi',
@@ -739,7 +739,7 @@ export const Tours = [
     }
     ,
     {
-        id :"6",
+        id: "6",
         title: 'Rajasthan Ethnic Tour : (10 Days)',
         cities: 'Destinations Covered: Delhi - Agra - Jaipur - Jodhpur - Udaipur - Kishangarh - Delhi',
         description: [
@@ -889,7 +889,7 @@ export const Tours = [
     }
     ,
     {
-        id :"7",
+        id: "7",
         title: 'Rajasthan DESERT Tour : (16 Days)',
         cities: 'Destinations Covered: Delhi - Mandawa - Bikaner - Jaisalmer - Jodhpur - Jaipur - Delhi',
         description: [
@@ -1000,7 +1000,7 @@ export const Tours = [
     ,
 
     {
-        id :"8",
+        id: "8",
         title: "Rajasthan FORT– PALACE Tour : (20 Days)",
         cities: "Destinations Covered: Delhi - Agra - Jaipur - Pushkar - Ranthambhore - Kota - Bundi - Chittaurgarh - Bijaipur - Udaipur - Kumbhalgarh - Jodhpur - Jaisalmer - Bikaner - Mandawa - Delhi",
         description: [
@@ -1211,6 +1211,10 @@ export const Tours = [
 
 ];
 
+type DescriptionItem = {
+    type: string;
+    content: string | string[];
+};
 
 const ContactUs = () => {
     const [activeTour, setActiveTour] = useState(Tours[0] || {});
@@ -1310,5 +1314,7 @@ const ContactUs = () => {
         </>
     );
 };
+
+
 
 export default ContactUs;

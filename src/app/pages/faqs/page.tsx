@@ -50,18 +50,18 @@ const Faqs = () => {
                                     onClick={() => handleActiveQuestion('1')}
                                 >
                                     <div className="heading flex items-center justify-between gap-6">
-                                        <div className="heading6">How does COVID-19 affect my online orders and store purchases?</div>
+                                        <div className="heading6">How does COVID-19 affect our travel service?</div>
                                         <Icon.CaretRight size={24} />
                                     </div>
                                     <div className="content body1 text-secondary">The courier companies have adapted their procedures to guarantee the safety of our employees and our community. We thank you for your patience, as there may be some delays to deliveries.
-                                        We remind you that you can still find us at Mango.com</div>
+                                        We remind you that you can still find us at Tripadvisor</div>
                                 </div>
                                 <div
                                     className={`question-item px-7 py-5 rounded-[20px] overflow-hidden border border-line cursor-pointer ${activeQuestion === '2' ? 'open' : ''}`}
                                     onClick={() => handleActiveQuestion('2')}
                                 >
                                     <div className="heading flex items-center justify-between gap-6">
-                                        <div className="heading6">NEW! Plus sizes for Woman</div>
+                                        <div className="heading6">We remind you that you can still find us at Tripadvisor</div>
                                         <Icon.CaretRight size={24} />
                                     </div>
                                     <div className="content body1 text-secondary">The courier companies have adapted their procedures to guarantee the safety of our employees and our community. We thank you for your patience, as there may be some delays to deliveries.
