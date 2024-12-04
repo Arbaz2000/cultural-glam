@@ -7,9 +7,9 @@ import Footer from '@/components/Footer/Footer'
 const AboutUs = () => {
     return (
         <>
-            <MenuOne props="bg-transparent" />
-            <div className='p-96'></div>
-            <Footer />
+            {/* {/* <MenuOne props="bg-transparent" /> */}
+            
+            <Footer /> 
         </>
     )
 }

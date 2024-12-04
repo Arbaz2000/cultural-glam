@@ -18,7 +18,8 @@ import LPP5 from "../../../public/images/slider/sliderfive.jpg"
 
 const SliderOne = () => {
     return (
-        <div className="slider-block style-one bg-linear xl:h-[860px] lg:h-[800px] md:h-[580px] sm:h-[500px] h-[350px] max-[420px]:h-[320px] ">
+        <div>
+        {/* <div className="slider-block style-one bg-linear xl:h-[860px] lg:h-[800px] md:h-[580px] sm:h-[500px] h-[350px] :h-[320px] "> */}
             <div className="slider-main w-full">
                 <Swiper
                     spaceBetween={0}
@@ -32,7 +33,7 @@ const SliderOne = () => {
                     }}
                 >
                    <SwiperSlide>
-                        <div className="slider-item h-full w-full relative mt-24">
+                        <div className="slider-item  w-full relative mt-24">
                             <div className="container w-full h-full flex items-center justify-between relative">
                                 <div className="text-content basis-1/2">
                                     <div className="text-sub-display">Explore Now! Up To 50% Off!</div>
@@ -44,13 +45,8 @@ const SliderOne = () => {
                                     <Image
                                         src={tarachandraji}
                                         alt="bg1-2"
-                                        width={1000}
+                                        width={500}
                                         height={200}
-                                        style={{
-                                            objectFit: 'cover',
-                                            objectPosition: 'center right',
-                                        }}
-                                        priority={true}
                                     />
                                 </div>
                             </div>
@@ -87,7 +83,7 @@ const SliderOne = () => {
                                 <div className="text-content basis-1/2">
                                     <div className="text-sub-display">Explore Now! Up To 50% Off!</div>
                                     <div className="text-display md:mt-5 mt-2">
-                                        Adventures <strong className="text-primary">Await</strong> All Year Round
+                                        Adventures <strong className="text-primary">Await</strong> All Year.
                                     </div>
                                 </div>
                                 <div className="sub-img relative w-1/2 h-full flex justify-end items-center">

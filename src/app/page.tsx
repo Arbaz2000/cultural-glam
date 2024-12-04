@@ -8,7 +8,7 @@ import productData from '@/data/Product.json'
 import Collection from '@/components/Home1/Collection'
 import TabFeatures from '@/components/Home1/TabFeatures'
 import TabFeatures2 from '@/components/Home1/TabFeatures2'
-import '../stylesGlobals/globals.css'
+import '../../stylesGlobals/globals.css'
 import Banner from '@/components/Home1/Banner'
 import Benefit from '@/components/Home1/Benefit'
 import testimonialData from '@/data/Testimonial.json'
@@ -37,8 +37,9 @@ export default function Home() {
       {/* <TabFeatures data={productData} start={0} limit={6} /> */}
       <TabFeatures2/>
       <Banner />
-      <Benefit props="md:py-20 py-10" />
+      {/* <Benefit props="md:py-20 py-10" /> */}
       <YoutubeVideo/>
+      {/* <Instagram /> */}
       <Instagram />
       <Footer />
       <ModalNewsletter />
