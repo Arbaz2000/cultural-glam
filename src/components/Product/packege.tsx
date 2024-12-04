@@ -1,20 +1,17 @@
-
 'use client'
-import React, { useState } from "react";
-import Image from 'next/image'; // Assuming you're using Next.js
-import { FaCircleArrowLeft } from "react-icons/fa6";
-import { FaCircleArrowRight } from "react-icons/fa6";
-
-import goldenTriangleTour from "../../../public/images/slider/packegeTours/GoldenTriangle.jpeg"
-import rajasthan from "../../../public/images/slider/packegeTours/Rajasthan10DayesOne.jpeg"
-import rajasthanTour from "../../../public/images/slider/packegeTours/Rajasthan10DayesTwo.jpeg"
-import rajasthanPlaceTour from "../../../public/images/slider/packegeTours/Rajasthan8Days.jpeg"
-import rajasthanEthnic from "../../../public/images/slider/packegeTours/rajasthanEthnic.jpeg"
-import rajasthanDesert from "../../../public/images/slider/packegeTours/sliderfour.png"
-import rajasthanFort from "../../../public/images/slider/packegeTours/Rajasthan20Days.jpeg"
-import Link from 'next/link'
+import React from "react";
+import Image from 'next/image';
 import { FaWhatsapp } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
+import Link from 'next/link';
+
+import goldenTriangleTour from "../../../public/images/slider/packegeTours/GoldenTriangle.jpeg";
+import rajasthan from "../../../public/images/slider/packegeTours/Rajasthan10DayesOne.jpeg";
+import rajasthanTour from "../../../public/images/slider/packegeTours/Rajasthan10DayesTwo.jpeg";
+import rajasthanPlaceTour from "../../../public/images/slider/packegeTours/Rajasthan8Days.jpeg";
+import rajasthanEthnic from "../../../public/images/slider/packegeTours/rajasthanEthnic.jpeg";
+import rajasthanDesert from "../../../public/images/slider/packegeTours/sliderfour.png";
+import rajasthanFort from "../../../public/images/slider/packegeTours/Rajasthan20Days.jpeg";
 
 const tours = [
   {
@@ -50,7 +47,7 @@ const tours = [
     title: "Rajasthan Ethnic Tours:",
     days: "10 Days",
     src: rajasthanEthnic,
-    description: "Rajasthan offers a stunning blend of rich history, royal palaces, and desert landscapes. Explore vibrant cities like Jaipur, Udaipur, and Jodhpur, with their rajasthan majestic forts, temples, and colorful cultural experiences."
+    description: "Rajasthan offers a stunning blend of rich history, Rajasthan royal palaces, and desert landscapes. Explore vibrant cities like Jaipur, Udaipur, and Jodhpur, with their majestic forts, temples, and colorful cultural experiences."
   },
   {
     id: "6",
@@ -70,53 +67,40 @@ const tours = [
 
 const Package = () => {
   return (
-    <>
-
-      <div className=" bg-slate-50">
-        <div className="bg-slate-50 py-10">
-          <p className="text-4xl font-bold mb-2 text-center">Explore Your Packege Tours</p>
-        </div>
-        <div className="container mx-auto py-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-            {tours.map((tours) => (
-              <a
-                key={tours.id}
-                className="block rounded-lg shadow-md overflow-hidden"
-              >
+    <div className="bg-slate-50">
+      <div className="py-10">
+        <p className="text-4xl font-bold mb-2 text-center">Explore Your Package Tours</p>
+      </div>
+      <div className="container mx-auto py-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {tours.map((tour) => (
+            <Link key={tour.id} href={`/detail/${tour.id}`}>
+              <div className="block rounded-lg shadow-md overflow-hidden">
                 <Image
-                  src={tours.src}
-                  alt={tours.title}
+                  src={tour.src}
+                  alt={tour.title}
                   width={500}
                   height={300}
                   className="object-cover"
                 />
                 <div className="p-4 flex flex-row justify-between">
-                  <h2 className="text-xl font-bold mb-2">{tours.title}</h2>
-                  <p className="text-gray-700 text-bold text">
-                    {tours.days}
-                  </p>
+                  <h2 className="text-xl font-bold mb-2">{tour.title}</h2>
+                  <p className="text-gray-700 font-bold">{tour.days}</p>
                 </div>
-                <p className="ml-3 text-gray-700  text">
-                  {tours.description}
-                </p>
-                <Link href='/pages/package-tours' >
-                  <div className="p-4 flex flex-row justify-between items-center bg-[#f4f3ee] shadow-md rounded-lg space-x-4">
-                    <button className="text-sm border-2 border-gray-950 spacing-6 font-semibold text-[#FFFFFF] rounded-md bg-[#1677FF] hover:bg-[#2196f3] py-1 px-3 transition duration-300 ease-in-out transform hover:scale-105">
-                      Details
-                    </button>
-                    <div className="flex flex-row space-x-4">
-                      <FaWhatsapp className="text-3xl text-success hover:text-green-500 transition duration-300 ease-in-out" />
-                      <CiMail className="text-3xl text-red hover:text-red-600 transition duration-300 ease-in-out" />
-                    </div>
+                <p className="ml-3 text-gray-700">{tour.description}</p>
+                <div className="p-4 flex flex-row justify-between bg-[#edf6f9]">
+                  <button className="text-l py-1 text-[#FFFFFF] rounded-md bg-[#1677FF] hover:bg-[#023e8a]">Details</button>
+                  <div className="flex flex-row space-x-5">
+                    <FaWhatsapp className="text-success text-3xl"/>
+                    <CiMail className="text-red text-3xl"/>
                   </div>
-
-                </Link>
-              </a>
-            ))}
-          </div>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

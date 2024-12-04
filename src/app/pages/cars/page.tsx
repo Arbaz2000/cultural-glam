@@ -334,7 +334,7 @@ const cardata = () => {
       </div>
       <div className="container mx-auto py-12 pt-28">
         <h1 className="text-3xl font-bold mb-8 text-center">Car Option</h1>
-        <p class="text-xl mb-10 text-center ">Choose your vichle for travel.</p>
+        <p className="text-xl mb-10 text-center ">Choose your vichle for travel.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           {tours.map((tour) => (
             <a

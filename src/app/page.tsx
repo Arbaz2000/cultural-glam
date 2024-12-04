@@ -16,9 +16,8 @@ import Testimonial from '@/components/Home1/Testimonial'
 import Instagram from '@/components/Home1/Instagram'
 import Footer from '@/components/Footer/Footer'
 import ModalNewsletter from '@/components/Modal/ModalNewsletter'
-import Cars from "@/components/Home1/caars"
+import Cars from "@/components/Home1/cars"
 import YoutubeVideo from "@/components/Home1/youtube"
-import Special from "@/components/Home1/special"
 import Package from '@/components/Product/packege'
 
 export default function Home() {
@@ -40,7 +39,8 @@ export default function Home() {
       {/* <Benefit props="md:py-20 py-10" /> */}
       <YoutubeVideo/>
       {/* <Instagram /> */}
-      <Instagram />
+      {/* <Instagram /> */}
+      {/* <Brand /> */}
       <Footer />
       <ModalNewsletter />
 
