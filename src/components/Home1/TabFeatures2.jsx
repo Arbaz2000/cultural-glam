@@ -1,35 +1,47 @@
-'use client'
-import Image from 'next/image';
-import React from 'react'
-import incdibleIndia from "../../../public/images/tourTravel/incedibleIndia.jpg"
-import varanasi from "../../../public/images/tourTravel/varanasi.jpg"
+'use client';
 
+import Image from 'next/image';
+import React from 'react';
+import incredebilerajasthan from "../../../public/images/tourTravel/incridebilerajasthan.jpeg";
 
 const Benefit = () => {
     return (
-        <>
-            <div className="whate-new-block md:pt-20 pt-10">
-                <div className="container">
-                    <div className="heading flex flex-col">
-                        <div className="heading3 pt-10 pb-5 pl-4 pr-2 bg-[#f5f5f5]">About India</div>
+        <div className="what-new-block bg-[#f9f9f9] py-10">
+            <div className="container mx-auto px-4">
+                {/* Heading */}
+                <div className="heading text-center">
+                    <div className="heading3 text-4xl font-bold sm:text-3xl text-2xl text-black bg-[#f5f5f5] inline-block py-3 px-5 rounded-lg">
+                        About Rajasthan
+                    </div>
+                </div>
+
+                {/* Content */}
+                <div className="flex flex-col md:flex-row items-center mt-10 md:mt-16 gap-10">
+                    {/* Text Section */}
+                    <div className="text-section w-full md:w-1/2 text-center md:text-left">
+                        <h2 className="text-2xl font-bold text-black sm:text-3xl">
+                            About <br /> Incredible Rajasthan
+                        </h2>
+                        <p className="mt-4 text-base md:text-lg leading-relaxed text-gray-700 px-2 md:px-0">
+                            Rajasthan, often referred to as the &quot;Land of Kings,&quot; is a state that exudes timeless charm, steeped in rich history and vibrant culture. From the majestic palaces of Jaipur to the haunting beauty of the Thar Desert, Rajasthan offers a captivating blend of architectural wonders, colorful traditions, and breathtaking landscapes. The state is renowned for its royal heritage, with its forts and temples narrating tales of bravery and grandeur. Visitors are enchanted by its bustling markets, traditional dance forms like Ghoomar, and the hospitality of its people. Rajasthan is truly a place where the past and present merge, offering an unforgettable experience.
+                        </p>
                     </div>
 
-                    <div className='flex flex-row'>
-                        {/* <div className="heading5 text-black ml-20 mt-10 mb-5">About <br />Incredible India</div><br /> */}
-
-                        {/* The paragraph comes below heading5 */}
-                        <div className="text-black ml-20 mt-10 mb-5 ">
-                            <span className='text-2xl text-black font-bold under'>About <br/>Incredible India</span><br /><p></p>India offers incredible holiday experiences through its cultural, topography, and wildlife diversity. With these amazing and unique experiences, this south Asian country conveniently finds its way into the world tourism map as one of the finest destinations for a holistic vacation. India establishes its identity as the country of architectural masterpieces, making it an ideal travel destination to plan a heritage tour in the world. While Taj Mahal makes for the major draw on an India tour, there are a plethora of monuments and edifices in every India travel guide displaying the fine architecture and grandiose of different eras in the country. The diverse Indian topography adorned with the impressive Himalayas; long stretches of coastline; expansive hot, cold and white salt deserts; dense forests; alpine meadows and lakes; and scenic waterfalls pique the tourists’ interest. Along with the best nature sightseeing tours, India offers an opportunity to visitors to have a little adventure of their own. The numerous spell-binding and less-trodden trails give trekking tour opportunities in South Asia unlike any other. India Tours offers a chance to explore its biodiversity in the country's many national parks and wildlife reserves. An enthralling experience entails in the India wildlife tour packages that take tourists to the habitats of Royal Bengal Tigers, one-horned rhinos, and snow leopards amongst many rare, endangered, and unique species of flora and fauna.</div>
-                        <Image src={incdibleIndia} width={500} alt='image of showing Incredible-india'
-                            className=' bg-foo mx-20 mt-10 rounded-xl hover:scale-110 transition-transform duration-700 ' />
-
+                    {/* Image Section */}
+                    <div className="image-section w-full md:w-1/2 flex justify-center">
+                        <Image
+                            src={incredebilerajasthan}
+                            alt="A view showcasing the beauty of Rajasthan"
+                            width={800}
+                            height={533}
+                            className="rounded-xl shadow-lg w-full max-w-md md:max-w-none"
+                            style={{ objectFit: 'cover' }}
+                        />
                     </div>
-
                 </div>
             </div>
+        </div>
+    );
+};
 
-        </>
-    )
-}
-
-export default Benefit
+export default Benefit;

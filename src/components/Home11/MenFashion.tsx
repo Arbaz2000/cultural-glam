@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import Product from '../Product/Product'
+import Product from '../Product/packege'
 import { ProductType } from '@/type/ProductType'
 import { motion } from 'framer-motion'
 
@@ -58,7 +58,7 @@ const MenFashion: React.FC<Props> = ({ data, start, limit }) => {
                             />
                         </Link>
                         {filteredProducts.slice(start, limit).map((prd, index) => (
-                            <Product key={index} data={prd} type='grid' />
+                            <Product key={index}  />
                         ))}
                     </div>
                 </div>

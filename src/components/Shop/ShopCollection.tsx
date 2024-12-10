@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ProductType } from '@/type/ProductType'
-import Product from '../Product/Product';
+import Product from '../Product/packege';
 
 interface Props {
     data: Array<ProductType>;
@@ -56,7 +56,7 @@ const ShopCollection: React.FC<Props> = ({ data }) => {
                                             .filter(product => product.type === 'accessories' && product.category === 'fashion')
                                             .slice(0, 2)
                                             .map(product => (
-                                                <Product data={product} type='grid' key={product.id} />
+                                                <Product   key={product.id} />
                                             ))}
                                     </div>
                                 </div>
@@ -88,7 +88,7 @@ const ShopCollection: React.FC<Props> = ({ data }) => {
                                             .filter(product => product.type === 'accessories' && product.category === 'fashion')
                                             .slice(2, 4)
                                             .map(product => (
-                                                <Product data={product} type='grid' key={product.id} />
+                                                <Product   key={product.id} />
                                             ))}
                                     </div>
                                 </div>
@@ -120,7 +120,7 @@ const ShopCollection: React.FC<Props> = ({ data }) => {
                                             .filter(product => product.type === 'accessories' && product.category === 'fashion')
                                             .slice(4, 6)
                                             .map(product => (
-                                                <Product data={product} type='grid' key={product.id} />
+                                                <Product   key={product.id} />
                                             ))}
                                     </div>
                                 </div>

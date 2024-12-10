@@ -6,6 +6,10 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css/bundle';
 import TestimonialItem from '../Testimonial/TestimonialItem';
 import { TestimonialType } from '@/type/TestimonialType'
+import rating from '../../../public/images/tourTravel/rate.png'
+import Tripadviser from '../../../public/images/tourTravel/tripadvisor-icon.png'
+
+import Image from 'next/image';
 
 interface Props {
     data: Array<TestimonialType>;
@@ -20,14 +24,33 @@ const Testimonial: React.FC<Props> = ({ data, limit }) => {
                     <div className="heading3 text-center">
                         What People Are Saying
                     </div>
-
-                    <div className="list-testimonial pagination-mt40 md:mt-10 mt-6">
+                    <div className="list-testimonial pagination-mt40 md:mt-10 mt-6 flex flex-row">
+                        <div className='flex flex-row mt-32 mr-10'>
+                        <div>
+                            <h2 className=''>EXCELLENG</h2>
+                            <Image className='text-sm '
+                            alt='rating png image '
+                            src={rating}
+                            width={80}
+                            height={80}                            ></Image>
+                            <p className=''>Based on <strong>100+review</strong></p>
+                            <Image className='text-sm mr-5'
+                            alt='rating png image '
+                            src={Tripadviser}
+                            width={60}
+                            height={60} 
+                            ></Image>
+                        </div>
+                        </div>
                         <Swiper
                             spaceBetween={12}
                             slidesPerView={1}
                             pagination={{ clickable: true }}
                             loop={true}
                             modules={[Pagination, Autoplay]}
+                            autoplay={{
+                                delay: 2000,
+                            }}
                             breakpoints={{
                                 680: {
                                     slidesPerView: 2,

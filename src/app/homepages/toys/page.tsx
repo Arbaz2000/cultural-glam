@@ -12,7 +12,6 @@ import TabFeatures from '@/components/Toys/TabFeatures'
 import blogData from '@/data/Blog.json'
 import NewsInsight from '@/components/Toys/NewsInsight'
 import dataTestimonial from '@/data/Testimonial.json'
-import Testimonial from '@/components/Furniture/Testimonial'
 import Footer from '@/components/Footer/Footer'
 import ModalNewsletter from '@/components/Modal/ModalNewsletter'
 
@@ -30,7 +29,6 @@ export default function HomeToys() {
             <WeekProduct data={productData} start={0} limit={8} />
             <FeaturedProduct data={productData} start={1} limit={6} />
             <TabFeatures data={productData} start={0} limit={4} />
-            <Testimonial data={dataTestimonial} limit={4} />
             <NewsInsight data={blogData} start={9} limit={12} />
             <Footer />
             <ModalNewsletter />

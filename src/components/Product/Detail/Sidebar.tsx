@@ -4,7 +4,7 @@ import React, { useRef, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ProductType } from '@/type/ProductType'
-import Product from '../Product'
+import Product from '../packege'
 import Rate from '@/components/Other/Rate'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Thumbs, Scrollbar } from 'swiper/modules';
@@ -914,7 +914,7 @@ const Sidebar: React.FC<Props> = ({ data, productId }) => {
                                     <>
                                         {
                                             data.slice(0, 4).map((item, index) => (
-                                                <Product key={index} data={item} type='grid' />
+                                                <Product key={index}  />
                                             ))
                                         }
                                     </>
@@ -922,7 +922,7 @@ const Sidebar: React.FC<Props> = ({ data, productId }) => {
                                     <>
                                         {
                                             data.slice(Number(productId), Number(productId) + 4).map((item, index) => (
-                                                <Product key={index} data={item} type='grid' />
+                                                <Product key={index}  />
                                             ))
                                         }
                                     </>

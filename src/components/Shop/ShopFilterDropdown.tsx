@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import { ProductType } from '@/type/ProductType'
-import Product from '../Product/Product';
+import Product from '../Product/packege';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css'
 import HandlePagination from '../Other/HandlePagination';
@@ -525,7 +525,7 @@ const ShopFilterDropdown: React.FC<Props> = ({ data, productPerPage, dataType })
                                 item.id === 'no-data' ? (
                                     <div key={item.id} className="no-data-product">No products match the selected criteria.</div>
                                 ) : (
-                                    <Product key={item.id} data={item} type='grid' />
+                                    <Product key={item.id} />
                                 )
                             ))}
                         </div>

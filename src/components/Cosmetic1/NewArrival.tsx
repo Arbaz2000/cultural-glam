@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import Product from '../Product/Product'
+import Product from '../Product/packege'
 import { ProductType } from '@/type/ProductType'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
@@ -76,7 +76,7 @@ const NewArrival: React.FC<Props> = ({ data, start, limit }) => {
                         >
                             {filteredProducts.slice(start, limit).map((prd, index) => (
                                 <SwiperSlide key={index}>
-                                    <Product data={prd} type='grid' />
+                                    <Product/>
                                 </SwiperSlide>
                             ))}
                         </Swiper>

@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css/bundle';
-import Product from '../Product/Product';
+import Product from '../Product/packege';
 import { ProductType } from '@/type/ProductType'
 
 interface Props {
@@ -55,7 +55,7 @@ const FeaturedProduct: React.FC<Props> = ({ data, start, limit }) => {
                                 >
                                     {data.filter(item => item.category === 'toys-kid').slice(start, limit).map((prd) => (
                                         <SwiperSlide key={prd.id} data-item={prd.id}>
-                                            <Product data={prd} type='grid' />
+                                            <Product />
                                         </SwiperSlide>
                                     ))}
                                 </Swiper>

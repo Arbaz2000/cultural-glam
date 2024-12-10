@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import { usePathname } from 'next/navigation';
-import Product from '@/components/Product/Product';
+import Product from '@/components/Product/packege';
 import productData from '@/data/Product.json'
 import useLoginPopup from '@/store/useLoginPopup';
 import useMenuMobile from '@/store/useMenuMobile';
@@ -642,7 +642,7 @@ const MenuYoga = () => {
                                                     <div className="text-button-uppercase pb-2">Recent Products</div>
                                                     <div className="list-product hide-product-sold  grid grid-cols-2 gap-5 mt-3">
                                                         {productData.filter(item => item.action === 'add to cart' && item.category === 'yoga').slice(0, 2).map((prd, index) => (
-                                                            <Product key={index} data={prd} type='grid' />
+                                                            <Product key={index}  />
                                                         ))}
                                                     </div>
                                                 </div>
@@ -822,7 +822,7 @@ const MenuYoga = () => {
                                                     <div className="text-button-uppercase pb-2">Recent Products</div>
                                                     <div className="list-product hide-product-sold  grid grid-cols-2 gap-5 mt-3">
                                                         {productData.filter(item => item.action === 'add to cart' && item.category === 'yoga').slice(0, 2).map((prd, index) => (
-                                                            <Product key={index} data={prd} type='grid' />
+                                                            <Product key={index}  />
                                                         ))}
                                                     </div>
                                                 </div>
@@ -1529,7 +1529,7 @@ const MenuYoga = () => {
                                                         <div className="text-button-uppercase pb-1">Recent Products</div>
                                                         <div className="list-product hide-product-sold  grid grid-cols-2 gap-5 mt-3">
                                                             {productData.filter(item => item.action === 'add to cart' && item.category === 'yoga').slice(0, 2).map((prd, index) => (
-                                                                <Product key={index} data={prd} type='grid' />
+                                                                <Product key={index}  />
                                                             ))}
                                                         </div>
                                                     </div>
@@ -1721,7 +1721,7 @@ const MenuYoga = () => {
                                                         <div className="text-button-uppercase pb-1">Recent Products</div>
                                                         <div className="list-product hide-product-sold  grid grid-cols-2 gap-5 mt-3">
                                                             {productData.filter(item => item.action === 'add to cart' && item.category === 'yoga').slice(0, 2).map((prd, index) => (
-                                                                <Product key={index} data={prd} type='grid' />
+                                                                <Product key={index}  />
                                                             ))}
                                                         </div>
                                                     </div>

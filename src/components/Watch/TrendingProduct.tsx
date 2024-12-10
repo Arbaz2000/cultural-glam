@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import Product from '../Product/Product'
+import Product from '../Product/packege'
 import { ProductType } from '@/type/ProductType'
 
 interface Props {
@@ -18,7 +18,7 @@ const TrendingProduct: React.FC<Props> = ({ data }) => {
                     <div className="heading3 text-center text-white">Trending Products</div>
                     <div className="list-product hide-product-sold grid lg:grid-cols-4 grid-cols-2 sm:gap-[30px] gap-[20px] md:mt-10 mt-6">
                         {filteredProducts.slice(0, 4).map((prd, index) => (
-                            <Product data={prd} type='grid' key={index} />
+                            <Product key={index} />
                         ))}
                     </div>
                 </div>

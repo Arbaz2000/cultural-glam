@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css/bundle';
-import Product from '../Product/Product'
+import Product from '../Product/packege'
 import { ProductType } from '@/type/ProductType'
 import { motion } from 'framer-motion'
 
@@ -68,7 +68,7 @@ const TabFeatures: React.FC<Props> = ({ data, start, limit }) => {
 
                     <div className="list-product grid lg:grid-cols-4 grid-cols-2 gap-[30px] hide-product-sold section-swiper-navigation  md:mt-10 mt-6">
                         {filteredProducts.slice(start, limit).map((prd, index) => (
-                            <Product key={index} data={prd} type='grid' />
+                            <Product key={index} />
                         ))}
                     </div>
                     <div className="block-button flex items-center justify-center w-full md:mt-10 mt-6">

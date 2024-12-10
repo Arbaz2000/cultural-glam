@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link';
-import Product from '../Product/Product'
+import Product from '../Product/packege'
 import { ProductType } from '@/type/ProductType'
 import { countdownTime } from '@/store/countdownTime'
 
@@ -48,7 +48,7 @@ const Deal: React.FC<Props> = ({ data, start, limit }) => {
 
                     <div className="list-product show-product-sold grid lg:grid-cols-4 grid-cols-2 sm:gap-[30px] gap-[20px] md:mt-10 mt-6">
                         {data.slice(start, limit).map((prd, index) => (
-                            <Product key={index} data={prd} type='grid' />
+                            <Product key={index} />
                         ))}
                     </div>
                 </div>

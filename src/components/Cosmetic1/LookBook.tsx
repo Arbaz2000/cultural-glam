@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
-import Product from '../Product/Product'
+import Product from '../Product/packege'
 import { ProductType } from '@/type/ProductType'
 
 interface Props {
@@ -25,7 +25,7 @@ const LookBook: React.FC<Props> = ({ data, start, limit }) => {
                             .filter(product => product.category === 'cosmetic')
                             .slice(start, limit)
                             .map((prd, index) => (
-                                <Product key={index} data={prd} type='grid' />
+                                <Product key={index}/>
                             ))
                         }
                     </div>

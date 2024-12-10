@@ -8,7 +8,7 @@ import Breadcrumb from '@/components/Breadcrumb/Breadcrumb'
 import Footer from '@/components/Footer/Footer'
 import { ProductType } from '@/type/ProductType'
 import productData from '@/data/Product.json'
-import Product from '@/components/Product/Product'
+import Product from '@/components/Product/packege'
 import HandlePagination from '@/components/Other/HandlePagination'
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 
@@ -124,7 +124,7 @@ const SearchResult = () => {
                                 item.id === 'no-data' ? (
                                     <div key={item.id} className="no-data-product">No products match the selected criteria.</div>
                                 ) : (
-                                    <Product key={item.id} data={item} type='grid' />
+                                    <Product key={item.id} />
                                 )
                             ))}
                         </div>
