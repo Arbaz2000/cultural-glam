@@ -23,7 +23,7 @@ const Benefit = () => {
                             About <br /> Incredible Rajasthan
                         </h2>
                         <p className="mt-4 text-base md:text-lg leading-relaxed text-gray-700 px-2 md:px-0">
-                            Rajasthan, often referred to as the "Land of Kings," is a state that exudes timeless charm, steeped in rich history and vibrant culture. From the majestic palaces of Jaipur to the haunting beauty of the Thar Desert, Rajasthan offers a captivating blend of architectural wonders, colorful traditions, and breathtaking landscapes. The state is renowned for its royal heritage, with its forts and temples narrating tales of bravery and grandeur. Visitors are enchanted by its bustling markets, traditional dance forms like Ghoomar, and the hospitality of its people. Rajasthan is truly a place where the past and present merge, offering an unforgettable experience.
+                            Rajasthan, often referred to as the &quot;Land of Kings,&quot; is a state that exudes timeless charm, steeped in rich history and vibrant culture. From the majestic palaces of Jaipur to the haunting beauty of the Thar Desert, Rajasthan offers a captivating blend of architectural wonders, colorful traditions, and breathtaking landscapes. The state is renowned for its royal heritage, with its forts and temples narrating tales of bravery and grandeur. Visitors are enchanted by its bustling markets, traditional dance forms like Ghoomar, and the hospitality of its people. Rajasthan is truly a place where the past and present merge, offering an unforgettable experience.
                         </p>
                     </div>
 

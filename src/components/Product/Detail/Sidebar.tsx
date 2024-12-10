@@ -914,7 +914,7 @@ const Sidebar: React.FC<Props> = ({ data, productId }) => {
                                     <>
                                         {
                                             data.slice(0, 4).map((item, index) => (
-                                                <Product key={index} data={item} type='grid' />
+                                                <Product key={index}  />
                                             ))
                                         }
                                     </>
@@ -922,7 +922,7 @@ const Sidebar: React.FC<Props> = ({ data, productId }) => {
                                     <>
                                         {
                                             data.slice(Number(productId), Number(productId) + 4).map((item, index) => (
-                                                <Product key={index} data={item} type='grid' />
+                                                <Product key={index}  />
                                             ))
                                         }
                                     </>

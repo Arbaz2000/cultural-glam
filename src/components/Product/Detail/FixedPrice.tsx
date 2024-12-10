@@ -864,7 +864,7 @@ const FixedPrice: React.FC<Props> = ({ data, productId }) => {
                             <div className="heading3 text-center">Related Products</div>
                             <div className="list-product hide-product-sold  grid lg:grid-cols-4 grid-cols-2 md:gap-[30px] gap-5 md:mt-10 mt-6">
                                 {data.slice(Number(productId), Number(productId) + 4).map((item, index) => (
-                                    <Product key={index} data={item} type='grid' />
+                                    <Product key={index} />
                                 ))}
                             </div>
                         </div>

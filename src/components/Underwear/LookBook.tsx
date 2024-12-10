@@ -33,7 +33,7 @@ const LookBook: React.FC<Props> = ({ data }) => {
                         <div className="heading3 md:pb-10 pb-5">The Summer Look book</div>
                         <div className="w-1/2">
                             {data.slice(Number(prd), Number(prd) + 1).map((product, index) => (
-                                <Product key={index} data={product} type='grid' />
+                                <Product key={index}/>
                             ))}
                         </div>
                     </div>

@@ -27,7 +27,7 @@ const Benefit: React.FC<Props> = ({ props }) => {
                         <Image src={indiatIcon} width={80} alt='image of india-map-icon png' className="hover:scale-110 transition-transform duration-200"/>
 
                             <div className="heading6 text-center mt-5">India Tour</div>
-                            <div className="caption1 text-secondary text-center mt-3">"Explore India's rich culture, history, and scenic beauty with us."</div>
+                            <div className="caption1 text-secondary text-center mt-3">&quot;Explore India&spos;s rich culture, history, and scenic beauty with us.&quot;</div>
                         </div>
                         <div className="benefit-item flex flex-col items-center justify-center">
                             <Image src={international} width={80} alt='international-tour-icon png' className="hover:scale-110 transition-transform duration-200"/>

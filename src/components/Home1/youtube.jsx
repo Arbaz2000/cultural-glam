@@ -28,7 +28,7 @@ const YoutubeVideo = () => {
             <div className=" sm:ml-0 md:ml-20 sm:text-base md:text-lg w-full md:w-1/2">
               <h5 className="text-2xl text-black font-bold">Visit our YouTube</h5>
               <p className="text-lg font-medium bg-surface mt-4 max-w-lg sm:max-w-none">
-                Don't miss out! Visit my website to watch my latest YouTube video. Discover exciting content, valuable insights, and engaging entertainment. Click now and join the fun, as I share new ideas and experiences you won’t want to miss!
+                Don&apos;t miss out! Visit my website to watch my latest YouTube video. Discover exciting content, valuable insights, and engaging entertainment. Click now and join the fun, as I share new ideas and experiences you won’t want to miss!
               </p>
             </div>
           </div>

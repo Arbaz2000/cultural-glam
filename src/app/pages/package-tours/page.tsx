@@ -14,7 +14,7 @@ import Rajasthan10daysThree from '../../../../public/images/slider/Rajasthan10Da
 import Rajasthan16Days from '../../../../public/images/slider/Rajasthan16Days.jpeg';
 import Rajasthan20Days from '../../../../public/images/slider/Rajasthan20Days.jpeg';
 
-export const Tours = [
+const Tours = [
     {
         id: "1",
         title: 'Golden Triangle Tour: (6 Days)',

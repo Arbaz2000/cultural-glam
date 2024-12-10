@@ -6,9 +6,9 @@ import Image from 'next/image';
 import MenuOne from '@/components/Header/Menu/MenuOne';
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb';
 import Footer from '@/components/Footer/Footer';
-import { Tours } from '../../../app/pages/package-tours/page'; // Import your tours array
+import { Tours } from '../../pages/package-tours/page'; // Import your tours array
 
-const TourDetail = ({ params }: { params: { id: string } }) => {
+const TourDetail = ({ params }) => {
   const { id } = params; // Access id from params
 
   // Find the tour by the ID (Client-side logic)
