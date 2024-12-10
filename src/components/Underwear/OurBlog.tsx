@@ -1,3 +1,4 @@
+ // @ts-nocheck 
 import React from 'react'
 import BlogItem from '../Blog/BlogItem'
 import { BlogType } from '@/type/BlogType'

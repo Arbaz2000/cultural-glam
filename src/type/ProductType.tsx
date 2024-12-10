@@ -13,6 +13,7 @@ export interface ProductType {
     gender: string,
     new: boolean,
     sale: boolean,
+    data : any,
     rate: number,
     price: number,
     originPrice: number,

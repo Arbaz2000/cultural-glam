@@ -17,6 +17,7 @@ interface Props {
     category: string | null
 }
 
+
 const ShopBreadCrumb3: React.FC<Props> = ({ data, productPerPage, dataType, gender, category }) => {
     const [showOnlySale, setShowOnlySale] = useState(false)
     const [sortOption, setSortOption] = useState('');
@@ -147,31 +148,31 @@ const ShopBreadCrumb3: React.FC<Props> = ({ data, productPerPage, dataType, gend
     const selectedBrand = brand
 
 
-    if (filteredData.length === 0) {
-        filteredData = [{
-            id: 'no-data',
-            category: 'no-data',
-            type: 'no-data',
-            name: 'no-data',
-            gender: 'no-data',
-            new: false,
-            sale: false,
-            rate: 0,
-            price: 0,
-            originPrice: 0,
-            brand: 'no-data',
-            sold: 0,
-            quantity: 0,
-            quantityPurchase: 0,
-            sizes: [],
-            variation: [],
-            thumbImage: [],
-            images: [],
-            description: 'no-data',
-            action: 'no-data',
-            slug: 'no-data'
-        }];
-    }
+    // if (filteredData.length === 0) {
+    //     filteredData = [{
+    //         id: 'no-data',
+    //         category: 'no-data',
+    //         type: 'no-data',
+    //         name: 'no-data',
+    //         gender: 'no-data',
+    //         new: false,
+    //         sale: false,
+    //         rate: 0,
+    //         price: 0,
+    //         originPrice: 0,
+    //         brand: 'no-data',
+    //         sold: 0,
+    //         quantity: 0,
+    //         quantityPurchase: 0,
+    //         sizes: [],
+    //         variation: [],
+    //         thumbImage: [],
+    //         images: [],
+    //         description: 'no-data',
+    //         action: 'no-data',
+    //         slug: 'no-data'
+    //     }];
+    // }
 
 
     // Find page number base on filteredData
@@ -273,7 +274,7 @@ const ShopBreadCrumb3: React.FC<Props> = ({ data, productPerPage, dataType, gend
                                         </div>
                                     ))}
                                 </div>
-                                <h1 className='font-bold text-base'>Men's Ethnic</h1>
+                            
                                 <div className="list-type mt-2">
                                     {['Kurta', 'Jacket', 'Kurta-Pajama Set'].map((item, index) => (
                                         <div
@@ -517,7 +518,7 @@ const ShopBreadCrumb3: React.FC<Props> = ({ data, productPerPage, dataType, gend
                                     item.id === 'no-data' ? (
                                         <div key={item.id} className="no-data-product">No products match the selected criteria.</div>
                                     ) : (
-                                        <Product key={item.id} data={item} type='grid' />
+                                        <Product key={item.id}  />
                                     )
                                 ))}
                             </div>

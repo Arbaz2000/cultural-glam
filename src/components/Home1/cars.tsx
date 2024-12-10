@@ -1,4 +1,5 @@
 'use client';
+import { useMemo } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -7,30 +8,30 @@ import car2 from '../../../public/images/cars/toyotaEtios.jpeg';
 import car3 from '../../../public/images/tourTravel/car3.jpeg';
 import car4 from '../../../public/images/tourTravel/car4.jpeg';
 
-const carsDetails = [
-    {
-        image: car1,
-        name: 'TOYOTA INNOVA',
-        description: 'Budgeted and cheaper rates Guaranteed * Toyota Innova Luxury car * Both A.C & NON-A.C * Music system *Ice box Ample luggage space * Spacious and comfortable seats *White seat covers & curtains',
-    },
-    {
-        image: car2,
-        name: 'TOYOTA ETIOS',
-        description: 'Budgeted and cheaper rates Guaranteed *TOYOTA ETIOS * Both A.C & NON-A.C *First aid box *Music system *Ice box *Ample separate luggage space * Spacious and comfortable seats',
-    },
-    {
-        image: car3,
-        name: 'Bus',
-        description: 'Comfortable Seating * Air Conditioning / Ventilation *Wi-Fi and Charging Ports *Refreshments / Water Availability',
-    },
-    {
-        image: car4,
-        name: 'MINI BUS',
-        description: 'Comfortable and Adjustable Seating * Air Conditioning / Heating * Wi-Fi and Charging Stations * Safety Features and Entertainment',
-    },
-];
-
 const ChauffeurCars = () => {
+    const carsDetails = useMemo(() => [
+        {
+            image: car1,
+            name: 'TOYOTA INNOVA',
+            description: 'Budgeted and cheaper rates Guaranteed * Toyota Innova Luxury car * Both A.C & NON-A.C * Music system *Ice box Ample luggage space * Spacious and comfortable seats *White seat covers & curtains',
+        },
+        {
+            image: car2,
+            name: 'TOYOTA ETIOS',
+            description: 'Budgeted and cheaper rates Guaranteed *TOYOTA ETIOS * Both A.C & NON-A.C *First aid box *Music system *Ice box *Ample separate luggage space * Spacious and comfortable seats',
+        },
+        {
+            image: car3,
+            name: 'Bus',
+            description: 'Comfortable Seating * Air Conditioning / Ventilation *Wi-Fi and Charging Ports *Refreshments / Water Availability',
+        },
+        {
+            image: car4,
+            name: 'MINI BUS',
+            description: 'Comfortable and Adjustable Seating * Air Conditioning / Heating * Wi-Fi and Charging Stations * Safety Features and Entertainment',
+        },
+    ], []); // Empty dependency array ensures it is computed only once
+
     return (
         <section className="py-10 px-4 sm:px-8 lg:px-16">
             {/* Heading */}
@@ -54,9 +55,9 @@ const ChauffeurCars = () => {
                                 <Image
                                     src={car.image}
                                     alt={car.name}
-                                    layout="fill"
-                                    objectFit="cover"
-                                    className="transition-transform duration-300 hover:scale-105"
+                                    className="object-cover transition-transform duration-300 hover:scale-105"
+                                    width={500}  // Set appropriate width
+                                    height={300} // Set appropriate height
                                 />
                             </div>
                         </Link>

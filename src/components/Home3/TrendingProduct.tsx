@@ -1,3 +1,4 @@
+ // @ts-nocheck 
 import React from 'react'
 import Product from '../Product/packege'
 import { ProductType } from '@/type/ProductType'

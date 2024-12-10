@@ -1,6 +1,7 @@
+// @ts-nocheck
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation';
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
 import MenuOne from '@/components/Header/Menu/MenuOne'
@@ -9,9 +10,26 @@ import productData from '@/data/Product.json'
 import Footer from '@/components/Footer/Footer'
 
 export default function FilterOptions() {
-    const searchParams = useSearchParams()
-    const type = searchParams.get('type')
-    const category = searchParams.get('category')
+    const searchParams = useSearchParams();
+    const type = searchParams.get('type');
+    const category = searchParams.get('category');
+    
+    const [filteredProducts, setFilteredProducts] = useState(productData);
+
+    // Filter products based on query parameters
+    useEffect(() => {
+        let filtered = productData;
+
+        if (type) {
+            filtered = filtered.filter(product => product.type === type);
+        }
+
+        if (category) {
+            filtered = filtered.filter(product => product.category === category);
+        }
+
+        setFilteredProducts(filtered);
+    }, [type, category]);
 
     return (
         <>
@@ -19,7 +37,9 @@ export default function FilterOptions() {
             <div id="header" className='relative w-full'>
                 <MenuOne props="bg-transparent" />
             </div>
-            <ShopFilterOptions data={productData} productPerPage={12} />
+            <div className="shop-square">
+                <ShopFilterOptions data={filteredProducts} productPerPage={12} />
+            </div>
             <Footer />
         </>
     )

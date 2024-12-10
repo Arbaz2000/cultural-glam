@@ -1,3 +1,4 @@
+ // @ts-nocheck 
 "use client"
 import React from 'react'
 import TopNavOne from '@/components/Header/TopNav/TopNavOne'
@@ -9,7 +10,6 @@ import Collection from '@/components/Home1/Collection'
 import TabFeatures from '@/components/Home1/TabFeatures'
 import TabFeatures2 from '@/components/Home1/TabFeatures2'
 import '../../stylesGlobals/globals.css'
-import Banner from '@/components/Home1/Banner'
 import Benefit from '@/components/Home1/Benefit'
 import testimonialData from '@/data/Testimonial.json'
 import Testimonial from '@/components/Home1/Testimonial'
@@ -35,7 +35,6 @@ export default function Home() {
       {/* <Collection /> */}
       {/* <TabFeatures data={productData} start={0} limit={6} /> */}
       <TabFeatures2/>
-      <Banner />
       <Benefit props="md:py-20 py-10" />
       <YoutubeVideo/>
       {/* <Instagram /> */}

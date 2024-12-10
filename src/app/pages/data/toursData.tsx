@@ -1,21 +1,18 @@
- // @ts-nocheck 
-'use client'
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { tours } from '../data/toursData';
-import MenuOne from '@/components/Header/Menu/MenuOne';
-import Breadcrumb from '@/components/Breadcrumb/Breadcrumb';
-import Footer from '@/components/Footer/Footer';
-import GoldenTriangle from '../../../../public/images/slider/GoldenTriangle.jpeg';
-import Rajasthan11Days from '../../../../public/images/slider/Rajasthan11Days.jpeg';
-import Rajasthan8Days from '../../../../public/images/slider/Rajasthan8Days.jpeg';
-import Rajasthan10daysOne from '../../../../public/images/slider/Rajasthan10DayesOne.jpeg';
-import Rajasthan10daysTwo from '../../../../public/images/slider/Rajasthan10DayesTwo.jpeg';
-import Rajasthan10daysThree from '../../../../public/images/slider/Rajasthan10DaysThree.jpeg';
-import Rajasthan16Days from '../../../../public/images/slider/Rajasthan16Days.jpeg';
-import Rajasthan20Days from '../../../../public/images/slider/Rajasthan20Days.jpeg';
+export interface DescriptionContent {
+    type: 'heading' | 'text' | 'list';
+    content: string | string[];
+  }
+  
+  // Define the interface for Tours
+  export interface Tour {
+    id: string;
+    title: string;
+    cities: string;
+    description: DescriptionContent[];
+    image: string; // Assuming the image is a path or URL string
+  }
 
-export const Tours = [
+export const tours = [
     {
         id: "1",
         title: 'Golden Triangle Tour: (6 Days)',
@@ -103,7 +100,7 @@ export const Tours = [
                 content: 'After breakfast, return to Delhi. Enjoy a farewell lunch at the hotel, followed by a transfer to the airport to catch your flight.',
             },
         ],
-        image: GoldenTriangle,
+        image: '/images/slider/GoldenTriangle.jpeg',
     }
     ,
 
@@ -256,7 +253,7 @@ export const Tours = [
                 content: 'Morning sightseeing of Udaipur includes Lake Pichola and other attractions. Evening flight to your next destination.',
             },
         ],
-        image: Rajasthan11Days,
+        image: '/images/slider/Rajasthan11Days.jpeg',
     }
 
     ,
@@ -421,7 +418,7 @@ export const Tours = [
                 content: 'Overnight stay in Udaipur.',
             },
         ],
-        image: Rajasthan8Days,
+        image: '/images/slider/Rajasthan8Days.jpeg',
     }
 
     ,
@@ -599,11 +596,11 @@ export const Tours = [
                 content: 'Evening flight to your destination.',
             },
         ],
-        image: Rajasthan10daysOne,
+        image: '/images/slider/Rajasthan10DayesOne.jpeg',
     }
 
     ,
-    {
+    {   id: "5",
         title: 'Rajasthan PALACE Tour: (10 Days)',
         cities: {
             destinations: 'Delhi - Jaipur - Sariska - Mandawa - Bikaner - Khimsar - Jodhpur - Delhi',
@@ -736,7 +733,7 @@ export const Tours = [
                 content: 'Drive back to Delhi and depart for your onward journey.',
             },
         ],
-        image: Rajasthan10daysTwo,
+        image: '/images/slider/Rajasthan10DayesTwo.jpeg',
     }
     ,
     {
@@ -886,7 +883,7 @@ export const Tours = [
                 content: 'Evening transfer to Delhi airport for onward flight.',
             },
         ],
-        image: Rajasthan10daysThree,
+        image: '/images/slider/Rajasthan10DaysThree.jpeg',
     }
     ,
     {
@@ -996,7 +993,7 @@ export const Tours = [
                 content: 'You will be escorted to the international airport for your onward journey.',
             },
         ],
-        image: Rajasthan16Days,
+        image: '/images/slider/Rajasthan16Days.jpeg',
     }
     ,
 
@@ -1206,120 +1203,8 @@ export const Tours = [
                 ],
             },
         ],
-        image: Rajasthan20Days,
+        image: '/images/slider/Rajasthan20Days.jpeg',
     }
 
 
 ];
-
-type DescriptionItem = {
-    type: string;
-    content: string | string[];
-};
-
-const PackageToursPage = () => {
-    const [activeTour, setActiveTour] = useState(Tours[0] || {});
-
-    return (
-        <>
-            {/* Header Section */}
-            <div id="header" className="relative w-full">
-                <MenuOne props="bg-transparent" />
-                <Breadcrumb heading="Explore India" subHeading="Discover India" />
-            </div>
-
-            {/* Tours Section */}
-            <section className="py-16 bg-gray-100">
-                <div className="container mx-auto flex flex-col lg:flex-row gap-12">
-                    {/* Left Side: Tour List */}
-                    <div className="w-full lg:w-1/3">
-                        <div className="bg-white p-6 rounded-lg shadow-md sticky top-20">
-                            <h2 className="text-2xl font-bold text-center mb-6 text-heading">Explore Tours</h2>
-                            <ul className="space-y-6">
-                                {tours.map((tour, index) => (
-                                    <li key={index}>
-                                        <button
-                                            onClick={() => setActiveTour(tour)}
-                                            className={`block w-full p-4 text-left rounded-lg shadow-md transition-all duration-300 transform ${
-                                                activeTour?.title === tour.title
-                                                    ? 'bg-orange-600 text-white scale-105'
-                                                    : 'bg-gray-200 text-gray-800 hover:bg-orange-500 hover:text-white'
-                                            }`}
-                                        >
-                                            {tour.title}
-                                        </button>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    </div>
-
-                    {/* Right Side: Tour Details */}
-                    <div className="w-full lg:w-2/3 bg-white rounded-lg shadow-md overflow-hidden">
-                        {activeTour?.image && (
-                            <Image
-                                src={activeTour.image}
-                                alt={activeTour.title || 'Tour Image'}
-                                width={800}
-                                height={400}
-                                className="w-full h-64 object-cover rounded-t-lg"
-                            />
-                        )}
-                     <div className="p-6">
-    {/* Title */}
-    <h2 className="text-3xl font-bold text-heading mb-6">
-        {activeTour?.title || 'Tour Title'}
-    </h2>
-
-    {/* Cities Information */}
-    <p className="text-lg text-body mb-6">
-        <span className="font-semibold text-primary">Cities: </span>
-        {typeof activeTour?.cities === 'string'
-            ? activeTour.cities
-            : activeTour?.cities?.destinations
-            ? `${activeTour.cities.destinations} - ${activeTour.cities.duration || ''}`
-            : 'N/A'}
-    </p>
-
-    {/* Description */}
-    <div className="text-body whitespace-pre-line leading-relaxed space-y-4">
-        {activeTour?.description?.map((item, index) => {
-            const content = Array.isArray(item.content)
-                ? item.content.join(' ')
-                : item.content;
-
-            return (
-                <div key={index}>
-                    {typeof content === 'string'
-                        ? content.split('**').map((text, subIndex) =>
-                            subIndex % 2 === 1 ? (
-                                <span
-                                    key={subIndex}
-                                    className="block mt-4 font-semibold text-primary"
-                                >
-                                    {text}
-                                </span>
-                            ) : (
-                                <span key={subIndex}>{text}</span>
-                            )
-                        )
-                        : (
-                            <span>{content}</span>
-                        )}
-                </div>
-            );
-        })}
-    </div>
-</div>
-
-                    </div>
-                </div>
-            </section>
-
-            {/* Footer Section */}
-            <Footer />
-        </>
-    );
-};
-
-export default PackageToursPage;

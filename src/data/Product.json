@@ -8,6 +8,7 @@
     "gender": "women",
     "new": true,
     "sale": false,
+    "data": {}, 
     "rate": 4,
     "price": 45,
     "originPrice": 55,

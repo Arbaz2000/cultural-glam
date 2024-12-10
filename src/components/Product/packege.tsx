@@ -69,7 +69,7 @@ const Package = () => {
   return (
     <div className="bg-slate-50">
       <div className="py-10">
-        <p className="text-4xl font-bold mb-2 text-center">Explore Your Package Tours</p>
+        <p className="text-4xl font-bold mb-2 text-center">Explore Your <strong className='text-secondary'>Package</strong> Tours</p>
       </div>
       <hr className="border-gray-800 mb-2" />
       <div className="container mx-auto py-8">
