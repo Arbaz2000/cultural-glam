@@ -6,8 +6,11 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css/bundle';
 import TestimonialItem from '../Testimonial/TestimonialItem';
 import { TestimonialType } from '@/type/TestimonialType'
+import rating from '../../../public/images/tourTravel/rate.png'
+import Tripadviser from '../../../public/images/tourTravel/tripadvisor-icon.png'
 
 import Image from 'next/image';
+
 
 interface Props {
     data: Array<TestimonialType>;

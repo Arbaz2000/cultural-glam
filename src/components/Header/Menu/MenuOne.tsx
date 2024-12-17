@@ -194,7 +194,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                             href="/pages/about"
                                             className={`text-button-uppercase duration-300 flex items-center justify-center ${pathname === '/pages/about' ? 'active text-primary' : ''}`}
                                         >
-                                            About Us
+                                            Contect Us
                                         </Link>
                                     </li>
                                 </ul>

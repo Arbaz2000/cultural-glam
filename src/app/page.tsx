@@ -30,8 +30,10 @@ export default function Home() {
       {/* <Collection /> */}
       {/* <TabFeatures data={productData} start={0} limit={6} /> */}
       <TabFeatures2/>
+      {/* <Banner /> */}
       {/* <Benefit props="md:py-20 py-10" /> */}
       <YoutubeVideo/>
+      {/* <Instagram /> */}
       {/* <Instagram /> */}
       {/* <Brand /> */}
       <Footer />
