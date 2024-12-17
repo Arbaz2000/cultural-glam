@@ -11,6 +11,7 @@ import Tripadviser from '../../../public/images/tourTravel/tripadvisor-icon.png'
 
 import Image from 'next/image';
 
+
 interface Props {
     data: Array<TestimonialType>;
     limit: number;
@@ -26,21 +27,22 @@ const Testimonial: React.FC<Props> = ({ data, limit }) => {
                     </div>
                     <div className="list-testimonial pagination-mt40 md:mt-10 mt-6 flex flex-row">
                         <div className='flex flex-row mt-32 mr-10'>
-                        <div>
-                            <h2 className=''>EXCELLENG</h2>
-                            <Image className='text-sm '
-                            alt='rating png image '
-                            src={rating}
-                            width={80}
-                            height={80}                            ></Image>
-                            <p className=''>Based on <strong>100+review</strong></p>
-                            <Image className='text-sm mr-5'
-                            alt='rating png image '
-                            src={Tripadviser}
-                            width={60}
-                            height={60} 
-                            ></Image>
-                        </div>
+                            <div>
+                                <h2 className=''>EXCELLENG</h2>
+                                <Image className='text-sm '
+                                    alt='rating png image '
+                                    src={'/images/tourTravel/rate.jpeg'}
+                                    width={80}
+                                    height={80}                            
+                                    />
+                                <p className=''>Based on <strong>100+review</strong></p>
+                                <Image className='text-sm mr-5'
+                                    alt='rating png image '
+                                    src={'/images/tourTravel/tripadvisor-icon.jpeg'}
+                                    width={60}
+                                    height={60}
+                                />
+                            </div>
                         </div>
                         <Swiper
                             spaceBetween={12}

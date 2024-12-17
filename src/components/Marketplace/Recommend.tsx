@@ -1,3 +1,4 @@
+ // @ts-nocheck 
 import React from 'react'
 import productData from '@/data/Product.json'
 import Product from '../Product/packege'

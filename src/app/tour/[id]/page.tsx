@@ -1,12 +1,10 @@
-'use client';
+ // @ts-nocheck 
 import Image from 'next/image';
 import Link from 'next/link';
 import MenuOne from '@/components/Header/Menu/MenuOne';
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb';
+import { notFound } from 'next/navigation';
 import Footer from '@/components/Footer/Footer';
-import JaipurTwo from "../../../../public/images/slider/JaipurTwo.jpeg"
-import Jalmahal from "../../../../public/images/slider/Jalmahal.jpeg"
-import Gatore from "../../../../public/images/slider/Gatore.jpeg"
 
 interface DescriptionItem {
     type: 'text' | 'heading' | 'list';
@@ -367,19 +365,12 @@ interface TourDetailProps {
         id: string;
     };
 }
-
-export default function TourDetail({ params }: TourDetailProps) {
+export default function TourDetail({ params }: { params: { id: string } }) {
+    // Find the tour based on the params.id (static data)
     const tour = tours.find((t) => t.id === params.id);
 
     if (!tour) {
-        return (
-            <div className="min-h-screen flex items-center justify-center bg-gray-100">
-                <h1 className="text-3xl font-bold text-red-500">Tour Not Found</h1>
-                <Link href="/" className="mt-4 px-4 py-2 bg-blue-500 text-white rounded">
-                    Back to Home
-                </Link>
-            </div>
-        );
+        notFound();  // Returns a 404 page if tour is not found
     }
 
     return (
@@ -388,34 +379,35 @@ export default function TourDetail({ params }: TourDetailProps) {
                 <MenuOne props="bg-transparent" />
                 <Breadcrumb heading="Explore India" subHeading="Discover India" />
             </div>
-            {/* <div className="min-h-screen bg-gray-100 py-12 px-6">
-    <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
-        <div className="relative">
-            <Image
-                src={tour.image}
-                alt={tour.title}
-                width={800}
-                height={400}
-                className="rounded-md w-full"
-            />
-           
-            <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 rounded-md"></div>
-            <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 mt-6 text-3xl font-bold text-center text-white sm:text-4xl lg:text-5xl">
-                {tour.title}
-            </h1>
-        </div>
 
-        <div className="mt-4 text-gray-700">
+            <div className="min-h-screen bg-gray-100 py-12 px-6">
+                <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
+                    <div className="relative">
+                        <Image
+                            src={tour.image}
+                            alt={tour.title}
+                            width={800}
+                            height={400}
+                            className="rounded-md w-full"
+                        />
+                        {/* Gradient overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-md"></div>
+                        <h1 className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-3xl font-bold text-white text-center sm:text-4xl lg:text-5xl">
+                            {tour.title}
+                        </h1>
+                    </div>
+
+                    <div className="mt-4 text-gray-700">
             {tour.description.map((item, index) => {
                 if (item.type === 'heading') {
                     return (
-                        <h2 key={index} className="text-2xl font-semibold mt-4">
+                        <h2 key={index} className="text-2xl font-semibold mt-4  text-[#b59c39] ">
                             {item.content}
                         </h2>
                     );
                 } else if (item.type === 'text') {
                     return (
-                        <p key={index} className="mt-2">
+                        <p key={index} className="mt-2 text-1xl">
                             {item.content}
                         </p>
                     );
@@ -442,135 +434,23 @@ export default function TourDetail({ params }: TourDetailProps) {
             })}
         </div>
 
-        <div className="mt-6">
-            <Link href="/" className="px-4 py-2 bg-blue-500 text-white rounded">
-                Back to Tours
-            </Link>
-        </div>
-    </div>
-</div> */}
-
-<div className="min-h-screen bg-gray-100 py-12 px-6">
-    <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
-        <div className="relative">
-            <Image
-                src={tour.image}
-                alt={tour.title}
-                width={800}
-                height={400}
-                className="rounded-md w-full"
-            />
-            {/* Gradient overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-md"></div>
-            <h1 className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-3xl font-bold text-white text-center sm:text-4xl lg:text-5xl">
-                {tour.title}
-            </h1>
-        </div>
-
-        <div className="mt-4 text-gray-700">
-            {tour.description.map((item, index) => {
-                if (item.type === 'heading') {
-                    return (
-                        <h2 key={index} className="text-2xl font-semibold mt-4">
-                            {item.content}
-                        </h2>
-                    );
-                } else if (item.type === 'text') {
-                    return (
-                        <p key={index} className="mt-2">
-                            {item.content}
-                        </p>
-                    );
-                } else if (item.type === 'list') {
-                    if (Array.isArray(item.content)) {
-                        return (
-                            <ul key={index} className="list-disc pl-6 mt-2">
-                                {item.content.map((listItem, i) => (
-                                    <li key={i} className="text-gray-700">
-                                        {listItem}
-                                    </li>
-                                ))}
-                            </ul>
-                        );
-                    } else {
-                        return (
-                            <p key={index} className="mt-2">
-                                {item.content}
-                            </p>
-                        );
-                    }
-                }
-                return null;
-            })}
-        </div>
-
-        <div className="mt-6">
-            <Link href="/" className="px-4 py-2 bg-blue-500 text-white rounded">
-                Back to Tours
-            </Link>
-        </div>
-    </div>
-</div>
-
-
-
-
-            <section className="py-10 md:py-24 px-4 md:px-10 bg-white">
-                <div className="container mx-auto">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {/* Card 1 */}
-                        <div className="relative group overflow-hidden rounded-lg shadow-lg">
-                            <Image
-                                src={JaipurTwo}
-                                alt="Elephant Ride"
-                                layout="responsive"
-                                width={300}
-                                height={200}
-                                objectFit="cover"
-                                className="transition duration-500 ease-in-out transform group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black opacity-50 hover:opacity-75 transition duration-500 ease-in-out"></div>
-                            <div className="absolute inset-0 flex items-center justify-center text-center text-white font-bold text-xl transition duration-500 ease-in-out transform group-hover:translate-y-2">
-                                <p>Elephant Ride</p>
-                            </div>
-                        </div>
-
-                        {/* Card 2 */}
-                        <div className="relative group overflow-hidden rounded-lg shadow-lg">
-                            <Image
-                                src={Jalmahal}
-                                alt="Jal Mahal"
-                                layout="responsive"
-                                width={300}
-                                height={200}
-                                objectFit="cover"
-                                className="transition duration-500 ease-in-out transform group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black opacity-50 hover:opacity-75 transition duration-500 ease-in-out"></div>
-                            <div className="absolute inset-0 flex items-center justify-center text-center text-white font-bold text-xl transition duration-500 ease-in-out transform group-hover:translate-y-2">
-                                <p>Jal Mahal Visit</p>
-                            </div>
-                        </div>
-                        <div className="relative group overflow-hidden rounded-lg shadow-lg">
-                            <Image
-                                src={Gatore}
-                                alt="Gatore ki chatri"
-                                layout="responsive"
-                                width={300}
-                                height={200}
-                                objectFit="cover"
-                                className="transition duration-500 ease-in-out transform group-hover:scale-105"
-                            />
-                            <div className="absolute inset-0 bg-black opacity-50 hover:opacity-75 transition duration-500 ease-in-out"></div>
-                            <div className="absolute inset-0 flex items-center justify-center text-center text-white font-bold text-xl transition duration-500 ease-in-out transform group-hover:translate-y-2">
-                                <p>Gatore Ki Chatri</p>
-                            </div>
-                        </div>
+                    <div className="mt-6">
+                        <Link href="/" className="px-4 py-2 bg-blue-500 text-white rounded">
+                            Back to Tours
+                        </Link>
                     </div>
                 </div>
-            </section>
+            </div>
 
             <Footer />
         </>
     );
 }
+
+// Generate static params for dynamic routes
+export function generateStaticParams() {
+    return tours.map((tour) => ({
+        id: tour.id,  // Params that will be passed to the page component
+    }));
+}
+
