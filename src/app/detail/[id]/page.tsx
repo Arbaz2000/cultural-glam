@@ -33,12 +33,12 @@ const TourDetail = ({ params }: { params: { id: string } }) => {
       height={500}
       className="object-cover rounded-t-lg w-full"
     />
-    <h1 className="text-3xl font-bold mt-6 sm:text-4xl lg:text-5xl text-center">
+    <h1 className="text-3xl font-bold mt-6 sm:text-4xl lg:text-5xl text-center text-primary">
       {tour.title}
     </h1>
   
     <p className="text-xl mt-4 text-gray-700 text-center">
-      <span className="font-semibold text-primary">Cities: </span>
+      <span className="text-2xl font-bold text-secondary">Cities : </span>
       {typeof tour.cities === 'string'
         ? tour.cities
         : `${tour.cities?.destinations} - ${tour.cities?.duration || ''}`}
@@ -52,13 +52,13 @@ const TourDetail = ({ params }: { params: { id: string } }) => {
             <h3 className="text-2xl font-semibold text-gray-800">{item.content}</h3>
           )}
           {item.type === 'text' && (
-            <p className="text-gray-700 mt-2 leading-relaxed">{item.content}</p>
+            <p className="text-gray-700 mt-2 leading-relaxed  text-[#b59c39]  ">{item.content}</p>
           )}
           {item.type === 'list' && (
             <ul className="list-disc pl-6 text-gray-700 mt-2 space-y-1">
               {Array.isArray(item.content) &&
-                item.content.map((listItem, idx) => (
-                  <li key={idx}>{listItem}</li>
+                item.content.map((listItem, index) => (
+                  <li key={index}>{listItem}</li>
                 ))}
             </ul>
           )}

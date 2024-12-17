@@ -107,19 +107,9 @@
     margin-bottom: 0.5rem; /* Space out list items */
   }
   
-  button {
-    background-color: #0056D2; /* Primary color for buttons */
-    color: #fff;
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+
   
-  button:hover {
-    background-color: #003A8C; /* Darker shade for button hover */
-  }
+  
   
   input, textarea {
     padding: 0.5rem;
@@ -129,10 +119,7 @@
     font-size: 1rem;
   }
   
-  input:focus, textarea:focus {
-    border-color: #0056D2; /* Focused border color */
-    outline: none;
-  }
+ 
   
   /* Add a box shadow to elements */
   .card, .section {

@@ -33,7 +33,7 @@ const ChauffeurCars = () => {
     ], []); // Empty dependency array ensures it is computed only once
 
     return (
-        <section className="py-10 px-4 sm:px-8 lg:px-16">
+        <section className="py-10 px-4 sm:px-8 lg:px-16 hidden lg:block">
             {/* Heading */}
             <div className="text-center mb-10">
                 <h1 className="text-3xl sm:text-4xl font-bold text-gray-800">

@@ -15,7 +15,7 @@ export interface DescriptionContent {
 export const tours = [
     {
         id: "1",
-        title: 'Golden Triangle Tour: (6 Days)',
+        title: 'Golden Triangle Tour: 6 Days',
         cities: 'Delhi – Agra – Jaipur – Delhi in 6 days',
         description: [
             {
@@ -106,7 +106,7 @@ export const tours = [
 
     {
         id: "2",
-        title: 'Rajasthan (11 Days)',
+        title: 'Rajasthan: 11 Days',
         cities: 'Delhi - Agra - Jaipur - Jodhpur - Jaisalmer - Udaipur - Delhi',
         description: [
             {
@@ -259,7 +259,7 @@ export const tours = [
     ,
     {
         id: "3",
-        title: 'Rajasthan Tour: (8 Days)',
+        title: 'Rajasthan Tour: 8 Days',
         cities: {
             destinations: 'Jaipur - Bikaner - Jaisalmer - Jodhpur - Mount Abu - Udaipur',
             duration: '08 Nights / 09 Days',
@@ -424,7 +424,7 @@ export const tours = [
     ,
     {
         id: "4",
-        title: 'Rajasthan PALACE Tour: (10 Days)',
+        title: 'Rajasthan PALACE Tour: 10 Days',
         cities: {
             destinations: 'Delhi - Jaipur - Jodhpur - Udaipur - Jaisalmer - Bikaner - Mandawa - Delhi',
             duration: '09 Nights / 10 Days',
@@ -601,7 +601,7 @@ export const tours = [
 
     ,
     {   id: "5",
-        title: 'Rajasthan PALACE Tour: (10 Days)',
+        title: 'Rajasthan Palace Tour: 10 Days',
         cities: {
             destinations: 'Delhi - Jaipur - Sariska - Mandawa - Bikaner - Khimsar - Jodhpur - Delhi',
             duration: '09 Nights / 10 Days',
@@ -738,7 +738,7 @@ export const tours = [
     ,
     {
         id: "6",
-        title: 'Rajasthan Ethnic Tour : (10 Days)',
+        title: 'Rajasthan Ethnic Tour : 10 Days',
         cities: 'Destinations Covered: Delhi - Agra - Jaipur - Jodhpur - Udaipur - Kishangarh - Delhi',
         description: [
             {
@@ -888,7 +888,7 @@ export const tours = [
     ,
     {
         id: "7",
-        title: 'Rajasthan DESERT Tour : (16 Days)',
+        title: 'Rajasthan DESERT Tour : 16 Days',
         cities: 'Destinations Covered: Delhi - Mandawa - Bikaner - Jaisalmer - Jodhpur - Jaipur - Delhi',
         description: [
             {
@@ -999,7 +999,7 @@ export const tours = [
 
     {
         id: "8",
-        title: "Rajasthan FORT– PALACE Tour : (20 Days)",
+        title: "Rajasthan FORT– PALACE Tour : 20 Days",
         cities: "Destinations Covered: Delhi - Agra - Jaipur - Pushkar - Ranthambhore - Kota - Bundi - Chittaurgarh - Bijaipur - Udaipur - Kumbhalgarh - Jodhpur - Jaisalmer - Bikaner - Mandawa - Delhi",
         description: [
             {

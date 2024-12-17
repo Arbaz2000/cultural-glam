@@ -401,13 +401,13 @@ export default function TourDetail({ params }: { params: { id: string } }) {
             {tour.description.map((item, index) => {
                 if (item.type === 'heading') {
                     return (
-                        <h2 key={index} className="text-2xl font-semibold mt-4">
+                        <h2 key={index} className="text-2xl font-semibold mt-4  text-[#b59c39] ">
                             {item.content}
                         </h2>
                     );
                 } else if (item.type === 'text') {
                     return (
-                        <p key={index} className="mt-2">
+                        <p key={index} className="mt-2 text-1xl">
                             {item.content}
                         </p>
                     );

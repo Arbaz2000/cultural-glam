@@ -9,16 +9,10 @@ import 'swiper/css/bundle';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
 import 'swiper/css';
-import tarachandraji from "../../../public/images/slider/4.jpg"
-import LPP from "../../../public/images/slider/slideOne1.jpeg"
-import LPP2 from "../../../public/images/slider/slideTwo.jpeg"
-import LPP3 from "../../../public/images/slider/slideThree.jpeg"
-import LPP4 from "../../../public/images/slider/sliderfour.png"
-import LPP5 from "../../../public/images/slider/sliderfive.jpg"
 
 const SliderOne = () => {
     return (
-        <div className="slider-block style-one bg-linear xl:h-[860px] lg:h-[800px] md:h-[580px] sm:h-[500px] h-[350px] max-[420px]:h-[320px] ">
+        <div className="slider-block style-one bg-linear xl:h-[860px] lg:h-[800px] md:h-[580px] sm:h-[500px] h-[350px] max-[420px]:h-[320px] flex items-center justify-center">
             <div className="slider-main w-full">
                 <Swiper
                     spaceBetween={0}
@@ -40,12 +34,13 @@ const SliderOne = () => {
                                         Discover Destinations With <strong className='text-primary'>Tara Chandra ji</strong>
                                     </div>
                                 </div>
-                                <div className="sub-img relative w-1/2 h-full flex justify-end items-center">
+                                <div className="slider-block style-one bg-linear xl:h-[860px] lg:h-[800px] md:h-[580px] sm:h-[500px] h-[350px] max-[420px]:h-[320px] flex items-center justify-center bg-blue-500">
+
                                     <Image
-                                        src={tarachandraji}
+                                        src={'/images/slider/4.jpg'}
                                         alt="bg1-2"
                                         width={1000}
-                                        height={200}
+                                        height={100}
                                         style={{
                                             objectFit: 'cover',
                                             objectPosition: 'center right',
@@ -55,6 +50,7 @@ const SliderOne = () => {
                                 </div>
                             </div>
                         </div>
+
                     </SwiperSlide>
                     <SwiperSlide>
                         <div className="slider-item h-full w-full relative mt-24">
@@ -67,7 +63,7 @@ const SliderOne = () => {
                                 </div>
                                 <div className="sub-img relative w-1/2 h-full flex justify-end items-center">
                                     <Image
-                                        src={LPP2}
+                                        src={'/images/slider/slideTwo.jpeg'}
                                         alt="bg1-2"
                                         width={670}
                                         height={936}
@@ -92,7 +88,7 @@ const SliderOne = () => {
                                 </div>
                                 <div className="sub-img relative w-1/2 h-full flex justify-end items-center">
                                     <Image
-                                        src={LPP3}
+                                        src={'/images/slider/slideThree.jpeg'}
                                         alt="landing page photo"
                                         width={1000}
                                         height={1000}
@@ -117,7 +113,7 @@ const SliderOne = () => {
                                 </div>
                                 <div className="sub-img relative w-1/2 h-full flex justify-end items-center">
                                     <Image
-                                        src={LPP4}
+                                        src={'/images/slider/sliderfour.png'}
                                         alt="landing page photo"
                                         width={1000}
                                         height={1000}
@@ -142,7 +138,7 @@ const SliderOne = () => {
                                 </div>
                                 <div className="sub-img relative w-1/2 h-full flex justify-end items-center">
                                     <Image
-                                        src={LPP5}
+                                        src={'/images/slider/sliderfive.jpg'}
                                         alt="landing page photo"
                                         width={1000}
                                         height={1000}
@@ -159,6 +155,7 @@ const SliderOne = () => {
                 </Swiper>
             </div>
         </div>
+        
     );
 };
 

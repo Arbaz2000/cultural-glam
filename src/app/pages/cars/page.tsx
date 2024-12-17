@@ -6,26 +6,12 @@ import TopNavOne from '@/components/Header/TopNav/TopNavOne';
 import MenuOne from '@/components/Header/Menu/MenuOne';
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb';
 import Footer from '@/components/Footer/Footer';
-
-import car from "../../../../public/images/cars/3cars.jpeg";
-import bus from "../../../../public/images/cars/bus.jpeg";
-import hyundai from "../../../../public/images/cars/hyundai.jpeg";
-import jeep from "../../../../public/images/cars/jeep.jpeg";
-import suzuki from "../../../../public/images/cars/suzuki.jpeg";
-import tavera from "../../../../public/images/cars/tavera.jpeg";
-import tempo from "../../../../public/images/cars/tempo.jpeg";
-import toyota2 from "../../../../public/images/cars/toyota2.jpeg";
-import toyotaetios from "../../../../public/images/cars/toyotaEtios.jpeg";
-import toyoto from "../../../../public/images/cars/toyto.jpeg";
-import Toyotainnova from "../../../../public/images/cars/toyto1.jpeg";
-
-import toyoto1 from "../../../../public/images/cars/toyto1.jpeg";
 const cardata = () => {
   const tours = [
     {
       title: 'Cars',
       href: '#',
-      image: car,
+      image: '/images/cars/3cars.jpeg',
       description: `
               One day Jaipur to Samode and come back to Jaipur.
         
@@ -53,7 +39,7 @@ const cardata = () => {
     {
       title: 'luxuery Travle bus',
       href: '#',
-      image: bus,
+      image: '/images/cars/bus.jpeg',
       description: `
               **Highlights of Pushkar include:**
           
@@ -74,7 +60,7 @@ const cardata = () => {
     {
       title: 'Hyundai Car',
       href: '#',
-      image: hyundai,
+      image: '/images/cars/hyundai.jpeg',
       description: `
               **Highlights of the Jaipur City Sightseeing Tour:**
           
@@ -101,7 +87,7 @@ const cardata = () => {
     {
       title: 'Traditional Jeep',
       href: '#',
-      image: jeep,
+      image: '/images/cars/jeep.jpeg',
       description: `
               **Highlights of the Agra City Tour:**
           
@@ -119,7 +105,7 @@ const cardata = () => {
     {
       title: 'Suzuki van',
       href: '#',
-      image: suzuki,
+      image: '/images/cars/suzuki.jpeg',
       description: `
               **Highlights of the Delhi City Tour:**
           
@@ -153,7 +139,7 @@ const cardata = () => {
     {
       title: 'Chevrolet Tavera',
       href: '#',
-      image: tavera,
+      image: '/images/cars/tavera.jpeg',
       description: `
               **Highlights of the Jodhpur City Tour:**
           
@@ -183,7 +169,7 @@ const cardata = () => {
     {
       title: 'Tempo',
       href: '#',
-      image: tempo,
+      image: '/images/cars/tempo.jpeg',
       description: `
               **Highlights of the Jaipur Walking Day Tour:**
           
@@ -216,7 +202,7 @@ const cardata = () => {
     {
       title: 'Toyota  ',
       href: '#',
-      image: toyota2,
+      image: '/images/cars/toyota2.jpeg',
       description: `
               **Highlights:**
               - Explore the Kathputli colony.
@@ -239,7 +225,7 @@ const cardata = () => {
     {
       title: 'Toyota Etios',
       href: '#',
-      image: toyotaetios,
+      image: '/images/cars/toyotaEtios.jpeg',
       description: `
               **Overview:**
               If you are an adventure enthusiast looking to explore Jaipur beyond traditional sightseeing tours, our cycling tours are the perfect way to discover the hidden gems of this vibrant city. Experience the charming walled city with its historic pink stucco buildings, hilltop forts, serene hills, scrub forests, scenic villages, and ancient temples—all on a bicycle.
@@ -269,7 +255,7 @@ const cardata = () => {
     {
       title: 'Bicycling City Day Tour',
       href: '#',
-      image: toyoto,
+      image: '/images/cars/toyto.jpeg',
       description: `toyoto adventure enthusiast looking to explore Jaipur beyond traditional sightseeing tours, our cycling tours are the perfect way to discover the hidden gems of this vibrant city. Experience the charming walled city with its historic pink stucco buildings, hilltop forts, serene hills, scrub forests, scenic villages, and ancient temples—all on a bicycle.
         
             **Tour Options:**
@@ -297,7 +283,7 @@ const cardata = () => {
     {
       title: 'Toyota Innova',
       href: '#',
-      image: Toyotainnova,
+      image: '/images/cars/toyto1.jpeg',
       description: `
           **Overview:**
           If you are an adventure enthusiast looking to explore Jaipur beyond traditional sightseeing tours, our cycling tours are the perfect way to discover the hidden gems of this vibrant city. Experience the charming walled city with its historic pink stucco buildings, hilltop forts, serene hills, scrub forests, scenic villages, and ancient temples—all on a bicycle.
@@ -336,9 +322,9 @@ const cardata = () => {
         <h1 className="text-3xl font-bold mb-8 text-center">Car Option</h1>
         <p className="text-xl mb-10 text-center ">Choose your vichle for travel.</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-          {tours.map((tour) => (
+          {tours.map((tour,index) => (
             <a
-              key={tour.title}
+              key={index}
               href={tour.href}
               className="block rounded-lg shadow-md overflow-hidden"
             >

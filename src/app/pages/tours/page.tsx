@@ -1,30 +1,16 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image';
-import Link from 'next/link';
-import TopNavOne from '@/components/Header/TopNav/TopNavOne';
 import MenuOne from '@/components/Header/Menu/MenuOne';
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb';
 import Footer from '@/components/Footer/Footer';
-import JaipurOne from "../../../../public/images/slider/jaipurOne.jpeg";
-import PushkarOne from "../../../../public/images/slider/PushkarOne.jpeg";
-import JaipurSightseeing from "../../../../public/images/slider/JaipurSightseeing.jpeg";
-import AgraOne from "../../../../public/images/slider/AgraOne.jpeg";
-import DelhiOne from "../../../../public/images/slider/DelhiOne.jpeg"
-import JodhpurOne from "../../../../public/images/slider/JodhpurOne.jpeg"
-import JaipurWalking from "../../../../public/images/slider/JaipurWalking.jpeg"
-import SlumsTour from "../../../../public/images/slider/SlumsTour.jpeg"
-import CyclingTour from "../../../../public/images/slider/CyclingTour.jpeg"
-import JaipurTwo from "../../../../public/images/slider/JaipurTwo.jpeg"
-import Jalmahal from "../../../../public/images/slider/Jalmahal.jpeg"
-import Gatore from "../../../../public/images/slider/Gatore.jpeg"
 
 const ContactUs = () => {
   const tours = [
     {
       id: '1',
       title: 'Same Day Jaipur Private Tour',
-      image: JaipurOne,
+      image: '/images/slider/jaipurOne.jpeg',
       description: `
           One day Jaipur to Samode and come back to Jaipur.
     
@@ -52,7 +38,7 @@ const ContactUs = () => {
     {
       id: '2',
       title: 'Same Day Pushkar City Tour',
-      image: PushkarOne,
+      image: '/images/slider/PushkarOne.jpeg',
       description: `
           **Highlights of Pushkar include:**
       
@@ -73,7 +59,7 @@ const ContactUs = () => {
     {
       id: '3',
       title: 'Jaipur City Sightseeing Tour',
-      image: JaipurSightseeing,
+      image: '/images/slider/JaipurSightseeing.jpeg',
       description: `
           **Highlights of the Jaipur City Sightseeing Tour:**
       
@@ -100,7 +86,7 @@ const ContactUs = () => {
     {
       id: '4',
       title: 'Agra City Same Day Tour',
-      image: AgraOne,
+      image: '/images/slider/AgraOne.jpeg',
       description: `
           **Highlights of the Agra City Tour:**
       
@@ -118,7 +104,7 @@ const ContactUs = () => {
     {
       id: '5',
       title: 'Delhi City Same Day Tour',
-      image: DelhiOne,
+      image: '/images/slider/DelhiOne.jpeg',
       description: `
           **Highlights of the Delhi City Tour:**
       
@@ -152,7 +138,7 @@ const ContactUs = () => {
     {
       id: '6',
       title: 'Jodhpur City Same Day Tour',
-      image: JodhpurOne,
+      image: '/images/slider/JodhpurOne.jpeg',
       description: `
           **Highlights of the Jodhpur City Tour:**
       
@@ -182,7 +168,7 @@ const ContactUs = () => {
     {
       id: '7',
       title: 'Jaipur Walking Day Tour',
-      image: JaipurWalking,
+      image: '/images/slider/JaipurWalking.jpeg',
       description: `
           **Highlights of the Jaipur Walking Day Tour:**
       
@@ -215,7 +201,7 @@ const ContactUs = () => {
     {
       id: '8',
       title: 'Slums Day Tour',
-      image: SlumsTour,
+      image: '/images/slider/SlumsTour.jpeg',
       description: `
           **Highlights:**
           - Explore the Kathputli colony.
@@ -238,7 +224,7 @@ const ContactUs = () => {
     {
       id: '9',
       title: 'Bicycling City Day Tour',
-      image: CyclingTour,
+      image: '/images/slider/CyclingTour.jpeg',
       description: `
           **Overview:**
           If you are an adventure enthusiast looking to explore Jaipur beyond traditional sightseeing tours, our cycling tours are the perfect way to discover the hidden gems of this vibrant city. Experience the charming walled city with its historic pink stucco buildings, hilltop forts, serene hills, scrub forests, scenic villages, and ancient temples—all on a bicycle.
@@ -290,7 +276,7 @@ const ContactUs = () => {
                 className="object-cover"
               />
               <div className="p-4">
-                <h2 className="text-xl font-bold mb-2">{tour.title}</h2>
+                <h2 className="text-xl font-bold mb-2 text-secondary">{tour.title}</h2>
                 <p className="text-gray-700 text-sm">
                   {/* {tour.description} */}
                 </p>
@@ -305,7 +291,7 @@ const ContactUs = () => {
             {/* Card 1 */}
             <div className="relative group overflow-hidden rounded-lg shadow-lg">
               <Image
-                src={JaipurTwo}
+                src={'/images/slider/JaipurTwo.jpeg'}
                 alt="Elephant Ride"
                 layout="responsive"
                 width={300}
@@ -322,7 +308,7 @@ const ContactUs = () => {
             {/* Card 2 */}
             <div className="relative group overflow-hidden rounded-lg shadow-lg">
               <Image
-                src={Jalmahal}
+                src={'/images/slider/Jalmahal.jpeg'}
                 alt="Jal Mahal"
                 layout="responsive"
                 width={300}
@@ -337,7 +323,7 @@ const ContactUs = () => {
             </div>
             <div className="relative group overflow-hidden rounded-lg shadow-lg">
               <Image
-                src={Gatore}
+                src={'/images/slider/Gatore.jpeg'}
                 alt="Gatore ki chatri"
                 layout="responsive"
                 width={300}
