@@ -1,6 +1,6 @@
 // @ts-nocheck 
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import { tours } from '../data/toursData';
 import MenuOne from '@/components/Header/Menu/MenuOne';
@@ -9,6 +9,19 @@ import Footer from '@/components/Footer/Footer';
 
 const PackageToursPage = () => {
     const [activeTour, setActiveTour] = useState(tours[0] || {});
+    const descriptionRefs = useRef([]); // Store references to descriptions
+
+    const handleButtonClick = (tour, index) => {
+        setActiveTour(tour);
+        // Scroll to the start of the description (not where it ended previously)
+        if (descriptionRefs.current[index]) {
+            descriptionRefs.current[index].scrollIntoView({
+                behavior: 'smooth',
+                block: 'start', // Ensure it scrolls to the top of the screen
+                inline: 'nearest'
+            });
+        }
+    };
 
     return (
         <>
@@ -24,12 +37,12 @@ const PackageToursPage = () => {
                     {/* Left Side: Tour List */}
                     <div className="w-full lg:w-1/3">
                         <div className="bg-[#ffffff] p-6 rounded-lg shadow-md sticky top-20">
-                            <h2 className="text-2xl font-bold text-center mb-6 text-heading">Explore Tours</h2>
+                            <h2 className="text-2xl font-bold text-center mb-6 text-heading bg-[#f5f5f5] rounded-lg heading3 sm:text-3xl py-2 px-2">Explore Tours</h2>
                             <ul className="space-y-6">
                                 {tours.map((tour, index) => (
                                     <li key={index}>
                                         <button
-                                            onClick={() => setActiveTour(tour)}
+                                            onClick={() => handleButtonClick(tour, index)} // Update the onClick handler
                                             className={`block w-full p-4 text-left rounded-lg shadow-md transition-all duration-300 transform bg-[#d48735] ${
                                                 activeTour?.title === tour.title
                                                     ? 'bg-orange-600 text-white scale-105'
@@ -41,7 +54,10 @@ const PackageToursPage = () => {
 
                                         <div className="lg:hidden mt-4">
                                             {activeTour?.title === tour.title && (
-                                                <div className="text-body whitespace-pre-line leading-relaxed space-y-4">
+                                                <div
+                                                    ref={(el) => (descriptionRefs.current[index] = el)} // Set ref for this description
+                                                    className="text-body whitespace-pre-line leading-relaxed space-y-4"
+                                                >
                                                     {tour.description?.map((item, index) => {
                                                         const content = Array.isArray(item.content)
                                                             ? item.content.join(' ')
@@ -105,7 +121,7 @@ const PackageToursPage = () => {
                             </p>
 
                             {/* Description */}
-                            <div className=" whitespace-pre-line leading-relaxed space-y-4">
+                            <div className="whitespace-pre-line leading-relaxed space-y-4">
                                 {activeTour?.description?.map((item, index) => {
                                     const content = Array.isArray(item.content)
                                         ? item.content.join(' ')
@@ -123,14 +139,13 @@ const PackageToursPage = () => {
                                                             {text}
                                                         </span>
                                                     ) : (
-                                                        <span key={subIndex} >{text}</span>
+                                                        <span key={subIndex}>{text}</span>
                                                     )
                                                 )
                                                 : (
                                                     <span>{content}</span>
                                                 )}
                                         </div>
-                                      
                                     );
                                 })}
                             </div>
@@ -147,3 +162,4 @@ const PackageToursPage = () => {
 };
 
 export default PackageToursPage;
+

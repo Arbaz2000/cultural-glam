@@ -4,8 +4,8 @@ import Image from 'next/image'
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 
 const Footer = () => {
-    return (
-        <>
+  return (
+    <>
             <div id="footer" className='footer'>
                 <div className="footer-main bg-surface">
                     <div className="container">
@@ -21,7 +21,7 @@ const Footer = () => {
                                         <span className="text-button">Mail:</span>
                                         <span className="text-button mt-3">Phone:</span>
                                         <span className="text-button mt-3">Address:</span>
-                                    </div>
+            </div>
                                     <div className="flex flex-col ">
                                         <span className=''>skystarjpr@yahoo.co.in</span>
                                         <span className='flex flex-col'>
@@ -62,27 +62,27 @@ const Footer = () => {
                                     <div className="list-social flex items-center gap-6 mt-4">
                                         <Link href={'www.facebook.com/skystarjpr'} target='_blank'>
                                             <div className="icon-facebook text-2xl text-black"></div>
-                                        </Link>
+                  </Link>
                                         <Link href={'https://www.instagram.com/'} target='_blank'>
                                             <div className="icon-instagram text-2xl text-black"></div>
-                                        </Link>
+                  </Link>
                                         <Link href={'https://www.twitter.com/'} target='_blank'>
                                             <div className="icon-twitter text-2xl text-black"></div>
-                                        </Link>
+                </Link>
                                         <Link href={'https://youtu.be/VrKwfeikDoo?si=JHoKrvFT-10y8rKW'} target='_blank'>
                                             <div className="icon-youtube text-2xl text-black"></div>
-                                        </Link>
+                </Link>
                                         <Link href={'https://www.pinterest.com/'} target='_blank'>
                                             <div className="icon-pinterest text-2xl text-black"></div>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
                 </div>
             </div>
-        </>
+    </>
     )
 }
 
