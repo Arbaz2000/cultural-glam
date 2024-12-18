@@ -370,7 +370,7 @@ import React from 'react'
 function ModalQuickview() {
   return (
     <div>
-      i am div 
+       
     </div>
   )
 }

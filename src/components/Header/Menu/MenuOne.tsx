@@ -124,7 +124,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                         href="/pages/about"
                                         className={`text-button-uppercase duration-300 h-full flex items-center justify-center text-sm md:text-base ${pathname === '/pages/about' ? 'active text-primary' : ''}`}
                                     >
-                                        Contact Us
+                                        About Us
                                     </Link>
                                 </li>
                             </ul>
@@ -194,7 +194,7 @@ const MenuOne: React.FC<Props> = ({ props }) => {
                                             href="/pages/about"
                                             className={`text-button-uppercase duration-300 flex items-center justify-center ${pathname === '/pages/about' ? 'active text-primary' : ''}`}
                                         >
-                                            Contect Us
+                                            About Us
                                         </Link>
                                     </li>
                                 </ul>

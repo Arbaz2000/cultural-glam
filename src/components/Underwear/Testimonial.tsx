@@ -1,4 +1,4 @@
- // @ts-nocheck 
+// @ts-nocheck 
 'use client'
 
 import React, { useState } from 'react'
@@ -24,7 +24,8 @@ const Testimonial: React.FC<Props> = ({ data, limit }) => {
     return (
         <>
             <div className="testimonial-block style-four bg-surface md:mt-20 mt-10 md:py-20 py-14">
-                <div className="container flex items-center justify-between flex-wrap gap-y-6 max-md:flex-col-reverse">
+                <div className="container flex items-center justify-between flex-wrap gap-y-6 md:flex-row flex-col-reverse">
+                    {/* Testimonial Text Section */}
                     <div className="md:w-1/2 w-full list-testimonial section-swiper-navigation style-small-border">
                         <div className="heading3 md:pb-10 pb-5">What People Say</div>
                         <Swiper
@@ -41,10 +42,12 @@ const Testimonial: React.FC<Props> = ({ data, limit }) => {
                             ))}
                         </Swiper>
                     </div>
+
+                    {/* Avatar Section */}
                     <div className="list-avatar lg:w-5/12 md:w-1/2 md:pl-9 text-center">
                         {data.slice(0, limit).map((prd, index) => (
                             <div
-                                className={`bg-img rounded-t-full overflow-hidden ${index === activeIndex ? 'active' : ''}`}
+                                className={`bg-img overflow-hidden ${index === activeIndex ? 'active' : ''}`}
                                 key={index}
                                 data-item={prd.id}
                             >
@@ -53,7 +56,7 @@ const Testimonial: React.FC<Props> = ({ data, limit }) => {
                                     width={1000}
                                     height={700}
                                     alt={prd.name}
-                                    className='avatar w-full'
+                                    className='avatar w-full'  // Flat image without rounded corners
                                 />
                             </div>
                         ))}

@@ -1,5 +1,4 @@
 'use client'
-
 import React, { Component } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -25,8 +24,8 @@ const SliderOne = () => {
                         delay: 4000,
                     }}
                 >
-                   <SwiperSlide>
-                        <div className="slider-item  w-full relative mt-24">
+                    <SwiperSlide>
+                        <div className="slider-item w-full relative mt-4">
                             <div className="container w-full h-full flex items-center justify-between relative">
                                 <div className="text-content basis-1/2">
                                     <div className="text-sub-display">Explore Now! Up To 50% Off!</div>
@@ -35,7 +34,6 @@ const SliderOne = () => {
                                     </div>
                                 </div>
                                 <div className="slider-block style-one bg-linear xl:h-[860px] lg:h-[800px] md:h-[580px] sm:h-[500px] h-[350px] max-[420px]:h-[320px] flex items-center justify-center bg-blue-500">
-
                                     <Image
                                         src={'/images/slider/4.jpg'}
                                         alt="bg1-2"
@@ -50,10 +48,9 @@ const SliderOne = () => {
                                 </div>
                             </div>
                         </div>
-
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="slider-item h-full w-full relative mt-24">
+                        <div className="slider-item h-full w-full relative mt-4">
                             <div className="container w-full h-full flex items-center justify-between relative">
                                 <div className="text-content basis-1/2">
                                     <div className="text-sub-display">Explore Now! Up To 50% Off!</div>
@@ -78,7 +75,7 @@ const SliderOne = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="slider-item h-full w-full relative mt-24">
+                        <div className="slider-item h-full w-full relative mt-4">
                             <div className="container w-full h-full flex items-center justify-between relative">
                                 <div className="text-content basis-1/2">
                                     <div className="text-sub-display">Explore Now! Up To 50% Off!</div>
@@ -103,17 +100,17 @@ const SliderOne = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="slider-item h-full w-full relative mt-24">
+                        <div className="slider-item h-full w-full relative mt-4">
                             <div className="container w-full h-full flex items-center justify-between relative">
                                 <div className="text-content basis-1/2">
                                     <div className="text-sub-display">Explore Now! Up To 50% Off!</div>
                                     <div className="text-display md:mt-5 mt-2">
-                                        Enjoy <strong className="text-primary">Desert</strong> tours,
+                                        Enjoy <strong className="text-primary">Desert</strong> tours
                                     </div>
                                 </div>
                                 <div className="sub-img relative w-1/2 h-full flex justify-end items-center">
                                     <Image
-                                        src={'/images/slider/sliderfour.png'}
+                                        src={'/images/slider/sliderFour.jpeg'}
                                         alt="landing page photo"
                                         width={1000}
                                         height={1000}
@@ -128,7 +125,7 @@ const SliderOne = () => {
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="slider-item h-full w-full relative mt-24">
+                        <div className="slider-item h-full w-full relative mt-4">
                             <div className="container w-full h-full flex items-center justify-between relative">
                                 <div className="text-content basis-1/2">
                                     <div className="text-sub-display">Explore Now! Up To 50% Off!</div>
@@ -155,8 +152,7 @@ const SliderOne = () => {
                 </Swiper>
             </div>
         </div>
-        
     );
 };
 
-export default SliderOne
+export default SliderOne;
